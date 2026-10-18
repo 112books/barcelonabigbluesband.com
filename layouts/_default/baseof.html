@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
   {{ partial "analytics/goatcounter.html" . }}
   <script src="{{ "js/track.js" | relURL }}" defer></script>
-  <link rel="author" href="/humans.txt">
+  <link rel="author" href="{{ "humans.txt" | relURL }}">
 </head>
 {{ $isHome := or .IsHome (eq .RelPermalink (printf "/%s/" .Language.Lang)) }}
 <body class="{{ if $isHome }}is-home{{ else }}is-subpage{{ end }}">
