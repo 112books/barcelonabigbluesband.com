@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="page-wrap">
+  <div class="page-inner">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    {{ if .Content }}
+    <div class="prose">{{ .Content }}</div>
+    {{ end }}
+
+    {{ if .RegularPages }}
+    <div class="news-list">
+      {{ range .RegularPages }}
+      <article class="news-item">
+        <h2 class="news-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="news-item__date">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+        </p>
+        <div class="news-item__summary prose">{{ .Summary }}</div>
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

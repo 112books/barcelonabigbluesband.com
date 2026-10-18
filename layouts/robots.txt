@@ -1,0 +1,54 @@
+{{- if site.Params.noindex -}}
+# Staging / preview: no s'ha d'indexar ni rastrejar
+User-agent: *
+Disallow: /
+{{- else -}}
+# Producció — indexació i citació permeses (SEO + GEO)
+User-agent: *
+Allow: /
+Disallow: /ca/admin/
+Disallow: /es/admin/
+Disallow: /en/admin/
+Disallow: /sr/admin/
+Disallow: /cms/
+Disallow: /data/
+Disallow: /daddario/
+Disallow: /ca/cerca/
+Disallow: /es/buscar/
+Disallow: /en/search/
+Disallow: /sr/pretraga/
+
+# Bots d'IA — permesos explícitament (estratègia GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: YouBot
+Allow: /
+
+Sitemap: {{ "sitemap.xml" | absURL }}
+{{- end -}}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $latestCover := "" }}
+{{ $pages := sort .Pages "Params.weight" }}
+{{ with index $pages 0 }}{{ $latestCover = .Params.cover }}{{ end }}
+
+{{/* Anys publicats, ordenats de més recent a més antic */}}
+{{ $years := slice }}
+{{ range $pages }}
+  {{ with .Params.year }}
+    {{ $ys := printf "%v" . }}
+    {{ if not (in $years $ys) }}{{ $years = $years | append $ys }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $years = sort $years }}
+{{ $n := len $years }}
+
+{{ $undated := slice }}
+{{ range $pages }}{{ if not .Params.year }}{{ $undated = $undated | append . }}{{ end }}{{ end }}
+
+<div class="page-wrap page-wrap--dark page-wrap--disc"
+  {{ if $latestCover }}style="--disc-bg: url('{{ strings.TrimPrefix "/" $latestCover | relURL }}')"{{ end }}>
+  <div class="page-inner">
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <div class="timeline" data-timeline>
+      <div class="timeline__rail" aria-hidden="true"><span class="timeline__rail-fill"></span></div>
+
+      {{ range $i, $_ := $years }}
+        {{ $year := index $years (sub $n $i 1) }}
+        <section class="timeline__group">
+          <h2 class="timeline__year">{{ $year }}</h2>
+          {{ range $pages }}
+            {{ if eq (printf "%v" (.Params.year | default "")) $year }}
+              {{ partial "disc-card.html" . }}
+            {{ end }}
+          {{ end }}
+        </section>
+      {{ end }}
+
+      {{ with $undated }}
+      <section class="timeline__group timeline__group--undated">
+        <h2 class="timeline__year">{{ i18n "disc_year_unknown" }}</h2>
+        {{ range . }}
+          {{ partial "disc-card.html" . }}
+        {{ end }}
+      </section>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<script src="{{ "js/timeline.js" | relURL }}?v=20261015"></script>
+{{ end }}

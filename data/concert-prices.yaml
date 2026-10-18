@@ -1,0 +1,18 @@
+# Preus d'entrada per concert (opcional).
+#
+# Només cal omplir els concerts dels quals vulguis publicar l'oferta a les
+# dades estructurades (JSON-LD MusicEvent). Si un concert no hi és, el seu
+# MusicEvent surt sense «offers» i Google no mostra l'avís de preu.
+#
+# Claus: date (`YYYY-MM-DD`) + "-" + slug del lloc (el primer camp de
+# `LOCATION` de l'iCal, o el nom del local a Bandsintown).
+# Camps:
+#   price        (obligatori) import més baix disponible, sense despeses
+#   priceCurrency (opcional, per defecte EUR; codi ISO 4217)
+#   availability  (opcional: in-stock | sold-out | pre-order | presale)
+#   validFrom     (opcional, ISO 8601: data de posada a la venda)
+#
+# Exemple:
+# "2026-12-27-jamboree-jazz":
+#   price: 25
+#   validFrom: 2026-09-01T10:00

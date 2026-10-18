@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="about-split">
+
+  {{ with .Params.image }}
+  <div class="about-split__image">
+    <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </div>
+  {{ end }}
+
+  <div class="about-split__content">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="prose">{{ .Content }}</div>
+  </div>
+
+</div>
+{{ end }}

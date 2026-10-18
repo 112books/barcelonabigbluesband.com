@@ -1,0 +1,36 @@
+gigs:
+  - name: "Bratia"
+    ical: "https://calendar.google.com/calendar/ical/7713a217c6e9631a76ac934719903101dbbc9550c23cfb6dc082c9114d8bf981%40group.calendar.google.com/public/basic.ics"
+
+# Concerts via Bandsintown (API pública amb app_id=js_<domini>).
+# L'id és el número de la URL https://www.bandsintown.com/a/<id>-...
+bandsintown:
+  - name: "Barcelona Big Blues Band"
+    id: 3540917
+  - name: "BGKO"
+    id: 12971154
+  - name: "Bratia"
+    id: 15535670
+  - name: "Los Mambo Jambo"
+    id: 5464733
+videos:
+  - name: "Ivan Kovačević"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Bratia"
+    channel: "UCXqrXtF9DiXVmfB4X8RX6gA"
+  - name: "Lazy Jumpers"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "The Nu Niles"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Bernat Font Trio"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Down Home"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Ivan Kovacevic 5 Spots"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Barcelona Big Blues Band"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Barcelona Gipsy Kezmer Orchestra"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"
+  - name: "Los Mambo Jambo"
+    channel: "UCG-CSJzP_90xHVhaDQj6PvA"

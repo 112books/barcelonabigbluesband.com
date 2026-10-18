@@ -1,0 +1,42 @@
+# Enllaços de plataforma per projecte.
+# Clau = translationKey del projecte. Ordre = ordre de visualització.
+# Plataformes: web | spotify | apple | bandcamp | youtube | bandsintown
+bratia:
+  - { platform: "web",         url: "https://bratiamusic.com" }
+  - { platform: "spotify",     url: "https://open.spotify.com/album/50KP9q2fYisoeMWT3bsdeX" }
+  - { platform: "apple",       url: "https://music.apple.com/es/album/balkan-pompe-ignition/1687764298" }
+  - { platform: "youtube",     url: "https://www.youtube.com/@bratiamusic" }
+  - { platform: "bandsintown", url: "https://www.bandsintown.com/a/15535670-bratia" }
+
+barcelona-gipsy-balkan-orchestra:
+  - { platform: "web",         url: "https://www.bgko.eu" }
+  - { platform: "spotify",     url: "https://open.spotify.com/artist/6iASQf0WvN8Ci5oZ2O2Z9b" }
+  - { platform: "apple",       url: "https://music.apple.com/us/artist/barcelona-gipsy-balkan-orchestra/1112956461" }
+  - { platform: "bandcamp",    url: "https://bgko.bandcamp.com" }
+  - { platform: "youtube",     url: "https://www.youtube.com/@bgko" }
+  - { platform: "bandsintown", url: "https://www.bandsintown.com/a/12971154-bgko-barcelona-gipsy-balkan-orchestra" }
+
+los-mambo-jambo:
+  - { platform: "web",         url: "https://buenritmo.bigcartel.com/artist/los-mambo-jambo" }
+  - { platform: "spotify",     url: "https://open.spotify.com/artist/4k1oj4XphotyHhFeQ4tWld" }
+  - { platform: "apple",       url: "https://music.apple.com/artist/455827672" }
+  - { platform: "bandcamp",    url: "https://losmambojambo.bandcamp.com" }
+  - { platform: "bandsintown", url: "https://www.bandsintown.com/a/5464733-los-mambo-jambo" }
+
+5-spots:
+  - { platform: "spotify", url: "https://open.spotify.com/artist/2MJQyVu3avox7aLx6vwr92" }
+  - { platform: "apple",   url: "https://music.apple.com/us/artist/ivan-kovacevic-5-spots/1047592568" }
+
+bernat-font-trio:
+  - { platform: "spotify", url: "https://open.spotify.com/artist/5SjpDKb3QOX4tKue1CbJys" }
+  - { platform: "apple",   url: "https://music.apple.com/es/artist/bernat-font-trio/439546769" }
+
+barcelona-big-blues-band:
+  - { platform: "apple",       url: "https://music.apple.com/es/artist/barcelona-big-blues-band/905808123" }
+  - { platform: "bandsintown", url: "https://www.bandsintown.com/a/3540917-barcelona-big-blues-band" }
+
+the-nu-niles:
+  - { platform: "apple", url: "https://music.apple.com/es/artist/the-nu-niles/205742774" }
+
+lazy-jumpers:
+  - { platform: "apple", url: "https://music.apple.com/es/artist/the-lazy-jumpers/155799583" }

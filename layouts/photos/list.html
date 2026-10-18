@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="page-wrap page-wrap--dark">
+  <div class="page-inner">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <p class="galleries-lead">{{ i18n "photos_lead" }}</p>
+
+    {{ $galleries := hugo.Data.galleries.galleries }}
+    {{ if $galleries }}
+    <div class="galleries-grid">
+      {{ range $galleries }}
+      {{ $title := index .title $.Lang }}
+      {{ if not $title }}{{ $title = index .title "ca" }}{{ end }}
+      {{ if not $title }}{{ $title = index .title "en" }}{{ end }}
+      <div class="gallery-card">
+        <a class="gallery-card__link"
+           href="{{ .url }}"
+           target="_blank"
+           rel="noopener"
+           aria-label="{{ $title }}">
+
+          {{ if .cover }}
+          <div class="gallery-card__thumb">
+            <img src="{{ .cover | relURL }}" alt="{{ $title }}" loading="lazy">
+          </div>
+          {{ else }}
+          <div class="gallery-card__thumb gallery-card__thumb--placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          {{ end }}
+
+          <div class="gallery-card__info">
+            <h2 class="gallery-card__title">{{ $title }}</h2>
+            <p class="gallery-card__date">{{ .date }}</p>
+            <p class="gallery-card__cta">{{ if eq .kind "chronicle" }}{{ i18n "view_chronicle" | default "Read the chronicle" }}{{ else }}{{ i18n "view_on_google_photos" | default "View on Google Photos" }}{{ end }} ↗</p>
+          </div>
+
+        </a>
+        {{ if .author }}
+          {{ if .author_url }}
+            <p class="gallery-card__author"><a href="{{ .author_url }}" target="_blank" rel="noopener">{{ .author }}</a></p>
+          {{ else }}
+            <p class="gallery-card__author">{{ .author }}</p>
+          {{ end }}
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}
+    <p class="galleries-empty">{{ i18n "galleries_empty" | default "Galleries coming soon." }}</p>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

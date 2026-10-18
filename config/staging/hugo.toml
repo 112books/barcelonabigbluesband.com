@@ -1,0 +1,7 @@
+baseURL = "https://112books.github.io/ivankovacevic.com/"
+enableGitInfo = false
+
+[params]
+  noindex = true
+  canonicalBaseURL = "https://ivankovacevic.com/"
+

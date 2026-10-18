@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="page-wrap{{ if eq .Type "legal" }} page-wrap--legal{{ end }}"{{ if eq .Type "legal" }} style="--legal-bg: url('{{ "images/wp/legal-bg.jpg" | absURL }}')"{{ end }}>
+  <div class="page-inner page-inner--narrow">
+    <button type="button" class="back-link" data-back>← {{ i18n "back" | default "Tornar" }}</button>
+    <h1 class="page-title">{{ .Title }}</h1>
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</div>
+{{ end }}

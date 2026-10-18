@@ -1,0 +1,63 @@
+<footer>
+  <div class="footer-main">
+    <div class="footer-socials">
+      {{ if .Site.Params.socials }}
+        <span class="footer-socials__label">{{ i18n "follow_us" | default "Follow us" }}</span>
+        <div class="footer-socials__links">
+          {{ range .Site.Params.socials }}
+            {{ $iconPath := printf "icons/%s.html" .icon }}
+            <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}" class="footer-social-link">
+              {{ partial $iconPath . }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    {{ with .Site.Params.sponsors }}
+    <div class="footer-sponsor">
+      {{ range . }}
+        {{ $link := .external | default "#" }}
+        {{ with .page }}
+          {{ with site.GetPage (printf "/%s" .) }}{{ $link = .RelPermalink }}{{ end }}
+        {{ end }}
+        <a href="{{ $link }}"{{ if hasPrefix $link "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .name }}">
+          <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
+        </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="footer-legal">
+      <ul class="legal-links">
+        {{ range (where site.RegularPages "Type" "legal").ByWeight }}
+          {{ $label := .Title }}
+          {{ if eq .Params.translationKey "legal-notice" }}{{ $label = i18n "legal_notice" | default .Title }}{{ end }}
+          {{ if eq .Params.translationKey "privacy-policy" }}{{ $label = i18n "privacy_policy" | default .Title }}{{ end }}
+          {{ if eq .Params.translationKey "cookies-policy" }}{{ $label = i18n "cookie_policy" | default .Title }}{{ end }}
+        <li><a href="{{ .RelPermalink }}">{{ $label }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">{{ i18n "official_website" }}.<br>© {{ now.Format "2006" }} {{ .Site.Title }}. {{ i18n "all_rights_reserved" }}<br>{{ i18n "photo_credit_prefix" }} <a href="https://pocallum.cat/" target="_blank" rel="noopener">Joan Linux · @pocallum</a>{{ i18n "photo_credit_suffix" }}</p>
+    <div class="footer-signature">
+      <p class="footer-signature__line">Powered by <a href="https://linuxbcn.com" target="_blank" rel="noopener">LinuxBCN.com</a> · <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo SSG</a></p>
+      <p class="footer-signature__services">Consultancy · Development · Hosting · Design</p>
+    </div>
+  </div>
+
+  <div class="footer-standards" aria-label="{{ i18n "web_standards" | default "Web standards" }}">
+    <span class="footer-std-badge">HTML5</span>
+    <span class="footer-std-badge">CSS3</span>
+    <span class="footer-std-badge">WCAG 2.1 AA</span>
+    <span class="footer-std-badge">WAI-ARIA</span>
+    <span class="footer-std-badge">OpenGraph</span>
+    <span class="footer-std-badge">Schema.org</span>
+    <span class="footer-std-badge">hreflang</span>
+    <span class="footer-std-badge">Core Web Vitals</span>
+    <span class="footer-std-badge">PWA</span>
+  </div>
+</footer>

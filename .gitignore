@@ -1,0 +1,38 @@
+# Hugo build output
+public/
+resources/
+
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Node
+node_modules/
+
+# Editors
+.vscode/
+.idea/
+
+# Credencials locals
+*.conf
+.env
+netlify-cms-github-oauth-provider/
+
+# Migració WordPress (dades temporals)
+_import/
+
+# Seguiment d'hores (local)
+.taques/
+
+# Obsidian / editor
+.obsidian/
+.obsidianignore
+.hugo_build.lock
+
+# Eines locals de l'agent
+.claude/
+
+# Python
+__pycache__/
+*.pyc

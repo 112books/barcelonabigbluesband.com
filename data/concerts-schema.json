@@ -1,0 +1,278 @@
+{
+  "generated": "2026-10-18T07:39:59Z",
+  "events": [
+    {
+      "@type": "MusicEvent",
+      "name": "Scena Rogoz, Varaždin, Croacia",
+      "startDate": "2026-10-17T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-10-17T20:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Barcelona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Novosadašnji Jazz Club, Novi Sad, Serbia",
+      "startDate": "2026-10-18T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-10-18T20:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Barcelona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Bluz i Pivo, Belgrado, Serbia",
+      "startDate": "2026-10-21T18:30:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-10-21T20:30:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Bluz i Pivo",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Cetinjska 15",
+          "addressLocality": "Serbia",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "SKC, Kragujevac, Serbia",
+      "startDate": "2026-10-22T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-10-22T20:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Barcelona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Dom Kulture, Užice, Serbia",
+      "startDate": "2026-10-23T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-10-23T20:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Barcelona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Teatro Alartis, Valdeolmos, España",
+      "startDate": "2026-11-07T19:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-11-07T21:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Barcelona",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Caixa Forum Zaragoza",
+      "startDate": "2026-11-08T19:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-11-08T21:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "CaixaForum Zaragoza",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. de José Anselmo Clavé",
+          "addressLocality": "España",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Bratia Rendez•Vous feat. Adrian Cunningham",
+      "startDate": "2026-12-18T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-12-18T20:30:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Jamboree Jazz & Dance Club",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pl. Reial",
+          "addressLocality": "España",
+          "addressCountry": "ES"
+        }
+      },
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Bratia Rendez•Vous feat Adrian Cunningham, Can Met, La Bisbal",
+      "startDate": "2026-12-19T19:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-12-19T21:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Associació CAN MET",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. de les Voltes",
+          "addressLocality": "España",
+          "addressCountry": "ES"
+        }
+      },
+      "description": "Join with Google Meet: https://meet.google.com/cbh-epbt-qvp\n\nLearn more about Meet at: https://support.google.com/a/users/answer/9282720",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Bratia Extravaganza + JOC, Teatre de Cerdanyola",
+      "startDate": "2026-12-20T18:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      },
+      "endDate": "2026-12-20T20:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Ateneu Cerdanyola",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Carrer de la Indústria",
+          "addressLocality": "España",
+          "addressCountry": "ES"
+        }
+      },
+      "description": "Bratia Extravaganza feat. La Jove Orquestra de Cerdanyola (JOC)\n\nJoin with Google Meet: https://meet.google.com/egp-tzqf-erb\n\nLearn more about Meet at: https://support.google.com/a/users/answer/928272",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Bratia"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Jamboree Jazz",
+      "startDate": "2026-12-27T19:00:00+00:00",
+      "performer": {
+        "@type": "MusicGroup",
+        "name": "Barcelona Big Blues Band"
+      },
+      "endDate": "2026-12-27T21:00:00+00:00",
+      "location": {
+        "@type": "Place",
+        "name": "Jamboree Jazz",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Barcelona",
+          "addressLocality": "Spain",
+          "addressCountry": "ES"
+        }
+      },
+      "url": "https://www.bandsintown.com/t/1040382086?app_id=js_ivankovacevic.com&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "MusicGroup",
+        "name": "Barcelona Big Blues Band"
+      }
+    }
+  ]
+}

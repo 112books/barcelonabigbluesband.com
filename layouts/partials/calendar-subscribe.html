@@ -1,0 +1,35 @@
+{{ $ical    := .Site.Params.google_calendar_ical }}
+{{ $webcal  := .Site.Params.google_calendar_webcal }}
+{{ $rssURL  := printf "%s%s/gigs/index.xml" .Site.BaseURL .Lang }}
+
+<div class="cal-subscribe">
+  <span class="cal-subscribe__label">{{ i18n "subscribe_calendar" | default "Subscriu-te al calendari" }}</span>
+  <div class="cal-subscribe__actions">
+
+    {{- if $webcal }}
+    <a href="{{ $webcal }}" class="cal-subscribe__btn" title="Afegir a Apple Calendar / Outlook">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      <span>{{ i18n "cal_subscribe_ical" | default "Subscriu-te (iCal)" }}</span>
+    </a>
+    {{ end }}
+
+    {{- if $ical }}
+    <a href="{{ $ical }}" download="ivan-kovacevic-gigs.ics" class="cal-subscribe__btn" title="Descarregar fitxer .ics">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      <span>{{ i18n "cal_download_ics" | default "Descarregar .ics" }}</span>
+    </a>
+    {{ end }}
+
+    <a href="{{ $rssURL }}" class="cal-subscribe__btn" title="Feed RSS de concerts">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1" fill="currentColor"/>
+      </svg>
+      <span>RSS</span>
+    </a>
+
+  </div>
+</div>

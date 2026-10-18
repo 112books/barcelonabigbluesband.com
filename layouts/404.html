@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · Ivan Kovačević</title>
+  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('{{ "images/error/error.jpg" | relURL }}') center center / cover no-repeat;
+      position: relative;
+    }
+    .error-page::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+    .error-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding: 2rem;
+    }
+    .error-code {
+      font-size: clamp(6rem, 20vw, 14rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #c9a84c;
+      margin: 0;
+    }
+    .error-title {
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      margin: 0.5rem 0 1rem;
+      font-weight: 600;
+    }
+    .error-message {
+      font-size: 1rem;
+      opacity: 0.85;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .error-back {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border: 2px solid #c9a84c;
+      color: #c9a84c;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .error-back:hover { background: #c9a84c; color: #000; }
+  </style>
+  <script src="{{ "js/404.js" | relURL }}" defer></script>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-content">
+      <p class="error-code">404</p>
+      <div id="msg-ca">
+        <h1 class="error-title">Aquesta pàgina s'ha perdut pel camí</h1>
+        <p class="error-message">Sembla que aquesta nota no existeix a la nostra partitura. Potser ha canviat d'URL o simplement s'ha evaporat com el so d'un violí.</p>
+        <a class="error-back" href="{{ "ca/" | relURL }}">← Torna a l'inici</a>
+      </div>
+      <div id="msg-es" style="display:none">
+        <h1 class="error-title">Esta página se ha perdido por el camino</h1>
+        <p class="error-message">Parece que esta nota no existe en nuestra partitura. Quizás cambió de URL o simplemente se evaporó como el sonido de un violín.</p>
+        <a class="error-back" href="{{ "es/" | relURL }}">← Volver al inicio</a>
+      </div>
+      <div id="msg-en" style="display:none">
+        <h1 class="error-title">This page got lost along the way</h1>
+        <p class="error-message">Looks like this note doesn't exist in our score. Maybe the URL changed, or it simply vanished like the sound of a violin.</p>
+        <a class="error-back" href="{{ "en/" | relURL }}">← Back to home</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<header class="site-header" id="site-header" role="banner">
+
+  <!-- Fila 1: logo + idiomes -->
+  <div class="header-top">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }}">
+      <img class="logo-full" src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }}" width="320" height="80">
+    </a>
+    {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--compact") }}
+  </div>
+
+  <!-- Separador -->
+  <div class="header-rule" aria-hidden="true"></div>
+
+  <!-- Fila 2: nav principal -->
+  <div class="header-bottom">
+    <nav class="main-nav" id="main-nav" aria-label="{{ i18n "nav_main" | default "Navegació principal" }}">
+      <ul class="nav-list" role="list">
+        {{ range site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} aria-current="page"{{ end }}>{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      <!-- Selector idiomes dins el menú mòbil -->
+      {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--mobile") }}
+    </nav>
+    <button class="nav-toggle" id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            aria-label="{{ i18n "nav_toggle" | default "Obrir menú" }}">
+      <span class="hamburger-bar" aria-hidden="true"></span>
+      <span class="hamburger-bar" aria-hidden="true"></span>
+      <span class="hamburger-bar" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Nav compacte (apareix en scroll) -->
+<nav class="nav-compact" id="nav-compact" aria-label="{{ i18n "nav_compact" | default "Navegació ràpida" }}" aria-hidden="true">
+  <div class="nav-compact__logo">
+    <a href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+      <img src="{{ "images/logo.svg" | relURL }}" alt="" aria-hidden="true">
+    </a>
+  </div>
+  <ul class="nav-compact__list" role="list">
+    {{ range site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}" aria-label="{{ .Name }}" data-tip="{{ .Name }}">
+        {{ partial "icons/nav-icon.html" .Identifier }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--compact") }}
+  <!-- Hamburguesa només visible en mòbil -->
+  <button class="nav-toggle nav-toggle--compact" id="nav-compact-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="{{ i18n "nav_toggle" | default "Obrir menú" }}">
+    <span class="hamburger-bar" aria-hidden="true"></span>
+    <span class="hamburger-bar" aria-hidden="true"></span>
+    <span class="hamburger-bar" aria-hidden="true"></span>
+  </button>
+</nav>
+
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+<script src="{{ "js/nav.js" | relURL }}" defer></script>

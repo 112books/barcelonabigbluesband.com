@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }} · {{ i18n "official_website_short" }}{{ else if strings.Contains .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  {{ partial "seo.html" . }}
+  <style>
+    @font-face {
+      font-family: 'Dancing Script';
+      src: url('{{ "fonts/DancingScript-SemiBold.woff2" | relURL }}') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+</style>
+  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}?v={{ now.Unix }}">
+  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}?v={{ now.Unix }}">
+  {{ partial "analytics/goatcounter.html" . }}
+  <script src="{{ "js/track.js" | relURL }}"></script>
+  <link rel="author" href="/humans.txt">
+</head>
+{{ $isHome := or .IsHome (eq .RelPermalink (printf "/%s/" .Language.Lang)) }}
+<body class="{{ if $isHome }}is-home{{ else }}is-subpage{{ end }}">
+
+  <!-- Skip to content: accessibilitat teclat/lector pantalla -->
+  <a class="skip-to-content" href="#main-content">{{ i18n "skip_to_content" | default "Salta al contingut principal" }}</a>
+
+  {{ partial "head.html" . }}
+
+  <main id="main-content" tabindex="-1"{{ if ne .Type "search" }} data-pagefind-body{{ end }}>
+    {{ block "main" . }}{{ .Content }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{ if .IsHome }}
+  <script src="{{ "js/hero-intro.js" | relURL }}" defer></script>
+  {{ end }}
+</body>
+</html>

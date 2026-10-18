@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<div class="page-wrap page-wrap--dark search-wrap" style="--search-bg: url('{{ "images/wp/search-bg.jpg" | absURL }}')">
+  <div class="page-inner">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <div class="search-container" data-pagefind-script="{{ "pagefind/pagefind.js" | relURL }}">
+
+      {{/* Input de cerca */}}
+      <div class="search-input-wrap">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="{{ i18n "search_placeholder" | default "Cerca al web..." }}"
+          aria-label="{{ i18n "search_label" | default "Cerca" }}"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button class="search-clear" id="search-clear" aria-label="{{ i18n "search_clear" | default "Esborrar cerca" }}" hidden>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      {{/* Estat i resultats */}}
+      <div class="search-status" id="search-status" aria-live="polite"></div>
+      <div class="search-results" id="search-results" role="list"></div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+
+{{ end }}

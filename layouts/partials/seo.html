@@ -1,0 +1,232 @@
+{{- $brand       := .Site.Title -}}
+{{- $title       := cond (strings.Contains .Title $brand) .Title (printf "%s · %s" .Title $brand) -}}
+{{- $description := .Params.description | default .Site.Language.Params.description | default .Site.Params.description -}}
+{{- $canonBase := "" -}}
+{{- with site.Params.canonicalBaseURL }}{{ $canonBase = printf "%s/" (strings.TrimSuffix "/" .) }}{{ end -}}
+{{- $canonical   := .Permalink -}}
+{{- if $canonBase }}{{ $canonical = replace .Permalink site.BaseURL $canonBase }}{{ end -}}
+{{- $lang        := .Site.Language.Lang -}}
+{{- $searchURL   := printf "%s%s/search/" .Site.BaseURL $lang -}}
+{{- range where .Site.Pages "Type" "search" }}{{ $searchURL = .Permalink }}{{ end -}}
+{{- $ogType      := "website" -}}
+{{- if .IsPage -}}
+  {{- if eq .Type "discography" -}}{{- $ogType = "music.album" -}}
+  {{- else if or (eq .Type "projects") (eq .Type "biography") -}}{{- $ogType = "profile" -}}
+  {{- else -}}{{- $ogType = "article" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $ogImage := "" -}}
+{{- if .Params.og_image -}}
+  {{- $ogImage = strings.TrimPrefix "/" .Params.og_image | absURL -}}
+{{- else if .Params.cover -}}
+  {{- $ogImage = strings.TrimPrefix "/" .Params.cover | absURL -}}
+{{- else if .Params.photo -}}
+  {{- $ogImage = strings.TrimPrefix "/" .Params.photo | absURL -}}
+{{- else if .Site.Params.og_image -}}
+  {{- $ogImage = strings.TrimPrefix "/" .Site.Params.og_image | absURL -}}
+{{- end -}}
+
+{{- $locales := dict "ca" "ca_ES" "es" "es_ES" "en" "en_GB" "sr" "sr_Latn" -}}
+{{- $locale  := index $locales $lang | default "en_GB" -}}
+
+<!-- ═══ SEO bàsic ═══ -->
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ .Site.Title }}">
+<meta name="robots" content="{{ if or .Params.noindex site.Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}">
+<link rel="canonical" href="{{ $canonical }}">
+
+<!-- ═══ OpenGraph ═══ -->
+<meta property="og:type"        content="{{ $ogType }}">
+<meta property="og:title"       content="{{ $title }}">
+<meta property="og:url"         content="{{ $canonical }}">
+<meta property="og:site_name"   content="{{ .Site.Title }}">
+<meta property="og:locale"      content="{{ $locale }}">
+<meta property="og:description" content="{{ $description }}">
+{{ if $ogImage }}<meta property="og:image" content="{{ $ogImage }}"><meta property="og:image:alt" content="{{ $title }}">{{ end }}
+
+{{/* og:locale:alternate per als idiomes alternatius */}}
+{{ range hugo.Sites }}
+  {{- if ne .Language.Lang $lang -}}
+    {{- $altLocale := index $locales .Language.Lang | default "en_GB" -}}
+<meta property="og:locale:alternate" content="{{ $altLocale }}">
+  {{- end -}}
+{{ end }}
+
+<!-- ═══ Twitter Card ═══ -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $title }}">{{ end }}
+
+<!-- ═══ Hreflang multilingüe ═══ -->
+{{ range .AllTranslations }}
+{{- $altURL := .Permalink -}}
+{{- if $canonBase }}{{ $altURL = replace .Permalink site.BaseURL $canonBase }}{{ end -}}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ $altURL }}">
+{{ end }}
+{{- $xdefault := .Permalink -}}
+{{- range .AllTranslations }}{{ if eq .Language.Lang "en" }}{{ $xdefault = .Permalink }}{{ end }}{{ end -}}
+{{- if $canonBase }}{{ $xdefault = replace $xdefault site.BaseURL $canonBase }}{{ end -}}
+<link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
+
+<!-- ═══ Favicon ═══ -->
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "images/favicon-96x96.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+
+<!-- ═══ Schema.org ═══ -->
+
+{{/* Person — present a totes les pàgines (enriquit per a cercadors i IA) */}}
+{{- $bands := where site.RegularPages "Type" "projects" -}}
+{{- $sameAs  := slice -}}
+{{- range .Site.Params.socials }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
+{{- with hugo.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with hugo.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ .Site.BaseURL }}#person",
+  "name": "Ivan Kovačević",
+  "alternateName": "Ivan Kovacevic",
+  "jobTitle": "Double bassist, bandleader and arranger",
+  "description": "{{ .Site.Language.Params.description | default .Site.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ $ogImage }}",
+  "birthDate": "1977-04-16",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Belgrade",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belgrade",
+      "addressCountry": "RS"
+    }
+  },
+  "nationality": "Serbian",
+  "homeLocation": { "@type": "Place", "name": "Barcelona" },
+  "knowsLanguage": ["sr", "es", "ca", "en"],
+  "genre": ["Balkan", "Gypsy Jazz", "Rhythm & Blues", "World Music"],
+  "memberOf": [
+    {{- range $i, $b := $bands }}{{ if $i }},{{ end }}
+    {
+      "@type": "MusicGroup",
+      "name": "{{ $b.Title }}"
+    }{{- end }}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "booking",
+    "email": "{{ index hugo.Data.contact "email" }}",
+    "areaServed": "Europe"
+  },
+  "sameAs": [
+    {{- range $i, $u := $sameAs }}{{ if $i }},{{ end }}
+    "{{ $u }}"{{- end }}
+  ]
+}
+</script>
+
+{{/* BreadcrumbList — en subpàgines (cadena completa d'ancestres) */}}
+{{ if not .IsHome }}
+{{- $anc := .Ancestors -}}
+{{- $na := len $anc -}}
+{{- $crumbs := slice -}}
+{{- range $i := seq $na -}}
+  {{- $p := index $anc (sub $na $i) -}}
+  {{- $nm := $p.Title -}}
+  {{- if $p.IsHome -}}{{- $nm = $p.Site.Title -}}{{- end -}}
+  {{- $crumbs = $crumbs | append (dict "name" $nm "item" $p.Permalink) -}}
+{{- end -}}
+{{- $crumbs = $crumbs | append (dict "name" .Title "item" $canonical) -}}
+{{- $list := slice -}}
+{{- range $i, $c := $crumbs -}}
+  {{- $list = $list | append (dict "@type" "ListItem" "position" (add $i 1) "name" $c.name "item" $c.item) -}}
+{{- end -}}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $list | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}
+
+{{/* WebSite amb SearchAction — home */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "inLanguage": "{{ $lang }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ $searchURL }}?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{/* MusicEvent — només a la pàgina de concerts */}}
+{{ if eq .Type "gigs" }}
+  {{ with index hugo.Data "concerts-schema" }}
+  {{ with .events }}
+    {{ range . }}
+    {{- $orgName := "" -}}
+    {{- with .organizer }}{{ $orgName = .name }}{{ end -}}
+    {{- if not $orgName }}{{ with .performer }}{{ $orgName = .name }}{{ end }}{{ end -}}
+    {{- $locName := "" -}}
+    {{- with .location }}{{ $locName = .name }}{{ end -}}
+    {{- $evURL := .url | default $.Permalink -}}
+    {{- $img := "images/og-image.jpg" | absURL -}}
+    {{- $desc := .description -}}
+    {{- if not $desc }}{{ $desc = printf "%s — %s" $orgName $locName }}{{ end -}}
+    {{- $org := dict "@type" "MusicGroup" "name" $orgName "url" $.Site.BaseURL -}}
+    {{- $ev := dict "@context" "https://schema.org" "@type" "MusicEvent" "name" .name "startDate" .startDate "location" .location "performer" .performer "organizer" $org "eventStatus" .eventStatus "url" $evURL "image" $img "description" $desc -}}
+    {{/* Offers només si el preu és conegut: Google exigeix price + priceCurrency
+         i validFrom des que hi ha availability (avís de Search Console). */}}
+    {{- with .offers }}{{ $ev = merge $ev (dict "offers" .) }}{{ end -}}
+    {{- with .endDate }}{{ $ev = merge $ev (dict "endDate" .) }}{{ end -}}
+<script type="application/ld+json">
+{{ $ev | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+    {{ end }}
+  {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* MusicGroup — pàgina de projecte */}}
+{{ if eq .Type "projects" }}
+{{- $all := index hugo.Data "project-links" -}}
+{{- $links := slice -}}
+{{- if $all }}{{ $links = index $all .Params.translationKey | default slice }}{{ end -}}
+{{- $sameAs := slice -}}
+{{- range $links }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
+{{- $group := dict "@context" "https://schema.org" "@type" "MusicGroup" "name" .Title "url" .Permalink "sameAs" $sameAs -}}
+{{- with .Params.photo }}{{ $group = merge $group (dict "image" (. | absURL)) }}{{ end -}}
+{{- $group = merge $group (dict "member" (slice (dict "@type" "Person" "name" "Ivan Kovačević" "@id" (printf "%s#person" .Site.BaseURL)))) -}}
+<script type="application/ld+json">
+{{ $group | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}
+
+{{/* MusicAlbum — fitxa de disc */}}
+{{ if eq .Type "discography" }}
+{{- $artist := strings.TrimSpace (index (split (plainify .Content) ".") 0) -}}
+{{- $sameAs := slice -}}
+{{- range $k := slice "spotify" "apple_music" "youtube" "smartlink" -}}
+  {{- with index $.Params $k }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- end -}}
+{{- $album := dict "@context" "https://schema.org" "@type" "MusicAlbum" "name" .Title "url" .Permalink "sameAs" $sameAs -}}
+{{- with .Params.year }}{{ $album = merge $album (dict "datePublished" (printf "%v" .)) }}{{ end -}}
+{{- with .Params.cover }}{{ $album = merge $album (dict "image" (. | absURL)) }}{{ end -}}
+{{- if $artist }}{{ $album = merge $album (dict "byArtist" (dict "@type" "MusicGroup" "name" $artist)) }}{{ end -}}
+<script type="application/ld+json">
+{{ $album | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}

@@ -1,0 +1,22 @@
+/* TEAM */
+Developer & Consultant: LinuxBCN.com
+Site: https://linuxbcn.com
+Location: Barcelona, Catalonia
+
+/* THANKS */
+Artist: Ivan Kovačević
+Site: https://ivankovacevic.com
+
+/* TECHNOLOGY */
+Hugo SSG: https://gohugo.io
+Hosting: LinuxBCN.com
+Analytics: GoatCounter (privacy-first)
+Photos: Google Photos
+Calendar: Google Calendar
+Videos: YouTube
+
+/* SITE */
+Last update: 2026-10
+Language: EN / CA / ES / SR
+Standards: HTML5, CSS3, WCAG 2.1 AA
+AI: https://ivankovacevic.com/llms.txt

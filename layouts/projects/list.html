@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="page-wrap page-wrap--projects">
+  <div class="projects-hero-full">
+    <img src="{{ "images/wp/projects-hero.jpg" | absURL }}" alt="{{ .Title }}" loading="eager">
+  </div>
+  <div class="page-inner">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+
+    <div class="band-grid">
+      {{ range .RegularPages }}
+      {{ if not .Params.hidden }}
+      <article class="band-card">
+        {{ with .Params.photo }}
+        <div class="band-card__photo-wrap">
+          <img class="band-card__photo" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="band-card__body">
+          <h2 class="band-card__name">
+            <a href="{{ .RelPermalink }}">{{ .Params.name | default .Title }}</a>
+          </h2>
+          {{ with .Params.role }}<p class="band-card__role">{{ . }}</p>{{ end }}
+          <div class="band-card__bio prose">{{ .Summary }}</div>
+          <div class="band-card__links">
+            <a class="band-card__more" href="{{ .RelPermalink }}">{{ i18n "read_more" | default "Més informació" }} →</a>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

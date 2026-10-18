@@ -1,0 +1,137 @@
+# ── Errors ────────────────────────────────────────────────
+ErrorDocument 404 /404.html
+
+# ── Redireccions ──────────────────────────────────────────
+RedirectMatch 301 ^/admin/?$ /ca/admin/
+
+# ── Redireccions des de l'antic WordPress ─────────────────
+# ES (URLs antigues a l'arrel)
+RedirectMatch 301 ^/aviso-legal/?$               /es/legal/aviso-legal/
+RedirectMatch 301 ^/politica-de-privacidad/?$    /es/legal/politica-privacidad/
+RedirectMatch 301 ^/politica-de-cookies/?$       /es/legal/politica-cookies/
+RedirectMatch 301 ^/ivan-kovacevic-biografia/?$  /es/biografia/
+RedirectMatch 301 ^/proximos-conciretos/?$       /es/proyectos/
+RedirectMatch 301 ^/proximos-conciertos/?$       /es/conciertos/
+RedirectMatch 301 ^/discografia/?$               /es/discografia/
+RedirectMatch 301 ^/videos/?$                    /es/videos/
+RedirectMatch 301 ^/contacto/?$                  /es/contacto/
+RedirectMatch 301 ^/ivan-kovacevic-sobre-daddario/?$ /es/proyectos/
+
+# EN
+RedirectMatch 301 ^/en/next-shows-2/?$ /en/concerts/
+RedirectMatch 301 ^/en/gigs/?$          /en/concerts/
+RedirectMatch 301 ^/en/next-shows/?$   /en/projects/
+RedirectMatch 301 ^/en/videos-2/?$     /en/videos/
+
+# Antics posts de projectes (ES)
+RedirectMatch 301 ^/2018/05/0[79]/lazy-jumpers/?$                     /es/proyectos/lazy-jumpers/
+RedirectMatch 301 ^/2018/05/0[79]/nu-niles/?$                         /es/proyectos/the-nu-niles/
+RedirectMatch 301 ^/2018/05/0[79]/the-nu-niles/?$                     /es/proyectos/the-nu-niles/
+RedirectMatch 301 ^/2018/05/0[79]/bernat-font-trio/?$                 /es/proyectos/bernat-font-trio/
+RedirectMatch 301 ^/2018/05/0[79]/los-mambo-jambo/?$                  /es/proyectos/los-mambo-jambo/
+RedirectMatch 301 ^/2018/05/0[79]/barcelona-big-blues-band/?$         /es/proyectos/barcelona-big-blues-band/
+RedirectMatch 301 ^/2018/05/0[79]/barcelona-gipsy-[a-z]+-orchestra/?$ /es/proyectos/barcelona-gipsy-balkan-orchestra/
+RedirectMatch 301 ^/2018/05/0[79]/ivan-kovacevic-5-spots/?$           /es/proyectos/5-spots/
+RedirectMatch 301 ^/2018/05/0[79]/down-home/?$                        /es/proyectos/down-home/
+
+# Antics posts de projectes (EN)
+RedirectMatch 301 ^/en/2018/05/0[79]/the-nu-niles/?$                     /en/projects/the-nu-niles/
+RedirectMatch 301 ^/en/2018/05/0[79]/bernat-font-trio/?$                 /en/projects/bernat-font-trio/
+RedirectMatch 301 ^/en/2018/05/0[79]/los-mambo-jambo/?$                  /en/projects/los-mambo-jambo/
+RedirectMatch 301 ^/en/2018/05/0[79]/barcelona-big-blues-band/?$         /en/projects/barcelona-big-blues-band/
+RedirectMatch 301 ^/en/2018/05/0[79]/barcelona-gipsy-[a-z]+-orchestra/?$ /en/projects/barcelona-gipsy-balkan-orchestra/
+RedirectMatch 301 ^/en/2018/05/0[79]/ivan-kovacevic-5-spots/?$           /en/projects/5-spots/
+RedirectMatch 301 ^/en/2018/05/0[79]/lazy-jumpers/?$                     /en/projects/lazy-jumpers/
+
+# Posts antics → notícies (secció eliminada: redirigim a inici/pressa)
+RedirectMatch 301 ^/2018/05/10/268x0w/?$ /es/
+RedirectMatch 301 ^/2018/05/10/ruta-66-meeting-point-ivan-kovacevic/?$ /es/prensa/
+RedirectMatch 301 ^/2018/05/11/avo-kanto-balkan-tour/?$ /es/proyectos/barcelona-gipsy-balkan-orchestra/
+RedirectMatch 301 ^/2021/04/21/bratia/?$ /es/proyectos/bratia/
+
+# Posts EN antics amb sufix -2
+RedirectMatch 301 ^/en/2018/05/0[79]/bernat-font-trio-2/?$ /en/projects/bernat-font-trio/
+RedirectMatch 301 ^/en/2018/05/0[79]/barcelona-big-blues-band-2/?$ /en/projects/barcelona-big-blues-band/
+RedirectMatch 301 ^/en/2018/05/0[79]/los-mambo-jambo-2/?$ /en/projects/los-mambo-jambo/
+RedirectMatch 301 ^/en/2018/05/0[79]/lazy-jumpers-2/?$ /en/projects/lazy-jumpers/
+RedirectMatch 301 ^/en/2018/05/0[79]/ivan-kovacevic-5-spots-2/?$ /en/projects/5-spots/
+
+# Esdeveniments antics (The Events Calendar) → agenda
+RedirectMatch 301 ^/events/category/.*$ /es/conciertos/
+RedirectMatch 301 ^/events/?$ /es/conciertos/
+RedirectMatch 301 ^/event/.*$ /es/conciertos/
+
+# Categories i etiquetes antigues
+RedirectMatch 301 ^/category/proyectos(/.*)?$ /es/proyectos/
+RedirectMatch 301 ^/category/slide-es/?$ /es/proyectos/
+RedirectMatch 301 ^/category/noticias/?$ /es/prensa/
+RedirectMatch 301 ^/category/en-los-medios/?$ /es/prensa/
+RedirectMatch 301 ^/en/category/projects(/.*)?$ /en/projects/
+RedirectMatch 301 ^/en/category/slide/?$ /en/projects/
+RedirectMatch 301 ^/tag/.*$ /es/prensa/
+
+# Sitemap i feeds antics
+RedirectMatch 301 ^/sitemap_index\.xml$ /sitemap.xml
+RedirectMatch 301 ^/wp-sitemap\.xml$ /sitemap.xml
+RedirectMatch 301 ^/feed/?$ /es/
+RedirectMatch 301 ^/comments/feed/?$ /es/
+
+# ── WordPress llegat: endpoints inexistents (410 Gone) ────
+RedirectMatch 410 ^/wp-admin(/.*)?$
+RedirectMatch 410 ^/wp-login\.php$
+RedirectMatch 410 ^/xmlrpc\.php$
+RedirectMatch 410 ^/wp-json(/.*)?$
+RedirectMatch 410 ^/wp-cron\.php$
+RedirectMatch 410 ^/wp-includes(/.*)?$
+RedirectMatch 410 ^/wp-content(/.*)?$
+RedirectMatch 410 ^/author(/.*)?$
+
+# ── Seguretat: Headers HTTP ───────────────────────────────
+<IfModule mod_headers.c>
+    # HSTS: força HTTPS durant 1 any (preload per a la llista de navegadors)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Evita clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Evita MIME sniffing
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions policy
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    # COOP
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+
+    # CSP — sense 'unsafe-inline' a script-src (tot el JS és extern)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' gc.zgo.at unpkg.com; style-src 'self' 'unsafe-inline' unpkg.com; font-src 'self' unpkg.com; img-src 'self' data: https:; connect-src 'self' gc.zgo.at ivankovacevic.goatcounter.com api.github.com https://raw.githubusercontent.com https://cms-oauth-bratia-y855.vercel.app unpkg.com; frame-src open.spotify.com www.youtube.com www.youtube-nocookie.com player.vimeo.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests"
+</IfModule>
+
+# ── Compressió ────────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml application/xml
+</IfModule>
+
+# ── Caché estàtica ─────────────────────────────────────────
+<IfModule mod_headers.c>
+    # Imatges i fonts: caché immutable 1 any
+    <FilesMatch "\.(webp|jpe?g|png|gif|svg|ico|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp        "access plus 1 year"
+    ExpiresByType image/jpeg        "access plus 1 year"
+    ExpiresByType image/png         "access plus 1 year"
+    ExpiresByType image/svg+xml     "access plus 1 year"
+    ExpiresByType text/css          "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType font/woff2        "access plus 1 year"
+</IfModule>

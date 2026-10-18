@@ -1,0 +1,27 @@
+{{ define "main" }}
+<style>
+  .admin-wrap { max-width: var(--max-w); margin: 0 auto; }
+  .admin-sub { color: var(--c-muted); margin-top: .35rem; }
+  .admin-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+  .admin-card { display: block; border: 1px solid var(--c-border); background: var(--c-surface); padding: 1.5rem; border-radius: 4px; text-decoration: none; transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease); }
+  .admin-card:hover { border-color: var(--c-accent); transform: translateY(-2px); }
+  .admin-card__title { display: block; font-family: var(--f-display); text-transform: uppercase; letter-spacing: .05em; color: var(--c-ink); font-size: 1.05rem; }
+  .admin-card__desc { display: block; color: var(--c-muted); font-size: .85rem; margin-top: .45rem; }
+</style>
+<div class="page-wrap page-wrap--dark" data-pagefind-ignore>
+  <div class="page-inner admin-wrap">
+    <h1 class="page-title">Admin</h1>
+    <p class="admin-sub">Eines internes · Ivan Kovačević</p>
+    <div class="admin-cards">
+      <a class="admin-card" href="{{ "ca/admin/insights/" | absURL }}">
+        <span class="admin-card__title">Estadístiques</span>
+        <span class="admin-card__desc">GoatCounter · visites, idiomes, dispositius i ubicacions</span>
+      </a>
+      <a class="admin-card" href="{{ "cms/" | absURL }}">
+        <span class="admin-card__title">Gestor de contingut</span>
+        <span class="admin-card__desc">Decap CMS · editar textos, projectes, discografia i agenda</span>
+      </a>
+    </div>
+  </div>
+</div>
+{{ end }}

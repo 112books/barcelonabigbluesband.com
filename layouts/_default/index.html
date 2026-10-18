@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+<h1 class="sr-only">{{ i18n "official_website" | default .Site.Title }}</h1>
+
+<div class="hero">
+  <picture>
+    <img src="{{ "images/wp/foto-background.png" | relURL }}" alt="" class="hero-img" loading="eager" fetchpriority="high" width="1134" height="944" aria-hidden="true">
+  </picture>
+  <div class="hero-overlay">
+
+    <div class="hero-logo-intro" id="hero-logo-intro">
+      <img src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }}" class="hero-logo-intro__img" width="340" height="84">
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">{{ .Site.Params.tagline }}</p>
+      <p class="hero-slogan reveal" style="animation-delay:.1s">{{ i18n "slogan" }}</p>
+    </div>
+  </div>
+</div>
+
+<nav class="section-nav" aria-label="{{ i18n "sections" | default "Seccions" }}">
+  <div class="section-nav__inner">
+    {{ range .Site.Menus.main }}
+      {{ if and (ne .Identifier "home") (ne .Identifier "search") }}
+      <a class="section-nav__item" href="{{ .URL }}">
+        <span class="section-nav__icon">{{ partial "icons/nav-icon.html" .Identifier }}</span>
+        <span class="section-nav__label">{{ .Name }}</span>
+      </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</nav>
+
+{{ end }}

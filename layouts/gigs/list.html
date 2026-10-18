@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="concerts-section"
+  style="--concerts-bg: url('{{ "images/wp/gigs-bg.jpg" | absURL }}')"
+  data-ical="{{ "data/concerts.txt" | absURL }}"
+  data-lang="{{ .Lang }}">
+
+  <div class="section-header">
+    <h1 class="section-title">{{ .Title }}</h1>
+  </div>
+
+  <div class="concerts-top">
+    <div class="cal-wrapper">
+      <div class="cal-nav">
+        <button class="cal-prev" aria-label="{{ i18n "cal_prev" | default "Mes anterior" }}">&#8592;</button>
+        <h2 class="cal-month-label"></h2>
+        <button class="cal-next" aria-label="{{ i18n "cal_next" | default "Mes següent" }}">&#8594;</button>
+      </div>
+      {{/* Els dies de la setmana els injecta concerts.js des de I18N */}}
+      <div class="cal-grid-header" aria-hidden="true"></div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+
+    <div class="concerts-list-col">
+      <ul class="concerts-upcoming-list" id="concerts-upcoming" aria-live="polite" aria-label="{{ i18n "upcoming_concerts" | default "Propers concerts" }}">
+        <li class="concerts-loading" aria-label="{{ i18n "loading" | default "Carregant..." }}">
+          <span class="music-notes" aria-hidden="true">
+            <span>♩</span><span>♪</span><span>♫</span><span>♬</span><span>♪</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="concert-detail" id="concert-detail" hidden aria-live="polite"></div>
+
+  <div class="concerts-subscribe-wrap">
+    {{ partial "calendar-subscribe.html" . }}
+  </div>
+
+  <div class="concerts-past-section">
+    {{/* El títol "Concerts passats" l'injecta concerts.js des de I18N */}}
+    <h3 class="concerts-past-title"></h3>
+    <ul class="concerts-past-list" id="concerts-past" aria-label="{{ i18n "past_concerts" | default "Concerts passats" }}"></ul>
+  </div>
+
+  <noscript>
+    <div class="concerts-noscript" style="max-width:var(--max-w);margin:2rem auto 0;padding:0 var(--gap)">
+      <h2>{{ i18n "upcoming_concerts" | default "Propers concerts" }}</h2>
+      <ul>
+      {{ with index hugo.Data "concerts-schema" }}{{ range first 20 .events }}
+        <li>{{ .startDate }} — {{ with .performer }}{{ .name }}{{ end }} · {{ with .location }}{{ .name }}{{ end }}</li>
+      {{ end }}{{ end }}
+      </ul>
+    </div>
+  </noscript>
+
+</section>
+
+<script src="{{ "js/concerts.js" | relURL }}?v=20261015"></script>
+{{ end }}

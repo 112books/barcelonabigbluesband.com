@@ -1,0 +1,4 @@
+baseURL = "https://ivankovacevic.com/"
+
+[services.indexNow]
+  key = "0e7f48253f9aaf1e81d0b90ed90c146a"

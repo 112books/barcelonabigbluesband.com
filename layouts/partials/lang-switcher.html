@@ -1,0 +1,18 @@
+<div class="lang-switcher {{ .class }}">
+  {{- $currentLang := .Site.Language.Lang -}}
+  {{- $baseURL := .Site.BaseURL -}}
+  {{- $translations := .Translations -}}
+  {{- range hugo.Sites -}}
+    {{- $lang := .Language.Lang -}}
+    {{- $url := printf "%s%s/" $baseURL $lang -}}
+    {{- range $translations -}}
+      {{- if eq .Language.Lang $lang -}}
+        {{- $url = .Permalink -}}
+      {{- end -}}
+    {{- end -}}
+    <a href="{{ $url }}" lang="{{ $lang }}" hreflang="{{ $lang }}"
+       class="{{ if eq $lang $currentLang }}active{{ end }}"{{ if eq $lang $currentLang }} aria-current="true"{{ end }}>
+      {{ $lang | upper }}
+    </a>
+  {{- end -}}
+</div>

@@ -1,0 +1,33 @@
+# Vídeos destacats del web actual (WordPress).
+# Garanteix que aquests vídeos apareguin SEMPRE a la pàgina de vídeos,
+# encara que no siguin al canal de YouTube d'Ivan (alguns són de BGKO,
+# Buenritmo o Robindro Musica). sync-videos.py els fusiona obligatòriament
+# i no s'esborren encara que es regeneri static/data/videos.json.
+featured:
+  - id: "Zf_yRFeW5I8"
+    title: "Cigani Ljubiat Pesnji - Barcelona Gipsy Klezmer Orchestra"
+    channel: "BGKO"
+  - id: "LCUv9W0ViRc"
+    title: "Djelem Djelem - Barcelona Gipsy Klezmer Orchestra"
+    channel: "Robindro Musica"
+  - id: "7Qu7KOXu_V4"
+    title: "Marijo deli bela kumrijo - Barcelona Gipsy balKan Orchestra"
+    channel: "BGKO"
+  - id: "SO2XU1kMKKY"
+    title: "Selma - Božo Vrećo Feat. Barcelona Gipsy balKan Orchestra"
+    channel: "BGKO"
+  - id: "tmgQ8PVLhA8"
+    title: "Dani Nel.lo & Barcelona Big Blues Band - Sax attack"
+    channel: "Ivan Kovacevic"
+  - id: "CI5E1vqSz88"
+    title: "Myriam Swanson & Barcelona Big Blues Band - That's Why I Cry"
+    channel: "Ivan Kovacevic"
+  - id: "kZSEbwYfnfk"
+    title: "Los Mambo Jambo Videoclip Oficial \"Impacto Inminente\""
+    channel: "Buenritmo"
+  - id: "EJGiDIdWDos"
+    title: "Los Mambo Jambo Videoclip Oficial \"Un Baile Hipnótico\""
+    channel: "Buenritmo"
+  - id: "Mv24yk112tc"
+    title: "Los Mambo Jambo \"Fuego Cruzado\""
+    channel: "Buenritmo"
