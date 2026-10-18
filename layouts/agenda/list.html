@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $events := site.Data.events }}
+{{ $events := hugo.Data.events }}
 {{ $upcoming := $events.upcoming | default (slice) }}
 
 <div class="page-wrap page-wrap--dark"{{ with .Params.bg }} style="--page-bg: url('{{ . | relURL }}')"{{ end }}>

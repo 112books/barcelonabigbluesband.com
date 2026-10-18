@@ -9,7 +9,7 @@
     </div>
     {{ end }}
     <div class="prose">{{ .Content }}</div>
-    {{ $links := index (index site.Data "project-links") .Params.translationKey }}
+    {{ $links := index (index hugo.Data "project-links") .Params.translationKey }}
     {{ with $links }}
     <div class="project-links">
       {{ range . }}

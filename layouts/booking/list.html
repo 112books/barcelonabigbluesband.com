@@ -10,7 +10,7 @@
       {{ .Content }}
     </div>
 
-    {{ $b := site.Data.booking }}
+    {{ $b := hugo.Data.booking }}
 
     <!-- ══ EPK ══ -->
     <section class="booking-epk" aria-label="{{ i18n "booking_epk" }}">
@@ -136,7 +136,7 @@
         <p class="booking-form__status" role="status" aria-live="polite"></p>
       </form>
 
-      {{ $c := site.Data.contact }}
+      {{ $c := hugo.Data.contact }}
       <div class="booking-mailto">
         <p class="booking-mailto__note">{{ i18n "booking_mailto_note" }}</p>
         <p class="booking-mailto__links">

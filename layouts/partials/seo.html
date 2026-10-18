@@ -82,8 +82,8 @@
 {{/* MusicGroup — present a totes les pàgines (enriquit per a cercadors i IA) */}}
 {{- $sameAs  := slice -}}
 {{- range .Site.Params.socials }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
-{{- with site.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
-{{- with site.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with hugo.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with hugo.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,7 +115,7 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "booking",
-    "email": "{{ index site.Data.contact "email" }}",
+    "email": "{{ index hugo.Data.contact "email" }}",
     "areaServed": "Europe"
   },
   "sameAs": [
@@ -169,7 +169,7 @@
 
 {{/* MusicEvent — pàgina d'agenda (des de data/events.json de Bandsintown) */}}
 {{ if eq .Type "agenda" }}
-  {{- $events := site.Data.events -}}
+  {{- $events := hugo.Data.events -}}
   {{- range $events.upcoming }}
   {{- $title := .title -}}
   {{- if not $title }}{{ $title = printf "%s · %s" site.Title .venue }}{{ end -}}
@@ -185,7 +185,7 @@
 
 {{/* MusicGroup — pàgina de projecte */}}
 {{ if eq .Type "projects" }}
-{{- $all := index site.Data "project-links" -}}
+{{- $all := index hugo.Data "project-links" -}}
 {{- $links := slice -}}
 {{- if $all }}{{ $links = index $all .Params.translationKey | default slice }}{{ end -}}
 {{- $sameAs := slice -}}
