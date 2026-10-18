@@ -50,6 +50,11 @@ promo_text    = ""
 promo_url     = ""
 promo_cta     = ""
 
+# Endpoint del formulari de contractació (handler al servidor propi).
+# Buit = fallback automàtic a mailto:bookingb4@gmail.com.
+# Exemple: "https://exemple.cat/api/send-booking.php"
+booking_form_endpoint = ""
+
 # Google Calendar (agenda) — pendent de crear pel compte de Joan/LinuxBCN
 google_calendar_ical = ""
 

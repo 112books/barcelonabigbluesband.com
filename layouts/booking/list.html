@@ -1,0 +1,194 @@
+{{ define "main" }}
+<div class="page-wrap page-wrap--dark">
+  <div class="page-inner">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <p class="booking-lead">{{ i18n "booking_lead" }}</p>
+
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{ $b := hugo.Data.booking }}
+
+    <!-- ══ EPK ══ -->
+    <section class="booking-epk" aria-label="{{ i18n "booking_epk" }}">
+      <h2 class="booking-epk__title">{{ i18n "booking_epk" }}</h2>
+
+      <div class="booking-grid">
+
+        <div class="booking-block">
+          <h3>{{ i18n "booking_lineup" }}</h3>
+          <ul class="booking-lineup" role="list">
+            {{ range $b.lineup }}
+            <li>
+              <strong>{{ .name }}</strong>
+              <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <div class="booking-block">
+          <h3>{{ i18n "booking_guests" }}</h3>
+          <ul class="booking-guests" role="list">
+            {{ range $b.guests }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <div class="booking-block">
+          <h3>{{ i18n "booking_venues" }}</h3>
+          <ul class="booking-venues" role="list">
+            {{ range $b.venues }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <div class="booking-block">
+          <h3>{{ i18n "booking_videos" }}</h3>
+          {{ range $b.videos }}
+          <div class="booking-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ .id }}"
+              title="{{ .title }}"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          {{ end }}
+          <p class="booking-links">
+            {{ $mdisc := where $.Site.Menus.main "Identifier" "discography" }}
+            {{ range $mdisc }}<a href="{{ .URL }}">{{ i18n "booking_discography_link" }} →</a>{{ end }}
+            {{ $mfoto := where $.Site.Menus.main "Identifier" "photos" }}
+            {{ range $mfoto }}<a href="{{ .URL }}">{{ i18n "booking_photos_link" }} →</a>{{ end }}
+          </p>
+        </div>
+
+        <div class="booking-block booking-block--wide">
+          <h3>{{ i18n "booking_rider" }}</h3>
+          <details class="booking-rider">
+            <summary>{{ i18n "booking_rider" }}</summary>
+            <ul role="list">
+              <li>{{ index $b.rider (printf "formation_%s" $.Lang) | default $b.rider.formation_en }}</li>
+              <li>{{ index $b.rider (printf "stage_%s" $.Lang) | default $b.rider.stage_en }}</li>
+              <li>{{ index $b.rider (printf "sound_%s" $.Lang) | default $b.rider.sound_en }}</li>
+              <li>{{ index $b.rider (printf "backline_%s" $.Lang) | default $b.rider.backline_en }}</li>
+              <li>{{ index $b.rider (printf "rehearsal_%s" $.Lang) | default $b.rider.rehearsal_en }}</li>
+              <li>{{ index $b.rider (printf "duration_%s" $.Lang) | default $b.rider.duration_en }}</li>
+            </ul>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ Contacte + formulari ══ -->
+    <section class="booking-contact" aria-label="{{ i18n "booking_contact_title" }}">
+      <h2 class="booking-contact__title">{{ i18n "booking_contact_title" }}</h2>
+
+      {{ $endpoint := site.Params.booking_form_endpoint | default "" }}
+      <form class="booking-form"
+            method="POST"
+            action="{{ $endpoint }}"
+            data-endpoint="{{ $endpoint }}"
+            novalidate>
+
+        <div class="booking-form__row">
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_name" }} *</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_email" }} *</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+        </div>
+
+        <div class="booking-form__row">
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_org" }}</span>
+            <input type="text" name="organisation" autocomplete="organization">
+          </label>
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_date" }}</span>
+            <input type="date" name="date">
+          </label>
+        </div>
+
+        <label class="booking-field">
+          <span>{{ i18n "booking_form_message" }} *</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        {{/* Honeypot anti-spam — invisible per als usuaris reals */}}
+        <div class="booking-hp" aria-hidden="true">
+          <label>
+            <span>{{ i18n "booking_form_honeypot" }}</span>
+            <input type="text" name="_hp" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+
+        <button type="submit" class="booking-submit">{{ i18n "booking_form_send" }}</button>
+        <p class="booking-form__status" role="status" aria-live="polite"></p>
+      </form>
+
+      {{ $c := hugo.Data.contact }}
+      <div class="booking-mailto">
+        <p class="booking-mailto__note">{{ i18n "booking_mailto_note" }}</p>
+        <p class="booking-mailto__links">
+          <a href="mailto:{{ $c.email }}?subject={{ i18n "booking_contact_title" }}">{{ $c.email }}</a>
+          {{ with $c.phone }} · <a href="tel:{{ replace . " " "" }}">{{ . }}</a>{{ end }}
+        </p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  var form = document.querySelector('.booking-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    // Honeypot: si el camp està omplert, no és una persona
+    if (form._hp && form._hp.value) { e.preventDefault(); return; }
+
+    var endpoint = form.getAttribute('data-endpoint');
+    var status = form.querySelector('.booking-form__status');
+
+    if (!endpoint) {
+      // Fallback: obrir el programa de correu amb el contingut del formulari
+      e.preventDefault();
+      var body =
+        'Nom: ' + form.name.value + '\n' +
+        'Email: ' + form.email.value + '\n' +
+        'Organització: ' + (form.organisation.value || '-') + '\n' +
+        'Data: ' + (form.date.value || '-') + '\n\n' +
+        form.message.value;
+      window.location.href = 'mailto:{{ $c.email }}?subject=' +
+        encodeURIComponent('Contractació — ' + form.name.value) +
+        '&body=' + encodeURIComponent(body);
+      if (status) status.textContent = '{{ i18n "booking_mailto_note" }}';
+      return;
+    }
+
+    if (status) status.textContent = '…';
+    fetch(endpoint, { method: 'POST', body: new FormData(form) })
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        form.reset();
+        if (status) status.textContent = '✓';
+      })
+      .catch(function () {
+        window.location.href = 'mailto:{{ $c.email }}?subject=' +
+          encodeURIComponent('Contractació') +
+          '&body=' + encodeURIComponent(form.message.value);
+      });
+  });
+})();
+</script>
+{{ end }}
