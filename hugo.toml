@@ -59,11 +59,17 @@ booking_form_endpoint = ""
 google_calendar_ical = ""
 
 # Xarxes socials — Facebook és el que enllaça el site actual de BBBB.
-# PENDENT: confirmar si hi ha comptes propis de la banda (Instagram/YouTube).
+# Instagram: compte oficial de la banda (confirmat per l'usuari).
+# PENDENT: confirmar YouTube propi de la banda (ara, canal d'Ivan).
 [[params.socials]]
   name = "Facebook"
   icon = "facebook"
   url  = "https://www.facebook.com/ivan.kovacevic.5686"
+
+[[params.socials]]
+  name = "Instagram"
+  icon = "instagram"
+  url  = "https://www.instagram.com/barcelonabigbluesband/"
 
 # Patrocinadors / endorsaments (logo al peu, entre xarxes i text legal)
 # Desactivat: la pàgina /daddario/ es manté (noindex) per si torna a ser espònsor,
