@@ -1,0 +1,95 @@
+{{ define "main" }}
+
+{{ $events := site.Data.events }}
+{{ $upcoming := $events.upcoming | default (slice) }}
+
+<div class="page-wrap page-wrap--dark">
+  <div class="page-inner agenda-page">
+
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="agenda-lead">{{ i18n "agenda_lead" }}</p>
+
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    {{ if $upcoming }}
+
+    <ul class="agenda-list" role="list">
+      {{ range $upcoming }}
+      {{ $title := .title }}
+      {{ if not $title }}{{ $title = printf "%s · %s" site.Title .venue }}{{ end }}
+      {{ $when := time.Format "Monday, 2 January 2006" .date }}
+      {{ $gcal := printf "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&details=%s&location=%s"
+          ($title | urlquery)
+          .gcal_start
+          .gcal_end
+          (site.Params.description | urlquery)
+          (printf "%s, %s" .venue .city | urlquery) }}
+
+      <li class="agenda-item">
+        <div class="agenda-item__date">
+          <span class="agenda-item__weekday">{{ time.Format "Monday" .date }}</span>
+          <span class="agenda-item__day">{{ time.Format "2" .date }}</span>
+          <span class="agenda-item__month">{{ time.Format "Jan 2006" .date }}</span>
+        </div>
+
+        <div class="agenda-item__info">
+          <p class="agenda-item__title">{{ $title }}</p>
+          <p class="agenda-item__where">
+            {{ with .venue }}<span class="agenda-item__venue">{{ . }}</span>{{ end }}
+            {{ with .city }} · {{ . }}{{ end }}
+            {{ with .time }} · {{ . }} h{{ end }}
+          </p>
+        </div>
+
+        <div class="agenda-item__actions">
+          {{ if .ticket_url }}
+          <a class="btn btn--accent" href="{{ .ticket_url }}" target="_blank" rel="noopener">
+            {{ i18n "agenda_tickets" }}
+          </a>
+          {{ else if .url }}
+          <a class="btn btn--accent" href="{{ .url }}" target="_blank" rel="noopener">
+            {{ i18n "agenda_tickets" }}
+          </a>
+          {{ else }}
+          <span class="agenda-free">{{ i18n "agenda_free" }}</span>
+          {{ end }}
+          <a class="agenda-gcal" href="{{ $gcal }}" target="_blank" rel="noopener">
+            {{ i18n "agenda_add_calendar" }} ↗
+          </a>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{ else }}
+
+    <div class="agenda-empty">
+      <p>{{ i18n "agenda_no_events" }}</p>
+      {{ with $events.source }}
+      <p><a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "agenda_source" }} ↗</a></p>
+      {{ end }}
+      <p>
+        {{ $mbook := where site.Menus.main "Identifier" "booking" }}
+        {{ range $mbook }}
+        <a href="{{ .URL }}" class="btn btn--accent">{{ i18n "booking_contact_title" }}</a>
+        {{ end }}
+      </p>
+    </div>
+
+    {{ end }}
+
+    {{ with $events.updated }}
+    <p class="agenda-meta">
+      {{ i18n "agenda_updated" }} {{ time.Format "2 Jan 2006, 15:04" . }} (UTC) ·
+      {{ with $events.source }}
+      <a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "agenda_source" }} ↗</a>
+      {{ end }}
+    </p>
+    {{ end }}
+
+  </div>
+</div>
+
+{{ end }}

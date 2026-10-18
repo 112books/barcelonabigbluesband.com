@@ -1,0 +1,18 @@
+{
+  "updated": "2026-10-18T14:47:18Z",
+  "source": "https://www.bandsintown.com/a/3540917-barcelona-big-blues-band",
+  "upcoming": [
+    {
+      "date": "2026-12-27",
+      "time": "21:00",
+      "gcal_start": "20261227T210000",
+      "gcal_end": "20261227T230000",
+      "title": "",
+      "venue": "Jamboree Jazz",
+      "city": "Barcelona",
+      "country": "Spain",
+      "url": "https://www.bandsintown.com/e/1040382086?app_id=js_barcelonabigbluesband.com&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event",
+      "ticket_url": "https://www.bandsintown.com/t/1040382086?app_id=js_barcelonabigbluesband.com&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=ticket"
+    }
+  ]
+}

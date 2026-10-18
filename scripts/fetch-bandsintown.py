@@ -13,7 +13,7 @@ Genera data/events.json amb:
 
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -53,6 +53,9 @@ def normalize(ev):
     return {
         "date": start.strftime("%Y-%m-%d"),
         "time": start.strftime("%H:%M"),
+        # Finals flotants (sense Z) per a Google Calendar; durada base 2h.
+        "gcal_start": start.strftime("%Y%m%dT%H%M%S"),
+        "gcal_end": (start + timedelta(hours=2)).strftime("%Y%m%dT%H%M%S"),
         "title": (ev.get("title") or "").strip(),
         "venue": (venue.get("name") or "").strip(),
         "city": (venue.get("city") or "").strip(),
