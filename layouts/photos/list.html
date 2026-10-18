@@ -22,7 +22,7 @@
 
           {{ if .cover }}
           <div class="gallery-card__thumb">
-            <img src="{{ .cover | relURL }}" alt="{{ $title }}" loading="lazy">
+            <img src="{{ .cover | strings.TrimPrefix "/" | relURL }}" alt="{{ $title }}" loading="lazy">
           </div>
           {{ else }}
           <div class="gallery-card__thumb gallery-card__thumb--placeholder">
