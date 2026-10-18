@@ -3,7 +3,7 @@
   <!-- Fila 1: logo + idiomes -->
   <div class="header-top">
     <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }}">
-      <img class="logo-full" src="{{ "images/logo.svg" | relURL }}" alt="{{ .Site.Title }}" width="320" height="80">
+      <img class="logo-full" src="{{ "images/logo/bbb-logo.jpg" | relURL }}" alt="{{ .Site.Title }}" width="512" height="512">
     </a>
     {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--compact") }}
   </div>
@@ -39,7 +39,7 @@
 <nav class="nav-compact" id="nav-compact" aria-label="{{ i18n "nav_compact" | default "Navegació ràpida" }}" aria-hidden="true">
   <div class="nav-compact__logo">
     <a href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
-      <img src="{{ "images/logo.svg" | relURL }}" alt="" aria-hidden="true">
+      <img src="{{ "images/logo/bbb-logo.jpg" | relURL }}" alt="" aria-hidden="true" width="512" height="512">
     </a>
   </div>
   <ul class="nav-compact__list" role="list">

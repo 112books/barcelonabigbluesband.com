@@ -112,9 +112,8 @@ a   { color: inherit; }
 
 .site-logo { display: block; text-decoration: none; }
 .logo-full {
-  height: 64px;
-  width: auto; max-width: 260px;
-  filter: brightness(0) invert(1);
+  height: 56px;
+  width: auto;
   opacity: .95;
   transition: height .4s var(--ease), opacity var(--dur);
 }
@@ -207,9 +206,8 @@ a   { color: inherit; }
   flex-shrink: 0; display: flex; align-items: center;
 }
 .nav-compact__logo img {
-  height: 56px;
+  height: 44px;
   width: auto;
-  filter: brightness(0) invert(1);
   opacity: .9;
 }
 
