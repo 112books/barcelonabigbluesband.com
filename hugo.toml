@@ -123,22 +123,28 @@ baseURL = "https://barcelonabigbluesband.com/"
   weight = 5
 
 [[languages.en.menu.main]]
+  name = "Photos"
+  url = "/en/photos/"
+  identifier = "photos"
+  weight = 6
+
+[[languages.en.menu.main]]
   name = "Press"
   url = "/en/press/"
   identifier = "press"
-  weight = 6
+  weight = 7
 
 [[languages.en.menu.main]]
   name = "Booking"
   url = "/en/booking/"
   identifier = "booking"
-  weight = 7
+  weight = 8
 
 [[languages.en.menu.main]]
   name = "Contact"
   url = "/en/contact/"
   identifier = "contact"
-  weight = 8
+  weight = 9
 
 [[languages.ca.menu.main]]
   name = "Inici"
@@ -171,22 +177,28 @@ baseURL = "https://barcelonabigbluesband.com/"
   weight = 5
 
 [[languages.ca.menu.main]]
+  name = "Fotos"
+  url = "/ca/fotos/"
+  identifier = "photos"
+  weight = 6
+
+[[languages.ca.menu.main]]
   name = "Premsa"
   url = "/ca/premsa/"
   identifier = "press"
-  weight = 6
+  weight = 7
 
 [[languages.ca.menu.main]]
   name = "Contractació"
   url = "/ca/contractacio/"
   identifier = "booking"
-  weight = 7
+  weight = 8
 
 [[languages.ca.menu.main]]
   name = "Contacte"
   url = "/ca/contacte/"
   identifier = "contact"
-  weight = 8
+  weight = 9
 
 [[languages.es.menu.main]]
   name = "Inicio"
@@ -219,19 +231,25 @@ baseURL = "https://barcelonabigbluesband.com/"
   weight = 5
 
 [[languages.es.menu.main]]
+  name = "Fotos"
+  url = "/es/fotos/"
+  identifier = "photos"
+  weight = 6
+
+[[languages.es.menu.main]]
   name = "Prensa"
   url = "/es/prensa/"
   identifier = "press"
-  weight = 6
+  weight = 7
 
 [[languages.es.menu.main]]
   name = "Contratación"
   url = "/es/contratacion/"
   identifier = "booking"
-  weight = 7
+  weight = 8
 
 [[languages.es.menu.main]]
   name = "Contacto"
   url = "/es/contacto/"
   identifier = "contact"
-  weight = 8
+  weight = 9
