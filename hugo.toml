@@ -220,75 +220,6 @@ defaultContentLanguageInSubdir = true
   identifier = "search"
   weight = 10
 
-[languages.sr]
-  contentDir = "content/sr"
-  title = "Ivan Kovačević"
-  label = "Srpski"
-  locale = "sr-Latn"
-  weight = 4
-
-  [languages.sr.params]
-    description = "Zvanični sajt kontrabasiste Ivana Kovačevića: balkanska muzika, džez, rhythm & blues iz Barselone. Biografija, projekti, diskografija, koncerti, video i kontakt."
-
-[[languages.sr.menu.main]]
-  name = "Početna"
-  url = "/sr/"
-  identifier = "home"
-  weight = 1
-
-[[languages.sr.menu.main]]
-  name = "Biografija"
-  url = "/sr/biografija/"
-  identifier = "biography"
-  weight = 2
-
-[[languages.sr.menu.main]]
-  name = "Projekti"
-  url = "/sr/projekti/"
-  identifier = "projects"
-  weight = 3
-
-[[languages.sr.menu.main]]
-  name = "Diskografija"
-  url = "/sr/diskografija/"
-  identifier = "discography"
-  weight = 4
-
-[[languages.sr.menu.main]]
-  name = "Koncerti"
-  url = "/sr/koncerti/"
-  identifier = "gigs"
-  weight = 5
-
-[[languages.sr.menu.main]]
-  name = "Video"
-  url = "/sr/video/"
-  identifier = "videos"
-  weight = 6
-
-[[languages.sr.menu.main]]
-  name = "Fotografije"
-  url = "/sr/fotografije/"
-  identifier = "photos"
-  weight = 7
-
-[[languages.sr.menu.main]]
-  name = "Štampa"
-  url = "/sr/stampa/"
-  identifier = "press"
-  weight = 8
-
-[[languages.sr.menu.main]]
-  name = "Kontakt"
-  url = "/sr/kontakt/"
-  identifier = "contact"
-  weight = 9
-
-[[languages.sr.menu.main]]
-  name = "Pretraga"
-  url = "/sr/pretraga/"
-  identifier = "search"
-  weight = 10
 
 # ══════════════════════════════════════════════════════════════
 # PARÀMETRES GENERALS
@@ -349,3 +280,5 @@ since       = "2026-10-15"   # inici del seguiment (producció)
   [outputFormats.Calendar]
     mediaType = "text/calendar"
     isPlainText = true
+
+baseURL = "https://barcelonabigbluesband.com/"
