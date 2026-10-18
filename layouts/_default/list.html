@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page-wrap">
+<div class="page-wrap page-wrap--dark"{{ with .Params.bg }} style="--page-bg: url('{{ . | relURL }}')"{{ end }}>
   <div class="page-inner">
 
     <h1 class="page-title">{{ .Title }}</h1>

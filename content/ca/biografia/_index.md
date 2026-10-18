@@ -1,5 +1,6 @@
 ---
 title: "Biografia"
+bg: "images/sections/biografia.jpg"
 description: "La Barcelona Big Blues Band, sota la direcció del contrabaixista Ivan Kovacevic."
 ---
 

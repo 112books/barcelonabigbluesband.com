@@ -1,5 +1,6 @@
 ---
 title: "Biography"
+bg: "images/sections/biografia.jpg"
 description: "The Barcelona Big Blues Band, led by double bassist Ivan Kovacevic."
 ---
 

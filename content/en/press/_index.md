@@ -1,5 +1,6 @@
 ---
 title: "Press"
+bg: "images/galleries/2026-01-img-4392-jpg.jpg"
 type: "press"
 translationKey: "press"
 description: "Interviews, reviews and coverage about the Barcelona Big Blues Band around the world."

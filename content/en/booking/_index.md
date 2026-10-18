@@ -1,5 +1,6 @@
 ---
 title: "Booking"
+bg: "images/galleries/2026-06-l1560008-jpg.jpg"
 type: "booking"
 description: "Book the Barcelona Big Blues Band for concerts, festivals and events. EPK, technical rider and booking form."
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Premsa"
+bg: "images/galleries/2026-01-img-4392-jpg.jpg"
 type: "press"
 translationKey: "press"
 description: "Entrevistes, ressenyes i cròniques sobre la Barcelona Big Blues Band arreu del món."

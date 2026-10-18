@@ -1756,3 +1756,9 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   .agenda-item { grid-template-columns: auto 1fr; }
   .agenda-item__actions { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: flex-start; }
 }
+
+.page-wrap[style*="--page-bg"] {
+  background:
+    linear-gradient(rgba(14,13,11,0.88), rgba(14,13,11,0.92)),
+    var(--page-bg) center center / cover no-repeat;
+}

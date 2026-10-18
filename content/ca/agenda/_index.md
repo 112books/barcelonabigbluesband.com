@@ -1,5 +1,6 @@
 ---
 title: "Agenda"
+bg: "images/hero/jam_06.jpg"
 description: "Agenda de concerts de la Barcelona Big Blues Band: propers dates, entrades i calendari."
 ---
 

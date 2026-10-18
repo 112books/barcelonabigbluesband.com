@@ -1,5 +1,6 @@
 ---
 title: "Contractació"
+bg: "images/galleries/2026-06-l1560008-jpg.jpg"
 type: "booking"
 description: "Contracta la Barcelona Big Blues Band per a concerts, festivals i esdeveniments. EPK, rider tècnic i formulari de reserves."
 ---

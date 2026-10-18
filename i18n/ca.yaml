@@ -1,10 +1,6 @@
 
 
-# Agenda (server-side des de data/events.json)
-agenda_lead: "Propers concerts de la Barcelona Big Blues Band."
-agenda_updated: "Actualitzat el"
-agenda_no_events: "De moment no hi ha concerts programats. Escola el nostre calendari a Bandsintown i segueix-nos al Facebook."
-agenda_tickets: "Entrades"
-agenda_add_calendar: "Al calendari"
-agenda_source: "Agenda a Bandsintown"
-agenda_free: "Gratuït / entrada al local"
+# Vídeos
+videos_lead: "Els millors moments de la Barcelona Big Blues Band en vídeo."
+videos_cta: "Més vídeos al canal"
+videos_cta_sub: "Subscriu-te al canal de YouTube"
