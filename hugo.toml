@@ -20,66 +20,6 @@ defaultContentLanguageInSubdir = true
   [languages.en.params]
     description = "Official website of double bassist Ivan Kovačević: Balkan, jazz, rhythm & blues from Barcelona. Biography, projects, discography, gigs, videos and booking."
 
-[[languages.en.menu.main]]
-  name = "Home"
-  url = "/en/"
-  identifier = "home"
-  weight = 1
-
-[[languages.en.menu.main]]
-  name = "Biography"
-  url = "/en/biography/"
-  identifier = "biography"
-  weight = 2
-
-[[languages.en.menu.main]]
-  name = "Projects"
-  url = "/en/projects/"
-  identifier = "projects"
-  weight = 3
-
-[[languages.en.menu.main]]
-  name = "Discography"
-  url = "/en/discography/"
-  identifier = "discography"
-  weight = 4
-
-[[languages.en.menu.main]]
-  name = "Concerts"
-  url = "/en/concerts/"
-  identifier = "gigs"
-  weight = 5
-
-[[languages.en.menu.main]]
-  name = "Videos"
-  url = "/en/videos/"
-  identifier = "videos"
-  weight = 6
-
-[[languages.en.menu.main]]
-  name = "Photos"
-  url = "/en/photos/"
-  identifier = "photos"
-  weight = 7
-
-[[languages.en.menu.main]]
-  name = "Press"
-  url = "/en/press/"
-  identifier = "press"
-  weight = 8
-
-[[languages.en.menu.main]]
-  name = "Contact"
-  url = "/en/contact/"
-  identifier = "contact"
-  weight = 9
-
-[[languages.en.menu.main]]
-  name = "Search"
-  url = "/en/search/"
-  identifier = "search"
-  weight = 10
-
 [languages.ca]
   contentDir = "content/ca"
   title = "Barcelona Big Blues Band"
@@ -90,66 +30,6 @@ defaultContentLanguageInSubdir = true
   [languages.ca.params]
     description = "Web oficial del contrabaixista Ivan Kovačević: balcànic, jazz, rhythm & blues des de Barcelona. Biografia, projectes, discografia, concerts, vídeos i contractació."
 
-[[languages.ca.menu.main]]
-  name = "Inici"
-  url = "/ca/"
-  identifier = "home"
-  weight = 1
-
-[[languages.ca.menu.main]]
-  name = "Biografia"
-  url = "/ca/biografia/"
-  identifier = "biography"
-  weight = 2
-
-[[languages.ca.menu.main]]
-  name = "Projectes"
-  url = "/ca/projectes/"
-  identifier = "projects"
-  weight = 3
-
-[[languages.ca.menu.main]]
-  name = "Discografia"
-  url = "/ca/discografia/"
-  identifier = "discography"
-  weight = 4
-
-[[languages.ca.menu.main]]
-  name = "Concerts"
-  url = "/ca/concerts/"
-  identifier = "gigs"
-  weight = 5
-
-[[languages.ca.menu.main]]
-  name = "Vídeos"
-  url = "/ca/videos/"
-  identifier = "videos"
-  weight = 6
-
-[[languages.ca.menu.main]]
-  name = "Fotografies"
-  url = "/ca/fotografies/"
-  identifier = "photos"
-  weight = 7
-
-[[languages.ca.menu.main]]
-  name = "Premsa"
-  url = "/ca/premsa/"
-  identifier = "press"
-  weight = 8
-
-[[languages.ca.menu.main]]
-  name = "Contacte"
-  url = "/ca/contacte/"
-  identifier = "contact"
-  weight = 9
-
-[[languages.ca.menu.main]]
-  name = "Cerca"
-  url = "/ca/cerca/"
-  identifier = "search"
-  weight = 10
-
 [languages.es]
   contentDir = "content/es"
   title = "Barcelona Big Blues Band"
@@ -159,71 +39,6 @@ defaultContentLanguageInSubdir = true
 
   [languages.es.params]
     description = "Web oficial del contrabajista Ivan Kovačević: balcánico, jazz, rhythm & blues desde Barcelona. Biografía, proyectos, discografía, conciertos, vídeos y contratación."
-
-[[languages.es.menu.main]]
-  name = "Inicio"
-  url = "/es/"
-  identifier = "home"
-  weight = 1
-
-[[languages.es.menu.main]]
-  name = "Biografía"
-  url = "/es/biografia/"
-  identifier = "biography"
-  weight = 2
-
-[[languages.es.menu.main]]
-  name = "Proyectos"
-  url = "/es/proyectos/"
-  identifier = "projects"
-  weight = 3
-
-[[languages.es.menu.main]]
-  name = "Discografía"
-  url = "/es/discografia/"
-  identifier = "discography"
-  weight = 4
-
-[[languages.es.menu.main]]
-  name = "Conciertos"
-  url = "/es/conciertos/"
-  identifier = "gigs"
-  weight = 5
-
-[[languages.es.menu.main]]
-  name = "Vídeos"
-  url = "/es/videos/"
-  identifier = "videos"
-  weight = 6
-
-[[languages.es.menu.main]]
-  name = "Fotografías"
-  url = "/es/fotografias/"
-  identifier = "photos"
-  weight = 7
-
-[[languages.es.menu.main]]
-  name = "Prensa"
-  url = "/es/prensa/"
-  identifier = "press"
-  weight = 8
-
-[[languages.es.menu.main]]
-  name = "Contacto"
-  url = "/es/contacto/"
-  identifier = "contact"
-  weight = 9
-
-[[languages.es.menu.main]]
-  name = "Buscar"
-  url = "/es/buscar/"
-  identifier = "search"
-  weight = 10
-
-
-# ══════════════════════════════════════════════════════════════
-# PARÀMETRES GENERALS
-# ══════════════════════════════════════════════════════════════
 
 [params]
 description = "Official website of double bassist Ivan Kovačević."
@@ -282,3 +97,149 @@ since       = "2026-10-15"   # inici del seguiment (producció)
     isPlainText = true
 
 baseURL = "https://barcelonabigbluesband.com/"
+
+# ══ MENÚS ══
+
+[[languages.en.menu.main]]
+  name = "Home"
+  url = "/en/"
+  identifier = "home"
+  weight = 1
+
+[[languages.en.menu.main]]
+  name = "Biography"
+  url = "/en/biography/"
+  identifier = "biography"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Agenda"
+  url = "/en/agenda/"
+  identifier = "agenda"
+  weight = 3
+
+[[languages.en.menu.main]]
+  name = "Discography"
+  url = "/en/discography/"
+  identifier = "discography"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Videos"
+  url = "/en/videos/"
+  identifier = "videos"
+  weight = 5
+
+[[languages.en.menu.main]]
+  name = "Press"
+  url = "/en/press/"
+  identifier = "press"
+  weight = 6
+
+[[languages.en.menu.main]]
+  name = "Booking"
+  url = "/en/booking/"
+  identifier = "booking"
+  weight = 7
+
+[[languages.en.menu.main]]
+  name = "Contact"
+  url = "/en/contact/"
+  identifier = "contact"
+  weight = 8
+
+[[languages.ca.menu.main]]
+  name = "Inici"
+  url = "/ca/"
+  identifier = "home"
+  weight = 1
+
+[[languages.ca.menu.main]]
+  name = "Biografia"
+  url = "/ca/biografia/"
+  identifier = "biography"
+  weight = 2
+
+[[languages.ca.menu.main]]
+  name = "Agenda"
+  url = "/ca/agenda/"
+  identifier = "agenda"
+  weight = 3
+
+[[languages.ca.menu.main]]
+  name = "Discografia"
+  url = "/ca/discografia/"
+  identifier = "discography"
+  weight = 4
+
+[[languages.ca.menu.main]]
+  name = "Vídeos"
+  url = "/ca/videos/"
+  identifier = "videos"
+  weight = 5
+
+[[languages.ca.menu.main]]
+  name = "Premsa"
+  url = "/ca/premsa/"
+  identifier = "press"
+  weight = 6
+
+[[languages.ca.menu.main]]
+  name = "Contractació"
+  url = "/ca/contractacio/"
+  identifier = "booking"
+  weight = 7
+
+[[languages.ca.menu.main]]
+  name = "Contacte"
+  url = "/ca/contacte/"
+  identifier = "contact"
+  weight = 8
+
+[[languages.es.menu.main]]
+  name = "Inicio"
+  url = "/es/"
+  identifier = "home"
+  weight = 1
+
+[[languages.es.menu.main]]
+  name = "Biografía"
+  url = "/es/biografia/"
+  identifier = "biography"
+  weight = 2
+
+[[languages.es.menu.main]]
+  name = "Agenda"
+  url = "/es/agenda/"
+  identifier = "agenda"
+  weight = 3
+
+[[languages.es.menu.main]]
+  name = "Discografía"
+  url = "/es/discografia/"
+  identifier = "discography"
+  weight = 4
+
+[[languages.es.menu.main]]
+  name = "Vídeos"
+  url = "/es/videos/"
+  identifier = "videos"
+  weight = 5
+
+[[languages.es.menu.main]]
+  name = "Prensa"
+  url = "/es/prensa/"
+  identifier = "press"
+  weight = 6
+
+[[languages.es.menu.main]]
+  name = "Contratación"
+  url = "/es/contratacion/"
+  identifier = "booking"
+  weight = 7
+
+[[languages.es.menu.main]]
+  name = "Contacto"
+  url = "/es/contacto/"
+  identifier = "contact"
+  weight = 8
