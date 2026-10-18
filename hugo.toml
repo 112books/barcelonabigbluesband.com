@@ -2,17 +2,17 @@ locale = "en"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
-title = "Ivan Kovačević"
+title = "Barcelona Big Blues Band"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 # ══════════════════════════════════════════════════════════════
-# IDIOMES — EN (principal) · CA · ES · SR
+# IDIOMES — CA · ES · EN
 # ══════════════════════════════════════════════════════════════
 
 [languages.en]
   contentDir = "content/en"
-  title = "Ivan Kovačević"
+  title = "Barcelona Big Blues Band"
   label = "English"
   locale = "en-GB"
   weight = 1
@@ -82,7 +82,7 @@ defaultContentLanguageInSubdir = true
 
 [languages.ca]
   contentDir = "content/ca"
-  title = "Ivan Kovačević"
+  title = "Barcelona Big Blues Band"
   label = "Català"
   locale = "ca-ES"
   weight = 2
@@ -152,7 +152,7 @@ defaultContentLanguageInSubdir = true
 
 [languages.es]
   contentDir = "content/es"
-  title = "Ivan Kovačević"
+  title = "Barcelona Big Blues Band"
   label = "Español"
   locale = "es-ES"
   weight = 3
