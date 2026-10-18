@@ -41,9 +41,9 @@ defaultContentLanguageInSubdir = true
     description = "Web oficial del contrabajista Ivan Kovačević: balcánico, jazz, rhythm & blues desde Barcelona. Biografía, proyectos, discografía, conciertos, vídeos y contratación."
 
 [params]
-description = "Official website of double bassist Ivan Kovačević."
-tagline     = "Double Bass · Balkan · Jazz · Rhythm & Blues"
-og_image    = "images/og-image.jpg"
+description = "Web oficial de la Barcelona Big Blues Band: blues, swing i rhythm and blues en gran format des de Barcelona. Concerts, discografia, vídeos i contractació."
+tagline     = "Blues · Swing · Rhythm & Blues · Barcelona"
+og_image    = "images/hero/jam_06.jpg"
 
 promo_enabled = false
 promo_text    = ""
@@ -53,20 +53,12 @@ promo_cta     = ""
 # Google Calendar (agenda) — pendent de crear pel compte de Joan/LinuxBCN
 google_calendar_ical = ""
 
-[[params.socials]]
-  name = "Instagram"
-  icon = "instagram"
-  url  = "https://www.instagram.com/kovacevic_doublebass/"
-
+# Xarxes socials — Facebook és el que enllaça el site actual de BBBB.
+# PENDENT: confirmar si hi ha comptes propis de la banda (Instagram/YouTube).
 [[params.socials]]
   name = "Facebook"
   icon = "facebook"
   url  = "https://www.facebook.com/ivan.kovacevic.5686"
-
-[[params.socials]]
-  name = "YouTube"
-  icon = "youtube"
-  url  = "https://www.youtube.com/channel/UCG-CSJzP_90xHVhaDQj6PvA"
 
 # Patrocinadors / endorsaments (logo al peu, entre xarxes i text legal)
 # Desactivat: la pàgina /daddario/ es manté (noindex) per si torna a ser espònsor,
@@ -78,8 +70,8 @@ google_calendar_ical = ""
 #   logo     = "images/sponsors/daddario.png"
 
 [params.analytics]
-goatcounter = "ivankovacevic"
-enabled     = true
+goatcounter = ""
+enabled     = false
 since       = "2026-10-15"   # inici del seguiment (producció)
 
 [markup]
