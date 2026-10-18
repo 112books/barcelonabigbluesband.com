@@ -42,8 +42,9 @@ $hits[] = (string)$now;
 @file_put_contents($dir, implode("\n", $hits), LOCK_EX);
 
 // ── Validació ──
-$name    = trim((string)($_POST['name'] ?? ''));
-$email   = trim((string)($_POST['email'] ?? ''));
+// Nota: retirem CR/LF de tots els camps per evitar injecció de capçaleres a mail().
+$name    = trim(str_replace(["\r", "\n"], '', (string)($_POST['name'] ?? '')));
+$email   = trim(str_replace(["\r", "\n"], '', (string)($_POST['email'] ?? '')));
 $org     = trim((string)($_POST['organisation'] ?? ''));
 $date    = trim((string)($_POST['date'] ?? ''));
 $message = trim((string)($_POST['message'] ?? ''));

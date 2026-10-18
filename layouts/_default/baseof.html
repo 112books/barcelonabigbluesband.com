@@ -14,10 +14,12 @@
       font-display: swap;
     }
 </style>
-  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}?v={{ now.Unix }}">
-  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}?v={{ now.Unix }}">
+  <link rel="preload" href="{{ "fonts/oswald-v57-latin-regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/inter-v20-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
   {{ partial "analytics/goatcounter.html" . }}
-  <script src="{{ "js/track.js" | relURL }}"></script>
+  <script src="{{ "js/track.js" | relURL }}" defer></script>
   <link rel="author" href="/humans.txt">
 </head>
 {{ $isHome := or .IsHome (eq .RelPermalink (printf "/%s/" .Language.Lang)) }}

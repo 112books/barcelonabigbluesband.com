@@ -6,7 +6,7 @@
 
     <p class="galleries-lead">{{ i18n "photos_lead" }}</p>
 
-    {{ $galleries := hugo.Data.galleries.galleries }}
+    {{ $galleries := site.Data.galleries.galleries }}
     {{ if $galleries }}
     <div class="galleries-grid">
       {{ range $galleries }}

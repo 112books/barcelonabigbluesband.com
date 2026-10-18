@@ -48,7 +48,7 @@
     <div class="concerts-noscript" style="max-width:var(--max-w);margin:2rem auto 0;padding:0 var(--gap)">
       <h2>{{ i18n "upcoming_concerts" | default "Propers concerts" }}</h2>
       <ul>
-      {{ with index hugo.Data "concerts-schema" }}{{ range first 20 .events }}
+      {{ with index site.Data "concerts-schema" }}{{ range first 20 .events }}
         <li>{{ .startDate }} — {{ with .performer }}{{ .name }}{{ end }} · {{ with .location }}{{ .name }}{{ end }}</li>
       {{ end }}{{ end }}
       </ul>

@@ -27,7 +27,7 @@
   {{- $ogImage = strings.TrimPrefix "/" .Site.Params.og_image | absURL -}}
 {{- end -}}
 
-{{- $locales := dict "ca" "ca_ES" "es" "es_ES" "en" "en_GB" "sr" "sr_Latn" -}}
+{{- $locales := dict "ca" "ca_ES" "es" "es_ES" "en" "en_GB" -}}
 {{- $locale  := index $locales $lang | default "en_GB" -}}
 
 <!-- ═══ SEO bàsic ═══ -->
@@ -79,48 +79,43 @@
 
 <!-- ═══ Schema.org ═══ -->
 
-{{/* Person — present a totes les pàgines (enriquit per a cercadors i IA) */}}
-{{- $bands := where site.RegularPages "Type" "projects" -}}
+{{/* MusicGroup — present a totes les pàgines (enriquit per a cercadors i IA) */}}
 {{- $sameAs  := slice -}}
 {{- range .Site.Params.socials }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
-{{- with hugo.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
-{{- with hugo.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with site.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with site.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "{{ .Site.BaseURL }}#person",
-  "name": "Ivan Kovačević",
-  "alternateName": "Ivan Kovacevic",
-  "jobTitle": "Double bassist, bandleader and arranger",
+  "@type": "MusicGroup",
+  "@id": "{{ .Site.BaseURL }}#musicgroup",
+  "name": "{{ .Site.Title }}",
   "description": "{{ .Site.Language.Params.description | default .Site.Params.description }}",
   "url": "{{ .Site.BaseURL }}",
   "image": "{{ $ogImage }}",
-  "birthDate": "1977-04-16",
-  "birthPlace": {
+  "genre": ["Rhythm & Blues", "Blues", "Swing", "Big Band"],
+  "foundingLocation": {
     "@type": "Place",
-    "name": "Belgrade",
+    "name": "Barcelona",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Belgrade",
-      "addressCountry": "RS"
+      "addressLocality": "Barcelona",
+      "addressCountry": "ES"
     }
   },
-  "nationality": "Serbian",
-  "homeLocation": { "@type": "Place", "name": "Barcelona" },
-  "knowsLanguage": ["sr", "es", "ca", "en"],
-  "genre": ["Balkan", "Gypsy Jazz", "Rhythm & Blues", "World Music"],
-  "memberOf": [
-    {{- range $i, $b := $bands }}{{ if $i }},{{ end }}
+  "member": [
     {
-      "@type": "MusicGroup",
-      "name": "{{ $b.Title }}"
-    }{{- end }}
+      "@type": "Person",
+      "name": "Ivan Kovačević",
+      "alternateName": "Ivan Kovacevic",
+      "jobTitle": "Double bassist, bandleader and arranger",
+      "@id": "{{ .Site.BaseURL }}#person"
+    }
   ],
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "booking",
-    "email": "{{ index hugo.Data.contact "email" }}",
+    "email": "{{ index site.Data.contact "email" }}",
     "areaServed": "Europe"
   },
   "sameAs": [
@@ -172,37 +167,25 @@
 </script>
 {{ end }}
 
-{{/* MusicEvent — només a la pàgina de concerts */}}
-{{ if eq .Type "gigs" }}
-  {{ with index hugo.Data "concerts-schema" }}
-  {{ with .events }}
-    {{ range . }}
-    {{- $orgName := "" -}}
-    {{- with .organizer }}{{ $orgName = .name }}{{ end -}}
-    {{- if not $orgName }}{{ with .performer }}{{ $orgName = .name }}{{ end }}{{ end -}}
-    {{- $locName := "" -}}
-    {{- with .location }}{{ $locName = .name }}{{ end -}}
-    {{- $evURL := .url | default $.Permalink -}}
-    {{- $img := "images/og-image.jpg" | absURL -}}
-    {{- $desc := .description -}}
-    {{- if not $desc }}{{ $desc = printf "%s — %s" $orgName $locName }}{{ end -}}
-    {{- $org := dict "@type" "MusicGroup" "name" $orgName "url" $.Site.BaseURL -}}
-    {{- $ev := dict "@context" "https://schema.org" "@type" "MusicEvent" "name" .name "startDate" .startDate "location" .location "performer" .performer "organizer" $org "eventStatus" .eventStatus "url" $evURL "image" $img "description" $desc -}}
-    {{/* Offers només si el preu és conegut: Google exigeix price + priceCurrency
-         i validFrom des que hi ha availability (avís de Search Console). */}}
-    {{- with .offers }}{{ $ev = merge $ev (dict "offers" .) }}{{ end -}}
-    {{- with .endDate }}{{ $ev = merge $ev (dict "endDate" .) }}{{ end -}}
+{{/* MusicEvent — pàgina d'agenda (des de data/events.json de Bandsintown) */}}
+{{ if eq .Type "agenda" }}
+  {{- $events := site.Data.events -}}
+  {{- range $events.upcoming }}
+  {{- $title := .title -}}
+  {{- if not $title }}{{ $title = printf "%s · %s" site.Title .venue }}{{ end -}}
+  {{- $start := printf "%sT%s:00" .date .time -}}
+  {{- $loc := dict "@type" "Place" "name" .venue "address" (dict "@type" "PostalAddress" "addressLocality" .city "addressCountry" .country) -}}
+  {{- $perf := dict "@type" "MusicGroup" "name" site.Title "url" site.BaseURL -}}
+  {{- $ev := dict "@context" "https://schema.org" "@type" "MusicEvent" "name" $title "startDate" $start "eventStatus" "https://schema.org/EventScheduled" "eventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode" "location" $loc "performer" $perf "organizer" $perf "url" (.ticket_url | default .url) "image" (printf "%s%s" site.BaseURL "images/hero/jam_06.jpg") -}}
 <script type="application/ld+json">
 {{ $ev | jsonify (dict "indent" "  ") | safeJS }}
 </script>
-    {{ end }}
-  {{ end }}
   {{ end }}
 {{ end }}
 
 {{/* MusicGroup — pàgina de projecte */}}
 {{ if eq .Type "projects" }}
-{{- $all := index hugo.Data "project-links" -}}
+{{- $all := index site.Data "project-links" -}}
 {{- $links := slice -}}
 {{- if $all }}{{ $links = index $all .Params.translationKey | default slice }}{{ end -}}
 {{- $sameAs := slice -}}
