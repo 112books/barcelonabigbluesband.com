@@ -79,6 +79,7 @@ booking_form_date: "Fecha prevista"
 booking_form_message: "Mensaje (tipo de evento, presupuesto aproximado, etc.)"
 booking_form_send: "Enviar"
 booking_form_honeypot: "No rellenes este campo"
+contact_form_subject: "Contacto"
 booking_mailto_note: "También puedes escribirnos directamente. Al hacer clic se abrirá tu programa de correo."
 booking_form_note: "Enviaremos el formulario a nuestro correo de contratación."
 

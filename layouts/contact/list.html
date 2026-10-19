@@ -74,8 +74,84 @@
 
       </div>
 
+      {{/* ══ Formulari de contacte (mateix estil que el de contractació) ══ */}}
+      {{ $endpoint := site.Params.contact_form_endpoint | default site.Params.booking_form_endpoint | default "" }}
+      <form class="booking-form contact-form"
+            method="POST"
+            action="{{ $endpoint }}"
+            data-endpoint="{{ $endpoint }}"
+            novalidate>
+
+        <div class="booking-form__row">
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_name" }} *</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label class="booking-field">
+            <span>{{ i18n "booking_form_email" }} *</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+        </div>
+
+        <label class="booking-field">
+          <span>{{ i18n "booking_form_message" }} *</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        {{/* Honeypot anti-spam — invisible per als usuaris reals */}}
+        <div class="booking-hp" aria-hidden="true">
+          <label>
+            <span>{{ i18n "booking_form_honeypot" }}</span>
+            <input type="text" name="_hp" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+
+        <button type="submit" class="booking-submit">{{ i18n "booking_form_send" }}</button>
+        <p class="booking-form__status" role="status" aria-live="polite"></p>
+      </form>
+
     </div>
   </div>
 
 </div>
+
+<script>
+(function () {
+  var form = document.querySelector('.contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    if (form._hp && form._hp.value) { e.preventDefault(); return; }
+
+    var endpoint = form.getAttribute('data-endpoint');
+    var status = form.querySelector('.booking-form__status');
+    var subject = '{{ i18n "contact_form_subject" }} — ' + form.name.value;
+
+    if (!endpoint) {
+      e.preventDefault();
+      var body =
+        'Nom: ' + form.name.value + '\n' +
+        'Email: ' + form.email.value + '\n\n' +
+        form.message.value;
+      window.location.href = 'mailto:{{ hugo.Data.contact.email }}?subject=' +
+        encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+      if (status) status.textContent = '{{ i18n "booking_mailto_note" }}';
+      return;
+    }
+
+    if (status) status.textContent = '…';
+    fetch(endpoint, { method: 'POST', body: new FormData(form) })
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        form.reset();
+        if (status) status.textContent = '✓';
+      })
+      .catch(function () {
+        window.location.href = 'mailto:{{ hugo.Data.contact.email }}?subject=' +
+          encodeURIComponent(subject) +
+          '&body=' + encodeURIComponent(form.message.value);
+      });
+  });
+})();
+</script>
 {{ end }}

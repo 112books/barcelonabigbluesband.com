@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: 112books/ivankovacevic.com
-  branch: main
+  repo: 112books/barcelonabigbluesband.com
+  branch: staging
   base_url: https://cms-oauth-bratia-y855.vercel.app
   auth_endpoint: /api/auth
 
@@ -13,7 +13,7 @@ public_folder: "/images/uploads"
 locale: "es"
 
 collections:
-  # ─── Configuració Global ─────────────────────────
+  # ─── Configuració global ──────────────────────────
   - name: "settings"
     label: "Configuración"
     files:
@@ -23,31 +23,34 @@ collections:
         fields:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Teléfono", name: "phone", widget: "string", required: false }
+          - { label: "Texto (CA)", name: "intro_ca", widget: "text", required: false }
           - { label: "Texto (ES)", name: "intro_es", widget: "text", required: false }
           - { label: "Texto (EN)", name: "intro_en", widget: "text", required: false }
-          - { label: "Texto (CA)", name: "intro_ca", widget: "text", required: false }
-          - { label: "Texto (SR)", name: "intro_sr", widget: "text", required: false }
       - name: "social"
         label: "Redes sociales"
         file: "data/social.yaml"
         fields:
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "YouTube", name: "youtube", widget: "string", required: false }
           - { label: "Spotify", name: "spotify", widget: "string", required: false }
           - { label: "Bandcamp", name: "bandcamp", widget: "string", required: false }
 
-  # ─── Páginas por idioma ──────────────────────────
-  - name: "pages-en"
-    label: "Páginas (EN)"
+  # ─── Pàgines per idioma ───────────────────────────
+  - name: "pages-ca"
+    label: "Pàgines (CA)"
     files:
-      - { name: "home-en", label: "Home", file: "content/en/_index.md",
-          fields: [ { label: "Title", name: "title", widget: "string" },
-                    { label: "Body", name: "body", widget: "markdown", required: false } ] }
-      - { name: "biography-en", label: "Biography", file: "content/en/biography/_index.md",
-          fields: [ { label: "Title", name: "title", widget: "string" },
-                    { label: "Image", name: "image", widget: "image", required: false },
-                    { label: "Body", name: "body", widget: "markdown" } ] }
-      - { name: "contact-en", label: "Contact", file: "content/en/contact/_index.md",
-          fields: [ { label: "Title", name: "title", widget: "string" },
-                    { label: "Body", name: "body", widget: "markdown", required: false } ] }
+      - { name: "home-ca", label: "Portada", file: "content/ca/_index.md",
+          fields: [ { label: "Títol", name: "title", widget: "string" },
+                    { label: "Cos", name: "body", widget: "markdown", required: false } ] }
+      - { name: "biografia-ca", label: "Biografia", file: "content/ca/biografia/_index.md",
+          fields: [ { label: "Títol", name: "title", widget: "string" },
+                    { label: "Fondo", name: "bg", widget: "image", required: false },
+                    { label: "Descripción", name: "description", widget: "string", required: false },
+                    { label: "Cos", name: "body", widget: "markdown" } ] }
+      - { name: "contacte-ca", label: "Contacte", file: "content/ca/contacte/_index.md",
+          fields: [ { label: "Títol", name: "title", widget: "string" },
+                    { label: "Cos", name: "body", widget: "markdown", required: false } ] }
 
   - name: "pages-es"
     label: "Páginas (ES)"
@@ -57,78 +60,51 @@ collections:
                     { label: "Cuerpo", name: "body", widget: "markdown", required: false } ] }
       - { name: "biografia-es", label: "Biografía", file: "content/es/biografia/_index.md",
           fields: [ { label: "Título", name: "title", widget: "string" },
-                    { label: "Imagen", name: "image", widget: "image", required: false },
+                    { label: "Fondo", name: "bg", widget: "image", required: false },
+                    { label: "Descripción", name: "description", widget: "string", required: false },
                     { label: "Cuerpo", name: "body", widget: "markdown" } ] }
       - { name: "contacto-es", label: "Contacto", file: "content/es/contacto/_index.md",
           fields: [ { label: "Título", name: "title", widget: "string" },
                     { label: "Cuerpo", name: "body", widget: "markdown", required: false } ] }
 
-  - name: "pages-ca"
-    label: "Pàgines (CA)"
+  - name: "pages-en"
+    label: "Pages (EN)"
     files:
-      - { name: "home-ca", label: "Portada", file: "content/ca/_index.md",
-          fields: [ { label: "Títol", name: "title", widget: "string" },
-                    { label: "Cos", name: "body", widget: "markdown", required: false } ] }
-      - { name: "biografia-ca", label: "Biografia", file: "content/ca/biografia/_index.md",
-          fields: [ { label: "Títol", name: "title", widget: "string" },
-                    { label: "Imatge", name: "image", widget: "image", required: false },
-                    { label: "Cos", name: "body", widget: "markdown" } ] }
-      - { name: "contacte-ca", label: "Contacte", file: "content/ca/contacte/_index.md",
-          fields: [ { label: "Títol", name: "title", widget: "string" },
-                    { label: "Cos", name: "body", widget: "markdown", required: false } ] }
+      - { name: "home-en", label: "Home", file: "content/en/_index.md",
+          fields: [ { label: "Title", name: "title", widget: "string" },
+                    { label: "Body", name: "body", widget: "markdown", required: false } ] }
+      - { name: "biography-en", label: "Biography", file: "content/en/biography/_index.md",
+          fields: [ { label: "Title", name: "title", widget: "string" },
+                    { label: "Background", name: "bg", widget: "image", required: false },
+                    { label: "Description", name: "description", widget: "string", required: false },
+                    { label: "Body", name: "body", widget: "markdown" } ] }
+      - { name: "contact-en", label: "Contact", file: "content/en/contact/_index.md",
+          fields: [ { label: "Title", name: "title", widget: "string" },
+                    { label: "Body", name: "body", widget: "markdown", required: false } ] }
 
-  - name: "pages-sr"
-    label: "Stranice (SR)"
-    files:
-      - { name: "home-sr", label: "Početna", file: "content/sr/_index.md",
-          fields: [ { label: "Naslov", name: "title", widget: "string" },
-                    { label: "Sadržaj", name: "body", widget: "markdown", required: false } ] }
-      - { name: "biografija-sr", label: "Biografija", file: "content/sr/biografija/_index.md",
-          fields: [ { label: "Naslov", name: "title", widget: "string" },
-                    { label: "Slika", name: "image", widget: "image", required: false },
-                    { label: "Sadržaj", name: "body", widget: "markdown" } ] }
-      - { name: "kontakt-sr", label: "Kontakt", file: "content/sr/kontakt/_index.md",
-          fields: [ { label: "Naslov", name: "title", widget: "string" },
-                    { label: "Sadržaj", name: "body", widget: "markdown", required: false } ] }
-
-  # ─── Proyectos / Projects (bandas) ───────────────
-  - name: "projects-es"
-    label: "Proyectos (ES)"
-    label_singular: "Proyecto"
-    folder: "content/es/proyectos"
+  # ─── Discografia ─────────────────────────────────
+  - name: "discography-ca"
+    label: "Discografia (CA)"
+    label_singular: "Disc"
+    folder: "content/ca/discografia"
     create: true
     slug: "{{slug}}"
     filter: { field: "headless", pattern: "^$" }
-    summary: "{{title}}"
+    summary: "{{year}} — {{title}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Nombre del proyecto", name: "name", widget: "string", required: false }
-      - { label: "Rol de Ivan", name: "role", widget: "string", required: false }
-      - { label: "Foto", name: "photo", widget: "image", required: false }
-      - { label: "Descripción", name: "description", widget: "string", required: false }
+      - { label: "Tipo", name: "type_release", widget: "select", options: ["album", "single", "ep"] }
+      - { label: "Año", name: "year", widget: "number", value_type: "int", required: true }
+      - { label: "Portada", name: "cover", widget: "image", required: false }
+      - { label: "Spotify Embed", name: "spotify_embed", widget: "string", required: false }
+      - { label: "Spotify URL", name: "spotify", widget: "string", required: false }
+      - { label: "Apple Music", name: "apple_music", widget: "string", required: false }
+      - { label: "YouTube", name: "youtube", widget: "string", required: false }
+      - { label: "Bandcamp", name: "bandcamp", widget: "string", required: false }
+      - { label: "Smartlink", name: "smartlink", widget: "string", required: false }
       - { label: "Orden", name: "weight", widget: "number", value_type: "int", required: false }
-      - { label: "Ocultar", name: "hidden", widget: "boolean", default: false, required: false }
-      - { label: "Cuerpo", name: "body", widget: "markdown", required: false }
+      - { label: "Descripción", name: "body", widget: "markdown", required: false }
 
-  - name: "projects-en"
-    label: "Projects (EN)"
-    label_singular: "Project"
-    folder: "content/en/projects"
-    create: true
-    slug: "{{slug}}"
-    filter: { field: "headless", pattern: "^$" }
-    summary: "{{title}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Project name", name: "name", widget: "string", required: false }
-      - { label: "Ivan's role", name: "role", widget: "string", required: false }
-      - { label: "Photo", name: "photo", widget: "image", required: false }
-      - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Order", name: "weight", widget: "number", value_type: "int", required: false }
-      - { label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false }
-      - { label: "Body", name: "body", widget: "markdown", required: false }
-
-  # ─── Discografía / Discography ───────────────────
   - name: "discography-es"
     label: "Discografía (ES)"
     label_singular: "Disco"
@@ -173,13 +149,55 @@ collections:
       - { label: "Order", name: "weight", widget: "number", value_type: "int", required: false }
       - { label: "Description", name: "body", widget: "markdown", required: false }
 
-  # ─── Legal (ES) ──────────────────────────────────
-  - name: "legal-es"
-    label: "Legal (ES)"
-    label_singular: "Legal"
-    folder: "content/es/legal"
-    create: true
-    slug: "{{slug}}"
+  # ─── Premsa ──────────────────────────────────────
+  - name: "press-ca"
+    label: "Premsa (CA)"
+    files:
+      - { name: "premsa-ca", label: "Premsa", file: "content/ca/premsa/_index.md",
+          fields: [ { label: "Título", name: "title", widget: "string" },
+                    { label: "Fondo", name: "bg", widget: "image", required: false },
+                    { label: "Descripción", name: "description", widget: "string", required: false },
+                    { label: "Cuerpo", name: "body", widget: "markdown" } ] }
+
+  - name: "press-es"
+    label: "Prensa (ES)"
+    files:
+      - { name: "prensa-es", label: "Prensa", file: "content/es/prensa/_index.md",
+          fields: [ { label: "Título", name: "title", widget: "string" },
+                    { label: "Fondo", name: "bg", widget: "image", required: false },
+                    { label: "Descripción", name: "description", widget: "string", required: false },
+                    { label: "Cuerpo", name: "body", widget: "markdown" } ] }
+
+  - name: "press-en"
+    label: "Press (EN)"
+    files:
+      - { name: "press-en", label: "Press", file: "content/en/press/_index.md",
+          fields: [ { label: "Title", name: "title", widget: "string" },
+                    { label: "Background", name: "bg", widget: "image", required: false },
+                    { label: "Description", name: "description", widget: "string", required: false },
+                    { label: "Body", name: "body", widget: "markdown" } ] }
+
+  # ─── Galeries fotogràfiques ──────────────────────
+  - name: "galleries"
+    label: "Fotos — Álbumes"
+    file: "data/galleries.yaml"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
+      - label: "Álbumes"
+        name: "galleries"
+        widget: "list"
+        summary: "{{title.ca}}"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Tipo", name: "kind", widget: "select", options: ["chronicle", "photos"] }
+          - label: "Título"
+            name: "title"
+            widget: "object"
+            fields:
+              - { label: "CA", name: "ca", widget: "string" }
+              - { label: "ES", name: "es", widget: "string", required: false }
+              - { label: "EN", name: "en", widget: "string", required: false }
+          - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", required: false }
+          - { label: "Autor", name: "author", widget: "string", required: false }
+          - { label: "URL autor", name: "author_url", widget: "string", required: false }
+          - { label: "URL crónica", name: "url", widget: "string", required: false }
+          - { label: "Portada", name: "cover", widget: "image", required: false }

@@ -1,0 +1,68 @@
+name: Fetch GoatCounter Analytics
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      WINDOW_DAYS: 400
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Fetch analytics data
+        env:
+          GC_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+          GC_ACCOUNT: barcelonabigbluesband
+        run: |
+          END=$(date +%Y-%m-%d)
+          # Finestra ~13 mesos per agrupar per dia/setmana/mes/trimestre/any
+          START=$(date -d "${WINDOW_DAYS} days ago" +%Y-%m-%d)
+          BASE="https://${GC_ACCOUNT}.goatcounter.com/api/v0"
+          AUTH="Authorization: Bearer ${GC_TOKEN}"
+
+          fetch_json() {
+            local url="$1"
+            local result
+            result=$(curl -s --max-time 60 --retry 2 --retry-delay 3 -H "${AUTH}" "${url}")
+            if echo "${result}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
+              echo "${result}"
+            else
+              echo "WARN: Resposta invalida per: ${url}" >&2
+              echo "      Contingut: ${result:0:100}" >&2
+              echo "null"
+            fi
+          }
+
+          echo "Obtenint dades del ${START} al ${END}..."
+
+          echo "$(fetch_json "${BASE}/stats/hits?start=${START}&end=${END}&limit=100")"      > /tmp/hits.json
+          echo "$(fetch_json "${BASE}/stats/browsers?start=${START}&end=${END}&limit=10")"   > /tmp/browsers.json
+          echo "$(fetch_json "${BASE}/stats/systems?start=${START}&end=${END}&limit=10")"    > /tmp/systems.json
+          echo "$(fetch_json "${BASE}/stats/sizes?start=${START}&end=${END}&limit=10")"      > /tmp/sizes.json
+          echo "$(fetch_json "${BASE}/stats/locations?start=${START}&end=${END}&limit=10")"  > /tmp/locations.json
+
+          python3 scripts/build-analytics-json.py "${START}" "${END}"
+
+      - name: Process analytics
+        run: |
+          START=$(date -d "${WINDOW_DAYS} days ago" +%Y-%m-%d)
+          python3 scripts/process-analytics.py \
+            /tmp/raw_all.json \
+            static/data/analytics.json \
+            "$START" \
+            "$(date +%Y-%m-%d)"
+
+      - name: Commit analytics data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/data/analytics.json
+          git diff --staged --quiet || git commit -m "chore: actualitzar analytics [skip ci]"
+          git pull --rebase
+          git push

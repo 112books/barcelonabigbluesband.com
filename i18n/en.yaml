@@ -81,6 +81,7 @@ booking_form_date: "Preferred date"
 booking_form_message: "Message (type of event, approximate budget, etc.)"
 booking_form_send: "Send"
 booking_form_honeypot: "Do not fill this in"
+contact_form_subject: "Contact"
 booking_mailto_note: "You can also email us directly. Clicking will open your email program."
 booking_form_note: "We will send the form to our booking email."
 

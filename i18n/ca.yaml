@@ -81,6 +81,7 @@ booking_form_date: "Data prevista"
 booking_form_message: "Missatge (tipus d'esdeveniment, pressupost aproximatz, etc.)"
 booking_form_send: "Enviar"
 booking_form_honeypot: "No omplis aquest camp"
+contact_form_subject: "Contacte"
 booking_mailto_note: "També pots escriure'ns directament. En fer clic s'obrirà el teu programa de correu."
 booking_form_note: "Enviarem el formulari al nostre correu de contractació."
 
