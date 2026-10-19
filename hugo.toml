@@ -81,7 +81,7 @@ google_calendar_ical = ""
 #   logo     = "images/sponsors/daddario.png"
 
 [params.analytics]
-goatcounter = ""
+goatcounter = "barcelonabigbluesband"
 enabled     = false
 since       = "2026-10-15"   # inici del seguiment (producció)
 
