@@ -22,6 +22,7 @@ document.addEventListener('click', function(e) {
     var scrolled = window.scrollY > 80 && !menuOpen;
     compact.classList.toggle('is-visible', scrolled);
     compact.setAttribute('aria-hidden', scrolled ? 'false' : 'true');
+    compact.inert = !scrolled;
     header.classList.toggle('is-hidden', scrolled);
   }
 
@@ -51,6 +52,7 @@ document.addEventListener('click', function(e) {
     header.classList.remove('is-hidden');
     compact.classList.remove('is-visible');
     compact.setAttribute('aria-hidden', 'true');
+    compact.inert = true;
     var first = mainNav.querySelector('a[href], button:not([disabled])');
     if (first) first.focus();
   }

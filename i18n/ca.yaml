@@ -84,6 +84,13 @@ booking_form_honeypot: "No omplis aquest camp"
 contact_form_subject: "Contacte"
 booking_mailto_note: "També pots escriure'ns directament. En fer clic s'obrirà el teu programa de correu."
 booking_form_note: "Enviarem el formulari al nostre correu de contractació."
+form_required: "Aquest camp és obligatori"
+form_invalid_email: "Introdueix una adreça de correu vàlida"
+form_privacy_note: "Les teves dades s'utilitzen únicament per atendre la teva sol·licitud."
+form_consent: "He llegit i accepto la"
+form_sending: "Enviant…"
+form_sent: "Gràcies! El missatge s'ha enviat correctament."
+form_error: "No s'ha pogut enviar. Torna-ho a provar o escriu-nos directament."
 
 # Agenda (server-side des de data/events.json)
 agenda_lead: "Propers concerts de la Barcelona Big Blues Band."

@@ -36,7 +36,7 @@
 </header>
 
 <!-- Nav compacte (apareix en scroll) -->
-<nav class="nav-compact" id="nav-compact" aria-label="{{ i18n "nav_compact" | default "Navegació ràpida" }}" aria-hidden="true">
+<nav class="nav-compact" id="nav-compact" aria-label="{{ i18n "nav_compact" | default "Navegació ràpida" }}" aria-hidden="true" inert>
   <div class="nav-compact__logo">
     <a href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
       <img src="{{ "images/logo/bbb-logo.svg" | relURL }}" alt="" aria-hidden="true" width="512" height="512">

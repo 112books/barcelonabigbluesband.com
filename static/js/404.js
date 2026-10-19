@@ -6,5 +6,7 @@
   ['ca', 'es', 'en'].forEach(function (l) {
     var el = document.getElementById('msg-' + l);
     if (el) el.style.display = (l === lang) ? 'block' : 'none';
+    var t = document.getElementById('msg-title-' + l);
+    if (t) t.style.display = (l === lang) ? 'block' : 'none';
   });
 })();

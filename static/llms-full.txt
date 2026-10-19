@@ -1,163 +1,208 @@
-# Ivan Kovacevic - full site index (llms-full.txt)
+# Barcelona Big Blues Band - full site index (llms-full.txt)
 
-> Official website of Serbian double bassist, bandleader and arranger Ivan Kovacevic
-> (Belgrade 1977, based in Barcelona). Balkan, jazz and rhythm & blues. Complete citable
-> index of the site for AI systems and search engines.
+> Official website of the Barcelona Big Blues Band, a rhythm & blues big band
+> from Barcelona (Spain) led by double bassist Ivan Kovacevic. Concerts, discography,
+> videos, press and booking. Complete citable index of the site for AI systems and
+> search engines.
 
 ## Canonical site
-- URL: https://ivankovacevic.com/
-- Languages: en, ca, es, sr
-- Sitemap: https://ivankovacevic.com/sitemap.xml
-- Short summary: https://ivankovacevic.com/llms.txt
-- Contact / booking: ivandoublebass@gmail.com
+- URL: https://barcelonabigbluesband.com/
+- Languages: en, ca, es
+- Sitemap: https://barcelonabigbluesband.com/sitemap.xml
+- Short summary: https://barcelonabigbluesband.com/llms.txt
+- Contact / booking: bookingb4@gmail.com
 
 ## EN (en)
 
 ### Biography
-- Biography - https://ivankovacevic.com/en/biography/
-  The Barcelona Big Blues Band, led by double bassist Ivan Kovacevic.
-
-### Projects
+- Biography - https://barcelonabigbluesband.com/en/biography/
+  The Barcelona Big Blues Band, under the direction of double bass player Ivan Kovacevic.
 
 ### Discography
-- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-agusti-burriel/
+- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-agusti-burriel/
   Links: Apple Music: https://music.apple.com/es/album/agust%C3%AD-burriel-barcelona-big-blues-band-ep/1835829777
   Agustí Burriel & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-dani-nello-ep/
+- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-dani-nello-ep/
   Links: Apple Music: https://music.apple.com/es/album/1835838719
   Dani Nel·lo & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-dani-nello-presents/
+- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - https://barcelonabigbluesband.com/en/discography/b4-dani-nello-presents/
   Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-dani-nello/
+- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - https://barcelonabigbluesband.com/en/discography/b4-dani-nello/
   Dani Nel·lo & Barcelona Big Blues Band (2014, album) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Drew Davies & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-drew-davies/
+- Drew Davies & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-drew-davies/
   Links: Apple Music: https://music.apple.com/es/album/drew-davies-barcelona-big-blues-band-ep/1836745961
   Drew Davies & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- B4 feat. Jonathan Herrero (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-jonathan-herrero/
+- B4 feat. Jonathan Herrero (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-jonathan-herrero/
   Links: Apple Music: https://music.apple.com/es/album/jonathan-herrero-barcelona-big-blues-band-ep/1835838636
   B4 feat. Jonathan Herrero (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-lluis-coloma/
+- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-lluis-coloma/
   Links: Apple Music: https://music.apple.com/es/album/1835823253
   Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- B4 feat. Mike Sanchez (single) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-mike-sanchez/
+- B4 feat. Mike Sanchez (single) - https://barcelonabigbluesband.com/en/discography/b4-mike-sanchez/
   B4 feat. Mike Sanchez (single) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-myriam-swanson/
+- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-myriam-swanson/
   Links: Apple Music: https://music.apple.com/es/album/myriam-swanson-barcelona-big-blues-band-ep/1835838813
   Myriam Swanson & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Pere Miró & Barcelona Big Blues Band (2021, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-pere-miro/
+- Pere Miró & Barcelona Big Blues Band (2021, ep) - https://barcelonabigbluesband.com/en/discography/b4-pere-miro/
   Links: Apple Music: https://music.apple.com/es/album/1681612829
   Pere Miró & Barcelona Big Blues Band (2021, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Ray Gelato & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-ray-gelato/
+- Ray Gelato & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-ray-gelato/
   Links: Apple Music: https://music.apple.com/es/album/ray-gelato-barcelona-big-blues-band-ep/1835830031
   Ray Gelato & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
-- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/en/discography/b4-spencer-evoy/
+- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/en/discography/b4-spencer-evoy/
   Links: Apple Music: https://music.apple.com/es/album/spencer-evoy-barcelona-big-blues-band-ep/1834779304
   Spencer Evoy & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, with Ivan Kovačević on double bass.
 
+### Agenda
+- Agenda - https://barcelonabigbluesband.com/en/agenda/
+  Barcelona Big Blues Band concert calendar: upcoming dates, tickets and calendar.
+
+### Videos
+- Videos - https://barcelonabigbluesband.com/en/videos/
+  Live videos of the Barcelona Big Blues Band: concerts, sessions and special performances.
+
 ### Photos
-- Photos - https://ivankovacevic.com/en/photos/
+- Photos - https://barcelonabigbluesband.com/en/photos/
   Photo albums and chronicles of the Barcelona Big Blues Band.
 
 ### Press
-- Press - https://ivankovacevic.com/en/press/
+- Press - https://barcelonabigbluesband.com/en/press/
   Interviews, reviews and coverage about the Barcelona Big Blues Band around the world.
+
+### Booking
+- Booking - https://barcelonabigbluesband.com/en/booking/
+  Book the Barcelona Big Blues Band for concerts, festivals and events. EPK, technical rider and booking form.
+
+### Contact
+- Contact - https://barcelonabigbluesband.com/en/contact/
+  Contact the Barcelona Big Blues Band: email, phone and social media.
 
 ## CA (ca)
 
 ### Biografia
-- Biografia - https://ivankovacevic.com/ca/biografia/
+- Biografia - https://barcelonabigbluesband.com/ca/biografia/
   La Barcelona Big Blues Band, sota la direcció del contrabaixista Ivan Kovacevic.
 
-### Projectes
-
 ### Discografia
-- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-agusti-burriel/
+- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-agusti-burriel/
   Links: Apple Music: https://music.apple.com/es/album/agust%C3%AD-burriel-barcelona-big-blues-band-ep/1835829777
   Agustí Burriel & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-dani-nello-ep/
+- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-dani-nello-ep/
   Links: Apple Music: https://music.apple.com/es/album/1835838719
   Dani Nel·lo & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-dani-nello-presents/
+- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - https://barcelonabigbluesband.com/ca/discografia/b4-dani-nello-presents/
   Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-dani-nello/
+- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - https://barcelonabigbluesband.com/ca/discografia/b4-dani-nello/
   Dani Nel·lo & Barcelona Big Blues Band (2014, album) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Drew Davies & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-drew-davies/
+- Drew Davies & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-drew-davies/
   Links: Apple Music: https://music.apple.com/es/album/drew-davies-barcelona-big-blues-band-ep/1836745961
   Drew Davies & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- B4 feat. Jonathan Herrero (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-jonathan-herrero/
+- B4 feat. Jonathan Herrero (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-jonathan-herrero/
   Links: Apple Music: https://music.apple.com/es/album/jonathan-herrero-barcelona-big-blues-band-ep/1835838636
   B4 feat. Jonathan Herrero (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-lluis-coloma/
+- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-lluis-coloma/
   Links: Apple Music: https://music.apple.com/es/album/1835823253
   Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- B4 feat. Mike Sanchez (single) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-mike-sanchez/
+- B4 feat. Mike Sanchez (single) - https://barcelonabigbluesband.com/ca/discografia/b4-mike-sanchez/
   B4 feat. Mike Sanchez (single) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-myriam-swanson/
+- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-myriam-swanson/
   Links: Apple Music: https://music.apple.com/es/album/myriam-swanson-barcelona-big-blues-band-ep/1835838813
   Myriam Swanson & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Pere Miró & Barcelona Big Blues Band (2021, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-pere-miro/
+- Pere Miró & Barcelona Big Blues Band (2021, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-pere-miro/
   Links: Apple Music: https://music.apple.com/es/album/1681612829
   Pere Miró & Barcelona Big Blues Band (2021, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Ray Gelato & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-ray-gelato/
+- Ray Gelato & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-ray-gelato/
   Links: Apple Music: https://music.apple.com/es/album/ray-gelato-barcelona-big-blues-band-ep/1835830031
   Ray Gelato & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
-- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/ca/discografia/b4-spencer-evoy/
+- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/ca/discografia/b4-spencer-evoy/
   Links: Apple Music: https://music.apple.com/es/album/spencer-evoy-barcelona-big-blues-band-ep/1834779304
   Spencer Evoy & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, amb Ivan Kovačević al contrabaix.
 
+### Agenda
+- Agenda - https://barcelonabigbluesband.com/ca/agenda/
+  Agenda de concerts de la Barcelona Big Blues Band: propers dates, entrades i calendari.
+
+### Vídeos
+- Vídeos - https://barcelonabigbluesband.com/ca/videos/
+  Vídeos en directe de la Barcelona Big Blues Band: concerts, sessions i actuacions especials.
+
+### Fotos
+- Fotos - https://barcelonabigbluesband.com/ca/fotos/
+  Àlbums i cròniques fotogràfiques de la Barcelona Big Blues Band.
+
 ### Premsa
-- Premsa - https://ivankovacevic.com/ca/premsa/
+- Premsa - https://barcelonabigbluesband.com/ca/premsa/
   Entrevistes, ressenyes i cròniques sobre la Barcelona Big Blues Band arreu del món.
+
+### Contractació
+- Contractació - https://barcelonabigbluesband.com/ca/contractacio/
+  Contracta la Barcelona Big Blues Band per a concerts, festivals i esdeveniments. EPK, rider tècnic i formulari de reserves.
+
+### Contacte
+- Contacte - https://barcelonabigbluesband.com/ca/contacte/
+  Contacte de la Barcelona Big Blues Band: correu, telèfon i xarxes socials.
 
 ## ES (es)
 
-### Biografia
-- Biografía - https://ivankovacevic.com/es/biografia/
+### Biografía
+- Biografía - https://barcelonabigbluesband.com/es/biografia/
   La Barcelona Big Blues Band, bajo la dirección del contrabajista Ivan Kovacevic.
 
-### Proyectos
-
-### Discografia
-- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-agusti-burriel/
+### Discografía
+- Agustí Burriel & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-agusti-burriel/
   Links: Apple Music: https://music.apple.com/es/album/agust%C3%AD-burriel-barcelona-big-blues-band-ep/1835829777
   Agustí Burriel & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-dani-nello-ep/
+- Dani Nel·lo & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-dani-nello-ep/
   Links: Apple Music: https://music.apple.com/es/album/1835838719
   Dani Nel·lo & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-dani-nello-presents/
+- Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) - https://barcelonabigbluesband.com/es/discografia/b4-dani-nello-presents/
   Ivan Kovačević presents: Dani Nel·lo & Barcelona Big Blues Band (album) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-dani-nello/
+- Dani Nel·lo & Barcelona Big Blues Band (2014, album) - https://barcelonabigbluesband.com/es/discografia/b4-dani-nello/
   Dani Nel·lo & Barcelona Big Blues Band (2014, album) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Drew Davies & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-drew-davies/
+- Drew Davies & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-drew-davies/
   Links: Apple Music: https://music.apple.com/es/album/drew-davies-barcelona-big-blues-band-ep/1836745961
   Drew Davies & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- B4 feat. Jonathan Herrero (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-jonathan-herrero/
+- B4 feat. Jonathan Herrero (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-jonathan-herrero/
   Links: Apple Music: https://music.apple.com/es/album/jonathan-herrero-barcelona-big-blues-band-ep/1835838636
   B4 feat. Jonathan Herrero (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-lluis-coloma/
+- Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-lluis-coloma/
   Links: Apple Music: https://music.apple.com/es/album/1835823253
   Barcelona Big Blues Band feat. Lluís Coloma (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- B4 feat. Mike Sanchez (single) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-mike-sanchez/
+- B4 feat. Mike Sanchez (single) - https://barcelonabigbluesband.com/es/discografia/b4-mike-sanchez/
   B4 feat. Mike Sanchez (single) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-myriam-swanson/
+- Myriam Swanson & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-myriam-swanson/
   Links: Apple Music: https://music.apple.com/es/album/myriam-swanson-barcelona-big-blues-band-ep/1835838813
   Myriam Swanson & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Pere Miró & Barcelona Big Blues Band (2021, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-pere-miro/
+- Pere Miró & Barcelona Big Blues Band (2021, ep) - https://barcelonabigbluesband.com/es/discografia/b4-pere-miro/
   Links: Apple Music: https://music.apple.com/es/album/1681612829
   Pere Miró & Barcelona Big Blues Band (2021, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Ray Gelato & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-ray-gelato/
+- Ray Gelato & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-ray-gelato/
   Links: Apple Music: https://music.apple.com/es/album/ray-gelato-barcelona-big-blues-band-ep/1835830031
   Ray Gelato & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
-- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - Barcelona Big Blues Band - https://ivankovacevic.com/es/discografia/b4-spencer-evoy/
+- Spencer Evoy & Barcelona Big Blues Band (2025, ep) - https://barcelonabigbluesband.com/es/discografia/b4-spencer-evoy/
   Links: Apple Music: https://music.apple.com/es/album/spencer-evoy-barcelona-big-blues-band-ep/1834779304
   Spencer Evoy & Barcelona Big Blues Band (2025, ep) — Barcelona Big Blues Band, con Ivan Kovačević al contrabajo.
 
+### Agenda
+- Agenda - https://barcelonabigbluesband.com/es/agenda/
+  Agenda de conciertos de la Barcelona Big Blues Band: próximas fechas, entradas y calendario.
+
+### Vídeos
+- Vídeos - https://barcelonabigbluesband.com/es/videos/
+  Vídeos en directo de la Barcelona Big Blues Band: conciertos, sesiones y actuaciones especiales.
+
+### Fotos
+- Fotos - https://barcelonabigbluesband.com/es/fotos/
+  Álbumes y crónicas fotográficas de la Barcelona Big Blues Band.
+
 ### Prensa
-- Prensa - https://ivankovacevic.com/es/prensa/
+- Prensa - https://barcelonabigbluesband.com/es/prensa/
   Entrevistas, reseñas y crónicas sobre la Barcelona Big Blues Band en todo el mundo.
 
-## SR (sr)
+### Contratación
+- Contratación - https://barcelonabigbluesband.com/es/contratacion/
+  Contrata a la Barcelona Big Blues Band para conciertos, festivales y eventos. EPK, rider técnico y formulario de reservas.
 
-### Projekti
-
-### Diskografija
+### Contacto
+- Contacto - https://barcelonabigbluesband.com/es/contacto/
+  Contacto de la Barcelona Big Blues Band: correo, teléfono y redes sociales.

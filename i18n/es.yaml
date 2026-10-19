@@ -82,6 +82,13 @@ booking_form_honeypot: "No rellenes este campo"
 contact_form_subject: "Contacto"
 booking_mailto_note: "También puedes escribirnos directamente. Al hacer clic se abrirá tu programa de correo."
 booking_form_note: "Enviaremos el formulario a nuestro correo de contratación."
+form_required: "Este campo es obligatorio"
+form_invalid_email: "Introduce una dirección de correo válida"
+form_privacy_note: "Tus datos se utilizan únicamente para atender tu solicitud."
+form_consent: "He leído y acepto la"
+form_sending: "Enviando…"
+form_sent: "¡Gracias! El mensaje se ha enviado correctamente."
+form_error: "No se ha podido enviar. Inténtalo de nuevo o escríbenos directamente."
 
 # Agenda (server-side desde data/events.json)
 agenda_lead: "Próximos conciertos de la Barcelona Big Blues Band."

@@ -1642,7 +1642,15 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   padding: .65rem .8rem;
   transition: border-color var(--dur) var(--ease);
 }
-.booking-field input:focus, .booking-field textarea:focus { outline: none; border-color: var(--c-accent); }
+.booking-field input:focus:not(:focus-visible), .booking-field textarea:focus:not(:focus-visible) { outline: none; }
+.booking-field input:focus-visible, .booking-field textarea:focus-visible { outline: 3px solid var(--c-accent); outline-offset: 2px; border-color: var(--c-accent); }
+.booking-field input:focus, .booking-field textarea:focus { border-color: var(--c-accent); }
+.booking-field__note { font-size: .85rem; opacity: .82; margin: .35rem 0 .1rem; }
+.booking-field__error { display: block; color: #ff6b6b; font-size: .85rem; min-height: 1em; margin-top: .15rem; }
+.booking-field input[aria-invalid="true"], .booking-field textarea[aria-invalid="true"] { border-color: #ff6b6b; }
+.booking-consent { display: flex; gap: .55rem; align-items: flex-start; font-size: .9rem; margin-top: .5rem; }
+.booking-consent input { margin-top: .2rem; flex: 0 0 auto; }
+.booking-consent a { color: var(--c-accent); }
 .booking-field textarea { resize: vertical; min-height: 130px; }
 
 .booking-hp { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }

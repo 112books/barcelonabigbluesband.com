@@ -18,7 +18,7 @@ defaultContentLanguageInSubdir = true
   weight = 1
 
   [languages.en.params]
-    description = "Official website of double bassist Ivan Kovačević: Balkan, jazz, rhythm & blues from Barcelona. Biography, projects, discography, gigs, videos and booking."
+    description = "Official website of the Barcelona Big Blues Band, a rhythm & blues big band from Barcelona led by double bassist Ivan Kovacevic. Concerts, discography, videos, press and booking."
 
 [languages.ca]
   contentDir = "content/ca"
@@ -28,7 +28,7 @@ defaultContentLanguageInSubdir = true
   weight = 2
 
   [languages.ca.params]
-    description = "Web oficial del contrabaixista Ivan Kovačević: balcànic, jazz, rhythm & blues des de Barcelona. Biografia, projectes, discografia, concerts, vídeos i contractació."
+    description = "Web oficial de la Barcelona Big Blues Band, una big band de rhythm & blues de Barcelona dirigida pel contrabaixista Ivan Kovacevic. Concerts, discografia, vídeos, premsa i contractació."
 
 [languages.es]
   contentDir = "content/es"
@@ -38,7 +38,7 @@ defaultContentLanguageInSubdir = true
   weight = 3
 
   [languages.es.params]
-    description = "Web oficial del contrabajista Ivan Kovačević: balcánico, jazz, rhythm & blues desde Barcelona. Biografía, proyectos, discografía, conciertos, vídeos y contratación."
+    description = "Web oficial de la Barcelona Big Blues Band, una big band de rhythm & blues de Barcelona dirigida por el contrabajista Ivan Kovacevic. Conciertos, discografía, vídeos, prensa y contratación."
 
 [params]
 description = "Web oficial de la Barcelona Big Blues Band: blues, swing i rhythm and blues en gran format des de Barcelona. Concerts, discografia, vídeos i contractació."

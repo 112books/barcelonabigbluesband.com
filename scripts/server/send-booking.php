@@ -79,6 +79,7 @@ if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'em
 if (mb_strlen($message) < 10 || mb_strlen($message) > 5000)      $errors[] = 'message';
 if ($org !== '' && mb_strlen($org) > 200)             $errors[] = 'organisation';
 if ($date !== '' && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $date)) $errors[] = 'date';
+if (($_POST['consent'] ?? '') === '')                 $errors[] = 'consent';
 
 if ($errors) {
     http_response_code(422);
