@@ -1,20 +1,41 @@
 <?php
 /**
- * Handler del formulari de contractació — Barcelona Big Blues Band
- * Desplegar al servidor propi (ex. vl28359.dinaserver.com) i posar la URL
- * a hugo.toml → booking_form_endpoint = "https://.../send-booking.php"
+ * Handler dels formularis de contacte i contractació — Barcelona Big Blues Band
+ * Desplegat a vl28359.dinaserver.com → https://barcelonabigbluesband.com/send-booking.php
  *
+ * El camp ocult "form_type" decideix l'assumpte (booking | contact).
  * Requereix PHP 7.4+. Sense dependències externes.
  */
 
 declare(strict_types=1);
 
-const DEST_EMAIL  = 'bookingb4@gmail.com';
-const SUBJECT_TAG = '[Contractació web barcelonabigbluesband.com]';
+const DEST_EMAIL = 'linuxbcn@gmail.com';
+const FORM_LABELS = [
+    'booking' => '[Contractació web barcelonabigbluesband.com]',
+    'contact' => '[Contacte web barcelonabigbluesband.com]',
+];
 const RATE_LIMIT  = 10;          // peticions per IP...
 const RATE_WINDOW = 3600;        // per aquesta finestra (segons)
 
+// ── CORS: permetre el web de staging (GitHub Pages) i el domini de producció ──
+$allowed = [
+    'https://112books.github.io',
+    'https://barcelonabigbluesband.com',
+    'https://www.barcelonabigbluesband.com',
+];
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if (in_array($origin, $allowed, true)) {
+    header('Access-Control-Allow-Origin: ' . $origin);
+    header('Vary: Origin');
+}
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json; charset=utf-8');
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(204);
+    exit;
+}
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -32,7 +53,9 @@ if (!empty($_POST['_hp'])) {
 $ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
 $dir = sys_get_temp_dir() . '/bbbb_booking_' . md5($ip);
 $now = time();
-$hits = array_filter(explode("\n", @file_get_contents($dir)), fn($l) => (int)$l > $now - RATE_WINDOW);
+$hits = array_filter(explode("\n", (string)@file_get_contents($dir)), function ($l) use ($now) {
+    return (int)$l > $now - RATE_WINDOW;
+});
 if (count($hits) >= RATE_LIMIT) {
     http_response_code(429);
     echo json_encode(['ok' => false, 'error' => 'rate_limited']);
@@ -43,6 +66,7 @@ $hits[] = (string)$now;
 
 // ── Validació ──
 // Nota: retirem CR/LF de tots els camps per evitar injecció de capçaleres a mail().
+$form    = ($_POST['form_type'] ?? 'booking') === 'contact' ? 'contact' : 'booking';
 $name    = trim(str_replace(["\r", "\n"], '', (string)($_POST['name'] ?? '')));
 $email   = trim(str_replace(["\r", "\n"], '', (string)($_POST['email'] ?? '')));
 $org     = trim((string)($_POST['organisation'] ?? ''));
@@ -63,12 +87,14 @@ if ($errors) {
 }
 
 // ── Cos del correu ──
-$body  = "Nou missatge des del formulari de contractació del web\n";
-$body .= str_repeat('─', 50) . "\n\n";
+$body  = "Nou missatge des del formulari de " . ($form === 'contact' ? 'contacte' : 'contractació') . " del web\n";
+$body .= str_repeat('-', 50) . "\n\n";
 $body .= "Nom:           {$name}\n";
 $body .= "Correu:        {$email}\n";
-$body .= "Organització:  " . ($org ?: '—') . "\n";
-$body .= "Data prevista: " . ($date ?: '—') . "\n";
+if ($form === 'booking') {
+    $body .= "Organització:  " . ($org ?: '-') . "\n";
+    $body .= "Data prevista: " . ($date ?: '-') . "\n";
+}
 $body .= "IP:            {$ip}\n\n";
 $body .= "Missatge:\n{$message}\n";
 
@@ -79,7 +105,7 @@ $headers = [
     'X-Mailer'     => 'PHP/' . PHP_VERSION,
 ];
 
-$sent = mail(DEST_EMAIL, SUBJECT_TAG . ' ' . $name, $body, $headers);
+$sent = mail(DEST_EMAIL, FORM_LABELS[$form] . ' ' . $name, $body, $headers);
 
 if ($sent) {
     echo json_encode(['ok' => true]);

@@ -180,24 +180,27 @@ collections:
   # ─── Galeries fotogràfiques ──────────────────────
   - name: "galleries"
     label: "Fotos — Álbumes"
-    file: "data/galleries.yaml"
-    fields:
-      - label: "Álbumes"
-        name: "galleries"
-        widget: "list"
-        summary: "{{title.ca}}"
+    files:
+      - name: "galleries"
+        label: "Álbumes"
+        file: "data/galleries.yaml"
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Tipo", name: "kind", widget: "select", options: ["chronicle", "photos"] }
-          - label: "Título"
-            name: "title"
-            widget: "object"
+          - label: "Álbumes"
+            name: "galleries"
+            widget: "list"
+            summary: "{{fields.title.ca}}"
             fields:
-              - { label: "CA", name: "ca", widget: "string" }
-              - { label: "ES", name: "es", widget: "string", required: false }
-              - { label: "EN", name: "en", widget: "string", required: false }
-          - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", required: false }
-          - { label: "Autor", name: "author", widget: "string", required: false }
-          - { label: "URL autor", name: "author_url", widget: "string", required: false }
-          - { label: "URL crónica", name: "url", widget: "string", required: false }
-          - { label: "Portada", name: "cover", widget: "image", required: false }
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Tipo", name: "kind", widget: "select", options: ["chronicle", "photos"] }
+              - label: "Título"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "CA", name: "ca", widget: "string" }
+                  - { label: "ES", name: "es", widget: "string", required: false }
+                  - { label: "EN", name: "en", widget: "string", required: false }
+              - { label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", required: false }
+              - { label: "Autor", name: "author", widget: "string", required: false }
+              - { label: "URL autor", name: "author_url", widget: "string", required: false }
+              - { label: "URL crónica", name: "url", widget: "string", required: false }
+              - { label: "Portada", name: "cover", widget: "image", required: false }
