@@ -1,5 +1,3 @@
-# Àlbums i cròniques de la Barcelona Big Blues Band (filtrat de ivankovacevic.com)
-# Fonts: cròniques de Pocallum (Joan Linux) i àlbums Google Photos.
 galleries:
 - id: 2026-06-22a25-barcelona-big-blues-band-al-beatgarden-studios
   kind: chronicle
@@ -94,8 +92,7 @@ galleries:
 - id: 15e-festival-de-blues-de-barcelona-victor-puertas-the-mellow-tones-enma-fernandez-band-barcelona-big-blues-band-jonathan-herrero-dani-nello
   kind: chronicle
   title:
-    ca: 15è Festival de Blues de Barcelona – Víctor Puertas & The Mellow Tones, Enma Fernández Band, Barcelona
-      Big Blues Band + Jonathan Herrero + Dani Nel·lo
+    ca: 15è Festival de Blues de Barcelona – Víctor Puertas & The Mellow Tones, Enma Fernández Band, Barcelona Big Blues Band + Jonathan Herrero + Dani Nel·lo
   date: '2017-07-16'
   author: Joan Linux
   author_url: https://blog.pocallum.cat/
@@ -199,7 +196,7 @@ galleries:
   author: Joan Linux
   author_url: https://blog.pocallum.cat/
   url: https://blog.pocallum.cat/2013/07/05/barcelona-big-blues-band-al-vijazz-2013-a-vilafranca-del-penedes/
-  cover: /images/galleries/2013-07-captura-de-pantalla-2024-11-28-a-les-14-14-36-png.png
+  cover: /images/galleries/2013-07-captura-de-pantalla-2024-11-28-a-les-14-14-36-png.jpg
 - id: barcelona-big-blues-band-al-vijazz
   kind: chronicle
   title:
@@ -235,7 +232,7 @@ galleries:
   author: Joan Linux
   author_url: https://blog.pocallum.cat/
   url: https://blog.pocallum.cat/2011/05/06/video-assaig-de-la-barcelona-big-blues-band/
-  cover: /images/galleries/2011-05-captura-de-pantalla-2024-12-09-a-les-16-46-16-png.png
+  cover: /images/galleries/2011-05-captura-de-pantalla-2024-12-09-a-les-16-46-16-png.jpg
 - id: assaig-de-la-barcelona-big-blues-band
   kind: chronicle
   title:

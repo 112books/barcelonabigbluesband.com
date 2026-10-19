@@ -42,7 +42,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p class="footer-copy">{{ i18n "official_website" }}.<br>© {{ now.Format "2006" }} {{ .Site.Title }}. {{ i18n "all_rights_reserved" }}<br>{{ i18n "photo_credit_prefix" }} <a href="https://pocallum.cat/" target="_blank" rel="noopener">Joan Linux · @pocallum</a>{{ i18n "photo_credit_suffix" }}</p>
+    <p class="footer-copy">{{ i18n "official_website" }}.<br>© {{ now.Format "2006" }} {{ .Site.Title }}. {{ i18n "all_rights_reserved" }}<br><a href="{{ with .Site.GetPage "/credits" }}{{ .RelPermalink }}{{ end }}">{{ i18n "credits_link" }}</a></p>
     <div class="footer-signature">
       <p class="footer-signature__line">Powered by <a href="https://linuxbcn.com" target="_blank" rel="noopener">LinuxBCN.com</a> · <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo SSG</a></p>
       <p class="footer-signature__services">Consultancy · Development · Hosting · Design</p>
