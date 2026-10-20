@@ -1624,11 +1624,13 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   margin-bottom: .9rem;
 }
 
-.booking-lineup { list-style: none; display: grid; gap: .45rem; }
-.booking-lineup li { display: flex; justify-content: space-between; gap: 1rem; font-size: .95rem; border-bottom: 1px dashed var(--c-border); padding-bottom: .4rem; }
-.booking-lineup li span { color: var(--c-muted); text-align: right; }
-
-.booking-guests, .booking-venues { list-style: none; display: grid; gap: .4rem; font-size: .95rem; }
+.booking-lineup, .booking-alumni, .booking-guests { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
+.booking-lineup li, .booking-alumni li, .booking-guests li { display: flex; align-items: center; gap: .8rem; font-size: .95rem; border-bottom: 1px dashed var(--c-border); padding-bottom: .4rem; flex-wrap: wrap; }
+.booking-musician__name { font-weight: 600; min-width: 180px; }
+.booking-musician__role { color: var(--c-muted); flex: 1; }
+.booking-musician__links { display: flex; gap: .35rem; align-items: center; }
+.booking-musician__icon { display: inline-flex; align-items: center; color: var(--c-accent); }
+.booking-musician__icon:hover { color: var(--c-accent-2); }
 .booking-guests li::before, .booking-venues li::before { content: "· "; color: var(--c-accent); font-weight: 700; }
 
 .booking-video { position: relative; padding-top: 56.25%; border-radius: 8px; overflow: hidden; margin-bottom: .8rem; background: var(--c-mid); }
