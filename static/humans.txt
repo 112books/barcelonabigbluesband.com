@@ -1,11 +1,12 @@
 /* TEAM */
-Developer & Consultant: LinuxBCN.com
-Site: https://linuxbcn.com
+Developer & Consultant: LinuxBCN.com — Joan Linux
+Site: https://barcelonabigbluesband.com
+Contact: bookingb4@gmail.com
 Location: Barcelona, Catalonia
 
 /* THANKS */
 Artist: Ivan Kovačević
-Site: https://ivankovacevic.com
+Band: Barcelona Big Blues Band
 
 /* TECHNOLOGY */
 Hugo SSG: https://gohugo.io
@@ -17,6 +18,6 @@ Videos: YouTube
 
 /* SITE */
 Last update: 2026-10
-Language: EN / CA / ES / SR
+Language: CA / ES / EN
 Standards: HTML5, CSS3, WCAG 2.1 AA
-AI: https://ivankovacevic.com/llms.txt
+AI: https://barcelonabigbluesband.com/llms.txt

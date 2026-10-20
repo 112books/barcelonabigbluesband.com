@@ -3,7 +3,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
 title = "Barcelona Big Blues Band"
-defaultContentLanguage = "en"
+defaultContentLanguage = "ca"
 defaultContentLanguageInSubdir = true
 
 # ══════════════════════════════════════════════════════════════

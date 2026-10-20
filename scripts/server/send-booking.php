@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-const DEST_EMAIL = 'linuxbcn@gmail.com';
+const DEST_EMAIL = 'bookingb4@gmail.com';
 const FORM_LABELS = [
     'booking' => '[Contractació web barcelonabigbluesband.com]',
     'contact' => '[Contacte web barcelonabigbluesband.com]',
