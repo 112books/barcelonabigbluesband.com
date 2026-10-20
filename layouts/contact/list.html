@@ -125,6 +125,20 @@
         <p class="booking-form__status" role="status" aria-live="polite"></p>
       </form>
 
+      <!-- Contacte directe a sota del formulari -->
+      <div class="contact-direct">
+        <p class="contact-direct__note">
+          {{ if eq .Lang "ca" }}O pots contactar directament:
+          {{ else if eq .Lang "es" }}O puedes contactar directamente:
+          {{ else }}Or contact us directly:
+          {{ end }}
+        </p>
+        <p class="contact-direct__links">
+          <a href="mailto:{{ hugo.Data.contact.email }}">{{ hugo.Data.contact.email }}</a>
+          {{ with hugo.Data.contact.phone }} · <a href="tel:{{ replace . " " "" }}">{{ . }}</a>{{ end }}
+        </p>
+      </div>
+
     </div>
   </div>
 

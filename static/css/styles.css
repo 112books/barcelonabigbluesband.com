@@ -1804,3 +1804,24 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
     linear-gradient(rgba(14,13,11,0.88), rgba(14,13,11,0.92)),
     var(--page-bg) center center / cover no-repeat;
 }
+
+.contact-direct {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--c-border);
+  text-align: center;
+}
+.contact-direct__note {
+  font-size: .9rem;
+  color: var(--c-muted);
+  margin-bottom: .6rem;
+}
+.contact-direct__links {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.contact-direct__links a {
+  color: var(--c-accent-2);
+  text-decoration: none;
+}
+.contact-direct__links a:hover { text-decoration: underline; }
