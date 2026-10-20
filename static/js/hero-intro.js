@@ -19,12 +19,12 @@
     fired = true;
     sessionStorage.setItem('ivk-intro-done', '1');
     intro.classList.add('hero-logo-intro--done');
-    setTimeout(function () { intro.style.display = 'none'; }, 2000); // era 700
+    setTimeout(function () { intro.style.display = 'none'; }, 3000);
   }
 
   document.addEventListener('mousemove', runIntro, { once: true });
   document.addEventListener('touchstart', runIntro, { once: true, passive: true });
   document.addEventListener('scroll', runIntro, { once: true, passive: true });
 
-  setTimeout(runIntro, 4000); // era 2500 — fallback més tard
+  setTimeout(runIntro, 8000);
 })();

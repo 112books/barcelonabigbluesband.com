@@ -34,10 +34,22 @@
           <ul class="booking-lineup" role="list">
             {{ range $b.lineup }}
             {{ $m := . }}
-            <li>
-              <strong>{{ .name }}</strong>
-              <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
-              {{ with .url }}<a class="booking-musician__link" href="{{ . }}" target="_blank" rel="noopener">{{ $m.label | default "Web" }} ↗</a>{{ end }}
+            <li class="booking-musician">
+              <span class="booking-musician__name">{{ .name }}</span>
+              <span class="booking-musician__links">
+                {{ with .url }}
+                <a class="booking-musician__icon" href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.label }}">
+                  {{ if eq $m.label "Instagram" }}
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  {{ else if eq $m.label "Mixcloud" }}
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 2.4c5.3 0 9.6 4.3 9.6 9.6s-4.3 9.6-9.6 9.6S2.4 17.3 2.4 12 6.7 2.4 12 2.4zm-3.6 4.8v9.6h1.2V7.2H8.4zm3 0v9.6h1.2V7.2h-1.2zm3 0v9.6h1.2V7.2h-1.2z"/></svg>
+                  {{ else }}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  {{ end }}
+                </a>
+                {{ end }}
+              </span>
+              <span class="booking-musician__role">{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
             </li>
             {{ end }}
           </ul>
@@ -47,7 +59,22 @@
           <h3>{{ i18n "booking_guests" }}</h3>
           <ul class="booking-guests" role="list">
             {{ range $b.guests }}
-            <li>{{ . }}</li>
+            {{ $g := . }}
+            <li class="booking-musician">
+              <span class="booking-musician__name">{{ .name }}</span>
+              <span class="booking-musician__links">
+                {{ with .url }}
+                <a class="booking-musician__icon" href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $g.label }}">
+                  {{ if eq $g.label "Instagram" }}
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  {{ else }}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  {{ end }}
+                </a>
+                {{ end }}
+              </span>
+              {{ with .instrument }}<span class="booking-musician__role">{{ . }}</span>{{ end }}
+            </li>
             {{ end }}
           </ul>
         </div>
@@ -58,10 +85,20 @@
           <ul class="booking-alumni" role="list">
             {{ range . }}
             {{ $m := . }}
-            <li>
-              <strong>{{ .name }}</strong>
-              <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
-              {{ with .url }}<a class="booking-musician__link" href="{{ . }}" target="_blank" rel="noopener">{{ $m.label | default "Web" }} ↗</a>{{ end }}
+            <li class="booking-musician">
+              <span class="booking-musician__name">{{ .name }}</span>
+              <span class="booking-musician__links">
+                {{ with .url }}
+                <a class="booking-musician__icon" href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $m.label }}">
+                  {{ if eq $m.label "Instagram" }}
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  {{ else }}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="16" height="16"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  {{ end }}
+                </a>
+                {{ end }}
+              </span>
+              <span class="booking-musician__role">{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
             </li>
             {{ end }}
           </ul>
@@ -72,7 +109,9 @@
           <h3>{{ i18n "booking_venues" }}</h3>
           <ul class="booking-venues" role="list">
             {{ range $b.venues }}
-            <li>{{ . }}</li>
+            <li>
+              {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ .name }} ↗</a>{{ else }}{{ .name }}{{ end }}
+            </li>
             {{ end }}
           </ul>
         </div>
@@ -102,12 +141,12 @@
           <details class="booking-rider">
             <summary>{{ i18n "booking_rider" }}</summary>
             <ul role="list">
-              <li>{{ index $b.rider (printf "formation_%s" $.Lang) | default $b.rider.formation_en }}</li>
-              <li>{{ index $b.rider (printf "stage_%s" $.Lang) | default $b.rider.stage_en }}</li>
-              <li>{{ index $b.rider (printf "sound_%s" $.Lang) | default $b.rider.sound_en }}</li>
-              <li>{{ index $b.rider (printf "backline_%s" $.Lang) | default $b.rider.backline_en }}</li>
-              <li>{{ index $b.rider (printf "rehearsal_%s" $.Lang) | default $b.rider.rehearsal_en }}</li>
-              <li>{{ index $b.rider (printf "duration_%s" $.Lang) | default $b.rider.duration_en }}</li>
+              {{ with index $b.rider (printf "formation_%s" $.Lang) | default $b.rider.formation_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "stage_%s" $.Lang) | default $b.rider.stage_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "sound_%s" $.Lang) | default $b.rider.sound_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "backline_%s" $.Lang) | default $b.rider.backline_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "rehearsal_%s" $.Lang) | default $b.rider.rehearsal_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "duration_%s" $.Lang) | default $b.rider.duration_en }}<li>{{ . }}</li>{{ end }}
             </ul>
           </details>
         </div>

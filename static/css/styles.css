@@ -303,7 +303,7 @@ a   { color: inherit; }
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   z-index: 10; pointer-events: none;
-  transition: opacity 2.5s ease;
+  transition: opacity 3s ease;
 }
 .hero-logo-intro__img {
   width: min(520px, 70vw);
