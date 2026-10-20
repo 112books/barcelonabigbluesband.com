@@ -39,6 +39,20 @@
           </ul>
         </div>
 
+        {{ with $b.alumni }}
+        <div class="booking-block">
+          <h3>{{ i18n "booking_alumni" }}</h3>
+          <ul class="booking-alumni" role="list">
+            {{ range . }}
+            <li>
+              <strong>{{ .name }}</strong>
+              <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
         <div class="booking-block">
           <h3>{{ i18n "booking_venues" }}</h3>
           <ul class="booking-venues" role="list">
