@@ -56,8 +56,7 @@ promo_cta     = ""
 booking_form_endpoint = "https://barcelonabigbluesband.com/send-booking.php"
 contact_form_endpoint = "https://barcelonabigbluesband.com/send-booking.php"
 
-# Google Calendar (agenda) — pendent de crear pel compte de Joan/LinuxBCN
-google_calendar_ical = ""
+# Agenda: font principal Bandsintown (events.json) + feed iCal propi (static/data/concerts.txt). Sense Google Calendar.
 
 # Xarxes socials — Facebook és el que enllaça el site actual de BBBB.
 # Instagram: compte oficial de la banda (confirmat per l'usuari).

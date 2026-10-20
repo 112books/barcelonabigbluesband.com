@@ -20,12 +20,7 @@
       {{ $title := .title }}
       {{ if not $title }}{{ $title = printf "%s · %s" site.Title .venue }}{{ end }}
       {{ $when := time.Format "Monday, 2 January 2006" .date }}
-      {{ $gcal := printf "https://calendar.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&details=%s&location=%s"
-          ($title | urlquery)
-          .gcal_start
-          .gcal_end
-          (site.Params.description | urlquery)
-          (printf "%s, %s" .venue .city | urlquery) }}
+      {{ $bitURL := .url }}
 
       <li class="agenda-item">
         <div class="agenda-item__date">
@@ -55,9 +50,11 @@
           {{ else }}
           <span class="agenda-free">{{ i18n "agenda_free" }}</span>
           {{ end }}
-          <a class="agenda-gcal" href="{{ $gcal }}" target="_blank" rel="noopener">
+          {{ with $bitURL }}
+          <a class="agenda-gcal" href="{{ . }}" target="_blank" rel="noopener">
             {{ i18n "agenda_add_calendar" }} ↗
           </a>
+          {{ end }}
         </div>
       </li>
       {{ end }}

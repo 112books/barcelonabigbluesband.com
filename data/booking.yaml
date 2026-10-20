@@ -2,7 +2,7 @@
 # Dades compartides de la pàgina de contractació (ca/es/en).
 # Els elements marcats amb TODO s'han de confirmar amb Ivan.
 
-# Formació base (font: Jamboree/MASiMAS 2026). TODO Ivan: confirmar formació actual.
+# Formació habitual (confirmada per l'usuari).
 lineup:
   - name: "Ivan Kovacevic"
     role_ca: "Contrabaix, direcció"
@@ -48,15 +48,44 @@ lineup:
     role_ca: "Guitarra"
     role_es: "Guitarra"
     role_en: "Guitar"
+  - name: "Federico Mazzanti"
+    role_ca: "Piano"
+    role_es: "Piano"
+    role_en: "Piano"
   - name: "Óscar Hita"
     role_ca: "Bateria"
     role_es: "Batería"
     role_en: "Drums"
 
+# Membres històrics / antics membres de la banda
+alumni:
+  - name: "Martí Elias"
+    role_ca: "Bateria (formació 2017, web oficial)"
+    role_es: "Batería (formación 2017, web oficial)"
+    role_en: "Drums (2017 line-up, official website)"
+  - name: "Anton Jarl"
+    role_ca: "Bateria (formació 2025)"
+    role_es: "Batería (formación 2025)"
+    role_en: "Drums (2025 line-up)"
+  - name: "Pere Masafret"
+    role_ca: "Trombó (formacions anteriors, 2017)"
+    role_es: "Trombón (formaciones anteriores, 2017)"
+    role_en: "Trombone (earlier line-ups, 2017)"
+  - name: "Igor Kossenkov"
+    role_ca: "Trombó (formacions anteriors, 2017)"
+    role_es: "Trombón (formaciones anteriores, 2017)"
+    role_en: "Trombone (earlier line-ups, 2017)"
+  - name: "Artem Zhuliev"
+    role_ca: "Saxo tenor (formació 2017)"
+    role_es: "Saxo tenor (formación 2017)"
+    role_en: "Tenor sax (2017 line-up)"
+
 # Artistes convidats habituals (font: web actual + premsa)
 guests:
   - "Dani Nel·lo"
   - "Ray Gelato"
+  - "Amadeu Casas"
+  - "August Tharrats"
   - "Mike Sanchez"
   - "Drew Davies"
   - "Myriam Swanson"
@@ -69,17 +98,26 @@ guests:
   - "Big Dani Pérez"
   - "Greg Piccolo"
 
-# Sales i festivals (font: premsa + web). TODO Ivan: completar/corregir.
+# Sales i festivals (font: premsa + web + cerca). Confirmar/corregir amb Ivan.
 venues:
-  - "Jamboree, Barcelona (residents des de fa més de 12 anys)"
-  - "Palau de la Música, Barcelona"
-  - "Festival de Blues de Barcelona"
-  - "Vijazz, Vilafranca del Penedès"
-  - "Teatro Juan Bravo, Segovia"
-  - "Festival Internacional de Música de Cambrils"
+  # Sales
+  - "Jamboree, Barcelona (sala habitual; Grec i MASiMAS Festival)"
+  - "Palau de la Música Catalana, Barcelona (MASiMAS Festival; amb Mike Sánchez i Dani Nel·lo, 2014)"
+  - "La Paloma, Barcelona (inauguració festival Sax-o-Rama, 2026)"
+  - "Luz de Gas, Barcelona (concert amb Elvis, juny 2026)"
+  - "Auditori Pau Casals, el Vendrell (gener 2018)"
+  - "Auditori del Vinseum, Vilafranca del Penedès (amb Dani Nel·lo, 2018)"
   - "Paral·lel 62, Barcelona"
-  - "Luz de Gas, Barcelona"
+  - "Teatro Juan Bravo, Segovia"
   - "Auditorio elcírculo, Logroño"
+  # Festivals
+  - "Festival de Jazz de San Javier, Múrcia (2017 amb Dani Nel·lo i Ray Gelato; 2025)"
+  - "Festival Internacional de Blues de Cerdanyola (2022)"
+  - "Festival de Blues de Barcelona (edicions anteriors)"
+  - "Festival de Jazz de Terrassa (2015, amb Dani Nel·lo i Agustí Burriel)"
+  - "Festival Internacional de Música de Cambrils"
+  - "Vijazz, Vilafranca del Penedès"
+  - "Festival de Big Bands de Pertuis, Pertuis (França)"
 
 # Vídeos destacats per l'EPK (YouTube). TODO Ivan: validar o substituir.
 videos:
