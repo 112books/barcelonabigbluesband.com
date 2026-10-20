@@ -39,5 +39,23 @@
   {{ if .IsHome }}
   <script src="{{ "js/hero-intro.js" | relURL }}" defer></script>
   {{ end }}
+
+  <!-- Scroll to top -->
+  <button class="scroll-to-top" id="scroll-to-top" aria-label="Torna a dalt" title="Torna a dalt">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <script>
+  (function () {
+    var btn = document.getElementById('scroll-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) btn.classList.add('is-visible');
+      else btn.classList.remove('is-visible');
+    }, { passive: true });
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+  </script>
 </body>
 </html>
