@@ -12,16 +12,16 @@ Aquest web recull fotografies, cròniques i material gràfic de la Barcelona Big
 
 ### Cròniques i àlbums
 
-Totes les cròniques i àlbums fotogràfics de la secció [Fotos]({{ "fotos/" | relLangURL }}) són de **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [@pocallum](https://pocallum.cat/)).
+Totes les cròniques i àlbums fotogràfics de la secció [Fotos]({{ "fotos/" | relLangURL }}) són de **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [pocallum.cat](https://pocallum.cat/)).
 
 ### Altres imatges
 
-L’autoria de la resta d’imatges del web (imatge principal, fons de seccions i portades de disc) està **pendent de confirmar**.
+La major part de les fotografies del web són de **Joan Linux**. L’autoria de la **imatge principal de portada** i de determinades fotografies de secció està **pendent de confirmar** amb Ivan Kovacevic.
 
 ## Discografia
 
-Les portades dels discos provenen dels materials originals de cada edició. L’autoria de les fotografies de portada està **pendent de confirmar**.
+Les portades dels discos provenen dels materials originals de cada edició. Els dissenys gràfics e il·lustradors de les portades estan **pendents de confirmar**. Quan es conegui l’autoria, s’actualitzarà aquesta pàgina.
 
 ## Lloc web
 
-Web oficial de la Barcelona Big Blues Band. Migrat de WordPress a Hugo, amb base en el disseny d’[ivankovacevic.com](https://ivankovacevic.com/).
+Plantejament, disseny i desenvolupament: **Joan Linux** — [LinuxBCN.com](https://linuxbcn.com). Web oficial de la Barcelona Big Blues Band, migrat de WordPress a Hugo amb base en el disseny d’[ivankovacevic.com](https://ivankovacevic.com/).

@@ -12,16 +12,16 @@ This website collects photographs, chronicles and graphic material from the Barc
 
 ### Chronicles and albums
 
-All the chronicles and photo albums in the [Photos]({{ "photos/" | relLangURL }}) section are by **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [@pocallum](https://pocallum.cat/)).
+All the chronicles and photo albums in the [Photos]({{ "photos/" | relLangURL }}) section are by **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [pocallum.cat](https://pocallum.cat/)).
 
 ### Other images
 
-The authorship of the remaining images on the site (hero image, section backgrounds and album covers) is **to be confirmed**.
+Most of the photographs on this site are by **Joan Linux**. The authorship of the **main hero image** and certain section background images is **to be confirmed** with Ivan Kovacevic.
 
 ## Discography
 
-The album covers come from the original materials of each release. The authorship of the cover photographs is **to be confirmed**.
+Album covers come from the original materials of each release. The graphic design and illustrators of the covers are **to be confirmed**. This page will be updated once known.
 
 ## Website
 
-Official website of the Barcelona Big Blues Band. Migrated from WordPress to Hugo, based on the design of [ivankovacevic.com](https://ivankovacevic.com/).
+Concept, design and development: **Joan Linux** — [LinuxBCN.com](https://linuxbcn.com). Official website of the Barcelona Big Blues Band, migrated from WordPress to Hugo based on the design of [ivankovacevic.com](https://ivankovacevic.com/).

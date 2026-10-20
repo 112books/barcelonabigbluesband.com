@@ -11,8 +11,7 @@
     {{ if not (in $years $ys) }}{{ $years = $years | append $ys }}{{ end }}
   {{ end }}
 {{ end }}
-{{ $years = sort $years }}
-{{ $n := len $years }}
+{{ $years = sort $years "value" "desc" }}
 
 {{ $undated := slice }}
 {{ range $pages }}{{ if not .Params.year }}{{ $undated = $undated | append . }}{{ end }}{{ end }}
@@ -25,15 +24,14 @@
     <div class="timeline" data-timeline>
       <div class="timeline__rail" aria-hidden="true"><span class="timeline__rail-fill"></span></div>
 
-      {{ range $i, $_ := $years }}
-        {{ $year := index $years (sub $n $i 1) }}
+      {{ range $year := $years }}
         <section class="timeline__group">
           <h2 class="timeline__year">{{ $year }}</h2>
-          {{ range $pages }}
-            {{ if eq (printf "%v" (.Params.year | default "")) $year }}
-              {{ partial "disc-card.html" . }}
-            {{ end }}
+        {{ range $pages }}
+          {{ if eq (printf "%v" (.Params.year | default "")) $year }}
+            {{ partial "disc-card.html" . }}
           {{ end }}
+        {{ end }}
         </section>
       {{ end }}
 
