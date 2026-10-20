@@ -12,25 +12,38 @@
 
     {{ $b := hugo.Data.booking }}
 
+    <nav class="booking-nav" aria-label="Seccions">
+      <a href="#epk">{{ i18n "booking_epk" }}</a>
+      <a href="#lineup">{{ i18n "booking_lineup" }}</a>
+      {{ if $b.alumni }}<a href="#alumni">{{ i18n "booking_alumni" }}</a>{{ end }}
+      <a href="#guests">{{ i18n "booking_guests" }}</a>
+      <a href="#venues">{{ i18n "booking_venues" }}</a>
+      <a href="#videos">{{ i18n "booking_videos" | default "Vídeos" }}</a>
+      <a href="#rider">{{ i18n "booking_rider" }}</a>
+      <a href="#contact">{{ i18n "booking_contact_title" }}</a>
+    </nav>
+
     <!-- ══ EPK ══ -->
-    <section class="booking-epk" aria-label="{{ i18n "booking_epk" }}">
+    <section class="booking-epk" id="epk" aria-label="{{ i18n "booking_epk" }}">
       <h2 class="booking-epk__title">{{ i18n "booking_epk" }}</h2>
 
       <div class="booking-grid">
 
-        <div class="booking-block">
+        <div class="booking-block" id="lineup">
           <h3>{{ i18n "booking_lineup" }}</h3>
           <ul class="booking-lineup" role="list">
             {{ range $b.lineup }}
+            {{ $m := . }}
             <li>
               <strong>{{ .name }}</strong>
               <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
+              {{ with .url }}<a class="booking-musician__link" href="{{ . }}" target="_blank" rel="noopener">{{ $m.label | default "Web" }} ↗</a>{{ end }}
             </li>
             {{ end }}
           </ul>
         </div>
 
-        <div class="booking-block">
+        <div class="booking-block" id="guests">
           <h3>{{ i18n "booking_guests" }}</h3>
           <ul class="booking-guests" role="list">
             {{ range $b.guests }}
@@ -40,20 +53,22 @@
         </div>
 
         {{ with $b.alumni }}
-        <div class="booking-block">
+        <div class="booking-block" id="alumni">
           <h3>{{ i18n "booking_alumni" }}</h3>
           <ul class="booking-alumni" role="list">
             {{ range . }}
+            {{ $m := . }}
             <li>
               <strong>{{ .name }}</strong>
               <span>{{ index . (printf "role_%s" $.Lang) | default .role_en }}</span>
+              {{ with .url }}<a class="booking-musician__link" href="{{ . }}" target="_blank" rel="noopener">{{ $m.label | default "Web" }} ↗</a>{{ end }}
             </li>
             {{ end }}
           </ul>
         </div>
         {{ end }}
 
-        <div class="booking-block">
+        <div class="booking-block" id="venues">
           <h3>{{ i18n "booking_venues" }}</h3>
           <ul class="booking-venues" role="list">
             {{ range $b.venues }}
@@ -62,7 +77,7 @@
           </ul>
         </div>
 
-        <div class="booking-block">
+        <div class="booking-block" id="videos">
           <h3>{{ i18n "booking_videos" }}</h3>
           {{ range $b.videos }}
           <div class="booking-video">

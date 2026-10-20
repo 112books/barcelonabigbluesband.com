@@ -303,11 +303,18 @@ a   { color: inherit; }
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   z-index: 10; pointer-events: none;
-  transition: opacity 1.8s ease;
+  transition: opacity 2.5s ease;
 }
 .hero-logo-intro__img {
   width: min(520px, 70vw);
   filter: drop-shadow(0 4px 32px rgba(0,0,0,0.55));
+  opacity: 0;
+  animation: logoIntroIn 1.4s ease-out 0.3s forwards;
+}
+@keyframes logoIntroIn {
+  0%   { opacity: 0; transform: scale(0.6); }
+  60%  { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
 }
 .hero-logo-intro--done { opacity: 0; }
 
@@ -1567,6 +1574,31 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   border-bottom: 1px solid var(--c-border);
   padding-bottom: .6rem;
 }
+
+
+.booking-nav {
+  display: flex; flex-wrap: wrap; gap: .6rem 1.2rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+}
+.booking-nav a {
+  color: var(--c-accent-2);
+  font-size: .9rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.booking-nav a:hover { text-decoration: underline; }
+
+.booking-musician__link {
+  margin-left: .6rem;
+  font-size: .8rem;
+  color: var(--c-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.booking-musician__link:hover { text-decoration: underline; }
 
 .booking-grid {
   display: flex;
