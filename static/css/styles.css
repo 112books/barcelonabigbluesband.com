@@ -548,6 +548,8 @@ a   { color: inherit; }
 .footer-social-link  { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 .contact-social-link { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 .videos-cta__link    { min-width: 44px; min-height: 44px; }
+.booking-submit      { min-height: 44px; }
+.booking-nav a       { min-height: 44px; display: inline-flex; align-items: center; }
 .section-nav__icon   { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
 
 @media (min-width: 769px) {
@@ -1866,4 +1868,11 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
     width: 40px;
     height: 40px;
   }
+}
+
+@media (max-width: 600px) {
+  .booking-nav { gap: .4rem .8rem; }
+  .booking-nav a { font-size: .8rem; }
+  .booking-musician__name { min-width: auto; }
+  .booking-musician { gap: .4rem; }
 }

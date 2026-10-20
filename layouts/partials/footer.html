@@ -6,7 +6,7 @@
         <div class="footer-socials__links">
           {{ range .Site.Params.socials }}
             {{ $iconPath := printf "icons/%s.html" .icon }}
-            <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}" class="footer-social-link">
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }}" class="footer-social-link">
               {{ partial $iconPath . }}
             </a>
           {{ end }}
@@ -21,7 +21,7 @@
         {{ with .page }}
           {{ with site.GetPage (printf "/%s" .) }}{{ $link = .RelPermalink }}{{ end }}
         {{ end }}
-        <a href="{{ $link }}"{{ if hasPrefix $link "http" }} target="_blank" rel="noopener"{{ end }} aria-label="{{ .name }}">
+        <a href="{{ $link }}"{{ if hasPrefix $link "http" }} target="_blank" rel="noopener noreferrer"{{ end }} aria-label="{{ .name }}">
           <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy">
         </a>
       {{ end }}
@@ -44,7 +44,7 @@
   <div class="footer-bottom">
     <p class="footer-copy">{{ i18n "official_website" }}.<br>© {{ now.Format "2006" }} {{ .Site.Title }}. {{ i18n "all_rights_reserved" }}<br><a href="{{ with .Site.GetPage "/credits" }}{{ .RelPermalink }}{{ end }}">{{ i18n "credits_link" }}</a></p>
     <div class="footer-signature">
-      <p class="footer-signature__line">Design & Development: <a href="https://linuxbcn.com" target="_blank" rel="noopener">LinuxBCN.com — Joan Linux</a> · <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo SSG</a></p>
+      <p class="footer-signature__line">Design & Development: <a href="https://linuxbcn.com" target="_blank" rel="noopener noreferrer">LinuxBCN.com — Joan Linux</a> · <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo SSG</a></p>
       <p class="footer-signature__services">Consultancy · Development · Hosting · Design</p>
     </div>
   </div>

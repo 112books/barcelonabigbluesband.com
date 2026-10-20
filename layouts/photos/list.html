@@ -41,7 +41,7 @@
         </a>
         {{ if .author }}
           {{ if .author_url }}
-            <p class="gallery-card__author"><a href="{{ .author_url }}" target="_blank" rel="noopener">{{ .author }}</a></p>
+            <p class="gallery-card__author"><a href="{{ .author_url }}" target="_blank" rel="noopener noreferrer">{{ .author }}</a></p>
           {{ else }}
             <p class="gallery-card__author">{{ .author }}</p>
           {{ end }}

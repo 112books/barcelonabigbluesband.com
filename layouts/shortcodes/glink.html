@@ -4,4 +4,4 @@
 {{- with where hugo.Data.guests.guests "id" $id -}}
   {{- $url = (index . 0).url -}}
 {{- end -}}
-{{- if $url -}}<a href="{{ $url }}" target="_blank" rel="noopener">{{ $name }}<span class="guest-link__ext" aria-hidden="true"> ↗</span></a>{{- else -}}{{ $name }}{{- end -}}
+{{- if $url -}}<a href="{{ $url }}" target="_blank" rel="noopener noreferrer">{{ $name }}<span class="guest-link__ext" aria-hidden="true"> ↗</span></a>{{- else -}}{{ $name }}{{- end -}}

@@ -40,18 +40,18 @@
 
         <div class="agenda-item__actions">
           {{ if .ticket_url }}
-          <a class="btn btn--accent" href="{{ .ticket_url }}" target="_blank" rel="noopener">
+          <a class="btn btn--accent" href="{{ .ticket_url }}" target="_blank" rel="noopener noreferrer">
             {{ i18n "agenda_tickets" }}
           </a>
           {{ else if .url }}
-          <a class="btn btn--accent" href="{{ .url }}" target="_blank" rel="noopener">
+          <a class="btn btn--accent" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
             {{ i18n "agenda_tickets" }}
           </a>
           {{ else }}
           <span class="agenda-free">{{ i18n "agenda_free" }}</span>
           {{ end }}
           {{ with $bitURL }}
-          <a class="agenda-gcal" href="{{ . }}" target="_blank" rel="noopener">
+          <a class="agenda-gcal" href="{{ . }}" target="_blank" rel="noopener noreferrer">
             {{ i18n "agenda_add_calendar" }} ↗
           </a>
           {{ end }}
@@ -65,7 +65,7 @@
     <div class="agenda-empty">
       <p>{{ i18n "agenda_no_events" }}</p>
       {{ with $events.source }}
-      <p><a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "agenda_source" }} ↗</a></p>
+      <p><a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ i18n "agenda_source" }} ↗</a></p>
       {{ end }}
       <p>
         {{ $mbook := where site.Menus.main "Identifier" "booking" }}
@@ -81,7 +81,7 @@
     <p class="agenda-meta">
       {{ i18n "agenda_updated" }} {{ time.Format "2 Jan 2006, 15:04" . }} (UTC) ·
       {{ with $events.source }}
-      <a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "agenda_source" }} ↗</a>
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ i18n "agenda_source" }} ↗</a>
       {{ end }}
     </p>
     {{ end }}

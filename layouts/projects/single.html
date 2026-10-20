@@ -13,7 +13,7 @@
     {{ with $links }}
     <div class="project-links">
       {{ range . }}
-      <a class="project-links__item" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .platform }}">
+      <a class="project-links__item" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .platform }}">
         {{ partial "icons/platform-icon.html" .platform }}
       </a>
       {{ end }}
