@@ -304,13 +304,18 @@ a   { color: inherit; }
   display: flex; align-items: center; justify-content: center;
   z-index: 10; pointer-events: none;
   overflow: hidden;
+  padding: 0 var(--gap);
+  box-sizing: border-box;
   transition: opacity 3s ease;
 }
 .hero-logo-intro__img {
-  width: min(480px, 60vw);
+  width: min(480px, 80vw);
+  max-width: 100%;
+  height: auto;
   filter: drop-shadow(0 4px 32px rgba(0,0,0,0.55));
   opacity: 0;
   animation: logoIntroIn 1.4s ease-out 0.3s forwards;
+  box-sizing: border-box;
 }
 @keyframes logoIntroIn {
   0%   { opacity: 0; transform: scale(0.7); }

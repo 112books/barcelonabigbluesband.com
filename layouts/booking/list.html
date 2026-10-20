@@ -12,7 +12,7 @@
 
     {{ $b := hugo.Data.booking }}
 
-    <nav class="booking-nav" aria-label="Seccions">
+    <nav class="booking-nav booking-nav--enhanced" aria-label="Seccions">
       <a href="#epk">{{ i18n "booking_epk" }}</a>
       <a href="#lineup">{{ i18n "booking_lineup" }}</a>
       {{ if $b.alumni }}<a href="#alumni">{{ i18n "booking_alumni" }}</a>{{ end }}
