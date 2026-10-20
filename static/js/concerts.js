@@ -328,7 +328,7 @@
       <h2 class="concert-detail-title">${esc(event.title)}</h2>
       ${event.location ? `<p class="concert-detail-location">📍 ${esc(event.location)}</p>` : ""}
       ${event.desc     ? `<p class="concert-detail-desc">${esc(event.desc)}</p>` : ""}
-      ${safeUrl(event.url) ? `<a href="${safeUrl(event.url)}" class="concert-detail-link" target="_blank" rel="noopener">${t.tickets}</a>` : ""}
+      ${safeUrl(event.url) ? `<a href="${safeUrl(event.url)}" class="concert-detail-link" target="_blank" rel="noopener noreferrer">${t.tickets}</a>` : ""}
       ${icalUrl ? `
       <div class="concert-detail-cal">
         <a href="${icalUrl}" download="ivan-kovacevic-gigs.ics" class="cal-subscribe__btn">

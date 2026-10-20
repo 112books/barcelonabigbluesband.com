@@ -56,7 +56,7 @@
             '<path d="M 45,24 27,14 27,34" fill="#fff"/>' +
           '</svg>' +
         '</button>' +
-        '<a class="videos-facade__yt" href="' + esc(v.url) + '" target="_blank" rel="noopener" aria-label="' + t.watch + '">' + t.watch + '</a>' +
+        '<a class="videos-facade__yt" href="' + esc(v.url) + '" target="_blank" rel="noopener noreferrer" aria-label="' + t.watch + '">' + t.watch + '</a>' +
       '</div>';
 
     var img = facade.querySelector('.videos-facade__thumb');
@@ -121,7 +121,7 @@
     if (facade) facade.innerHTML =
       '<div class="videos-facade__error">' +
         '<p>' + t.error + '</p>' +
-        '<a href="' + ytChannel + '" target="_blank" rel="noopener" class="videos-cta__link" style="margin-top:1rem">' + t.channel + '</a>' +
+        '<a href="' + ytChannel + '" target="_blank" rel="noopener noreferrer" class="videos-cta__link" style="margin-top:1rem">' + t.channel + '</a>' +
       '</div>';
   }
 })();
