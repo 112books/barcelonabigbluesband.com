@@ -17,15 +17,19 @@
 {{- end -}}
 
 {{- $ogImage := "" -}}
+{{- $ogPath  := "" -}}
 {{- if .Params.og_image -}}
-  {{- $ogImage = strings.TrimPrefix "/" .Params.og_image | absURL -}}
+  {{- $ogPath = strings.TrimPrefix "/" .Params.og_image -}}{{- $ogImage = $ogPath | absURL -}}
 {{- else if .Params.cover -}}
-  {{- $ogImage = strings.TrimPrefix "/" .Params.cover | absURL -}}
+  {{- $ogPath = strings.TrimPrefix "/" .Params.cover -}}{{- $ogImage = $ogPath | absURL -}}
 {{- else if .Params.photo -}}
-  {{- $ogImage = strings.TrimPrefix "/" .Params.photo | absURL -}}
+  {{- $ogPath = strings.TrimPrefix "/" .Params.photo -}}{{- $ogImage = $ogPath | absURL -}}
 {{- else if .Site.Params.og_image -}}
-  {{- $ogImage = strings.TrimPrefix "/" .Site.Params.og_image | absURL -}}
+  {{- $ogPath = strings.TrimPrefix "/" .Site.Params.og_image -}}{{- $ogImage = $ogPath | absURL -}}
 {{- end -}}
+{{- $ogDim := false -}}
+{{- $dims := index hugo.Data "og-dimensions" | default dict -}}
+{{- if and $dims $ogPath (isset $dims $ogPath) }}{{ $ogDim = index $dims $ogPath }}{{ end -}}
 
 {{- $locales := dict "ca" "ca_ES" "es" "es_ES" "en" "en_GB" -}}
 {{- $locale  := index $locales $lang | default "en_GB" -}}
@@ -43,7 +47,7 @@
 <meta property="og:site_name"   content="{{ .Site.Title }}">
 <meta property="og:locale"      content="{{ $locale }}">
 <meta property="og:description" content="{{ $description }}">
-{{ if $ogImage }}<meta property="og:image" content="{{ $ogImage }}"><meta property="og:image:alt" content="{{ $title }}">{{ end }}
+{{ if $ogImage }}<meta property="og:image" content="{{ $ogImage }}"><meta property="og:image:alt" content="{{ $title }}">{{ with $ogDim }}<meta property="og:image:width" content="{{ .width }}"><meta property="og:image:height" content="{{ .height }}">{{ end }}{{ end }}
 
 {{/* og:locale:alternate per als idiomes alternatius */}}
 {{ range hugo.Sites }}
@@ -57,7 +61,7 @@
 <meta name="twitter:card"        content="summary_large_image">
 <meta name="twitter:title"       content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
-{{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $title }}">{{ end }}
+{{ if $ogImage }}<meta name="twitter:image" content="{{ $ogImage }}"><meta name="twitter:image:alt" content="{{ $title }}">{{ with $ogDim }}<meta name="twitter:image:width" content="{{ .width }}"><meta name="twitter:image:height" content="{{ .height }}">{{ end }}{{ end }}
 
 <!-- ═══ Hreflang multilingüe ═══ -->
 {{ range .AllTranslations }}

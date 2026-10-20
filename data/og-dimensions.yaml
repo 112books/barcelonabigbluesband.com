@@ -1,0 +1,15 @@
+# Generat per scripts/og-dimensions.py — NO editar a mà.
+# Clau = ruta relativa a static/, valor = {width, height}
+"images/wp/discography/05-portada-disco.jpg": {width: 350, height: 311}
+"images/wp/discography/06-B4-feat-mike-sanchez-2.jpg": {width: 350, height: 350}
+"images/wp/discography/07-drew.jpg": {width: 350, height: 357}
+"images/wp/discography/08-portada-Swanson.jpg": {width: 676, height: 699}
+"images/wp/discography/09-portada-Agusti.jpg": {width: 629, height: 649}
+"images/wp/discography/Portada-Nel.lo_.jpg": {width: 1024, height: 1027}
+"images/wp/discography/b4-dani-nello-ep.jpg": {width: 600, height: 600}
+"images/wp/discography/b4-lluis-coloma.jpg": {width: 600, height: 600}
+"images/wp/discography/b4-pere-miro.jpg": {width: 600, height: 600}
+"images/wp/discography/caratula-b4-jonathan-herrero.jpg": {width: 4989, height: 4989}
+"images/wp/discography/ray-gelato-portada.jpg": {width: 702, height: 719}
+"images/wp/discography/spencer-evoy-portada.jpg": {width: 516, height: 517}
+"images/hero/jam_06.jpg": {width: 2000, height: 1200}

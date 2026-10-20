@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-"""Genera static/llms-full.txt a partir del contingut de Hugo (index complet per a IA)."""
+"""Genera static/llms-full.txt a partir del contingut de Hugo (index complet per a IA).
+
+No s'ha d'editar static/llms-full.txt a mà: es torna a generar amb aquest script.
+La base del domini es passa per l'entorn LLMS_BASE_URL (vegeu .github/workflows/build.yml).
+"""
 import re, glob, os, html
+
+BASE = os.environ.get("LLMS_BASE_URL", "https://barcelonabigbluesband.com").rstrip("/")
 
 LANGS = [
     ("en", {"biography": "biography", "discography": "discography", "agenda": "agenda",
@@ -13,7 +19,6 @@ LANGS = [
             "videos": "videos", "photos": "fotos", "press": "prensa",
             "booking": "contratacion", "contact": "contacto"}),
 ]
-BASE = "https://barcelonabigbluesband.com"
 LABELS = {
     "en": ("Biography", "Discography", "Agenda", "Videos", "Photos", "Press", "Booking", "Contact"),
     "ca": ("Biografia", "Discografia", "Agenda", "Vídeos", "Fotos", "Premsa", "Contractació", "Contacte"),

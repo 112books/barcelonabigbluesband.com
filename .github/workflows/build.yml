@@ -24,5 +24,10 @@ jobs:
           hugo-version: '0.166.0'
           extended: true
 
+      - name: Generate llms-full.txt
+        env:
+          LLMS_BASE_URL: https://barcelonabigbluesband.com
+        run: python3 scripts/generate-llms.py
+
       - name: Build
         run: hugo --minify --environment production
