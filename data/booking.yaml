@@ -1,156 +1,207 @@
-# ══ EPK — Barcelona Big Blues Band ══
-# Dades compartides de la pàgina de contractació (ca/es/en).
-# Els elements marcats amb TODO s'han de confirmar amb Ivan.
-
-# Formació habitual (confirmada per l'usuari).
 lineup:
-  - name: "Ivan Kovacevic"
-    role_ca: "Contrabaix, direcció"
-    role_es: "Contrabajo, dirección"
-    role_en: "Double bass, bandleader"
-    url: "https://ivankovacevic.com"
-    label: "Web"
-  - name: "Duška Miščević"
-    role_ca: "Saxo alt"
-    role_es: "Saxo alto"
-    role_en: "Alto sax"
-  - name: "Ignasi Poch"
-    role_ca: "Saxo alt"
-    role_es: "Saxo alto"
-    role_en: "Alto sax"
-    url: "https://www.instagram.com/ignasipoch/"
-    label: "Instagram"
-  - name: "Pol Prats"
-    role_ca: "Saxo tenor"
-    role_es: "Saxo tenor"
-    role_en: "Tenor sax"
-    url: "https://www.mixcloud.com/polsaxo/"
-    label: "Mixcloud"
-  - name: "Nil Mujal"
-    role_ca: "Saxo tenor"
-    role_es: "Saxo tenor"
-    role_en: "Tenor sax"
-  - name: "Núria Vito"
-    role_ca: "Saxo baríton"
-    role_es: "Saxo barítono"
-    role_en: "Baritone sax"
-  - name: "Jaume Torné"
-    role_ca: "Trompeta"
-    role_es: "Trompeta"
-    role_en: "Trumpet"
-  - name: "Víctor Vergés"
-    role_ca: "Trompeta"
-    role_es: "Trompeta"
-    role_en: "Trumpet"
-  - name: "Aram Montagud"
-    role_ca: "Trombó"
-    role_es: "Trombón"
-    role_en: "Trombone"
-  - name: "Miguel Berenguer"
-    role_ca: "Trombó"
-    role_es: "Trombón"
-    role_en: "Trombone"
-  - name: "Héctor Martín"
-    role_ca: "Guitarra"
-    role_es: "Guitarra"
-    role_en: "Guitar"
-    url: "https://www.instagram.com/dhectormartin/"
-    label: "Instagram"
-  - name: "Federico Mazzanti"
-    role_ca: "Piano"
-    role_es: "Piano"
-    role_en: "Piano"
-  - name: "Óscar Hita"
-    role_ca: "Bateria"
-    role_es: "Batería"
-    role_en: "Drums"
-
-# Membres històrics / antics membres de la banda
+- name: Ivan Kovacevic
+  role_ca: Contrabaix, direcció
+  role_es: Contrabajo, dirección
+  role_en: Double bass, bandleader
+  url: https://ivankovacevic.com
+  label: Web
+- name: Duška Miščević
+  role_ca: Saxo alt
+  role_es: Saxo alto
+  role_en: Alto sax
+- name: Ignasi Poch
+  role_ca: Saxo alt
+  role_es: Saxo alto
+  role_en: Alto sax
+  url: https://www.instagram.com/ignasipoch/
+  label: Instagram
+- name: Pol Prats
+  role_ca: Saxo tenor
+  role_es: Saxo tenor
+  role_en: Tenor sax
+  url: https://www.mixcloud.com/polsaxo/
+  label: Mixcloud
+- name: Nil Mujal
+  role_ca: Saxo tenor
+  role_es: Saxo tenor
+  role_en: Tenor sax
+- name: Núria Vito
+  role_ca: Saxo baríton
+  role_es: Saxo barítono
+  role_en: Baritone sax
+- name: Jaume Torné
+  role_ca: Trompeta
+  role_es: Trompeta
+  role_en: Trumpet
+- name: Víctor Vergés
+  role_ca: Trompeta
+  role_es: Trompeta
+  role_en: Trumpet
+- name: Aram Montagud
+  role_ca: Trombó
+  role_es: Trombón
+  role_en: Trombone
+- name: Miguel Berenguer
+  role_ca: Trombó
+  role_es: Trombón
+  role_en: Trombone
+- name: Héctor Martín
+  role_ca: Guitarra
+  role_es: Guitarra
+  role_en: Guitar
+  url: https://www.instagram.com/dhectormartin/
+  label: Instagram
+- name: Federico Mazzanti
+  role_ca: Piano
+  role_es: Piano
+  role_en: Piano
+- name: Óscar Hita
+  role_ca: Bateria
+  role_es: Batería
+  role_en: Drums
 alumni:
-  - name: "Martí Elias"
-    role_ca: "Bateria (formació 2017, web oficial)"
-    role_es: "Batería (formación 2017, web oficial)"
-    role_en: "Drums (2017 line-up, official website)"
-  - name: "Anton Jarl"
-    role_ca: "Bateria (formació 2025)"
-    role_es: "Batería (formación 2025)"
-    role_en: "Drums (2025 line-up)"
-  - name: "Pere Masafret"
-    role_ca: "Trombó (formacions anteriors, 2017)"
-    role_es: "Trombón (formaciones anteriores, 2017)"
-    role_en: "Trombone (earlier line-ups, 2017)"
-  - name: "Igor Kossenkov"
-    role_ca: "Trombó (formacions anteriors, 2017)"
-    role_es: "Trombón (formaciones anteriores, 2017)"
-    role_en: "Trombone (earlier line-ups, 2017)"
-  - name: "Artem Zhuliev"
-    role_ca: "Saxo tenor (formació 2017)"
-    role_es: "Saxo tenor (formación 2017)"
-    role_en: "Tenor sax (2017 line-up)"
-
-# Artistes convidats habituals (font: web actual + premsa)
+- name: Martí Elias
+  role_ca: Bateria (formació 2017, web oficial)
+  role_es: Batería (formación 2017, web oficial)
+  role_en: Drums (2017 line-up, official website)
+- name: Anton Jarl
+  role_ca: Bateria (formació 2025)
+  role_es: Batería (formación 2025)
+  role_en: Drums (2025 line-up)
+- name: Pere Masafret
+  role_ca: Trombó (formacions anteriors, 2017)
+  role_es: Trombón (formaciones anteriores, 2017)
+  role_en: Trombone (earlier line-ups, 2017)
+- name: Igor Kossenkov
+  role_ca: Trombó (formacions anteriors, 2017)
+  role_es: Trombón (formaciones anteriores, 2017)
+  role_en: Trombone (earlier line-ups, 2017)
+- name: Artem Zhuliev
+  role_ca: Saxo tenor (formació 2017)
+  role_es: Saxo tenor (formación 2017)
+  role_en: Tenor sax (2017 line-up)
 guests:
-  - "Dani Nel·lo"
-  - "Ray Gelato"
-  - "Amadeu Casas"
-  - "August Tharrats"
-  - "Mike Sanchez"
-  - "Drew Davies"
-  - "Myriam Swanson"
-  - "Spencer Evoy"
-  - "Jonathan Herrero"
-  - "Agustí Burriel"
-  - "Lluís Coloma"
-  - "Steve Lucky & Carmen Gettit"
-  - "Knock Out Greg"
-  - "Big Dani Pérez"
-  - "Greg Piccolo"
-
-# Sales i festivals (font: premsa + web + cerca). Confirmar/corregir amb Ivan.
+- name: Dani Nel·lo
+  instrument: ''
+  url: https://www.daninello.cat/en/
+  label: Web
+- name: Ray Gelato
+  instrument: ''
+  url: https://www.raygelato.com/
+  label: Web
+- name: Amadeu Casas
+  instrument: ''
+  url: ''
+  label: ''
+- name: August Tharrats
+  instrument: ''
+  url: ''
+  label: ''
+- name: Mike Sanchez
+  instrument: ''
+  url: https://www.mikesanchez.com/
+  label: Web
+- name: Drew Davies
+  instrument: ''
+  url: ''
+  label: ''
+- name: Myriam Swanson
+  instrument: ''
+  url: https://myriamswanson.com/
+  label: Web
+- name: Spencer Evoy
+  instrument: ''
+  url: https://www.instagram.com/mfcchicken/
+  label: Instagram
+- name: Jonathan Herrero
+  instrument: ''
+  url: https://www.instagram.com/elkujo/
+  label: Instagram
+- name: Agustí Burriel
+  instrument: ''
+  url: https://www.instagram.com/agustiburriel/
+  label: Instagram
+- name: Lluís Coloma
+  instrument: ''
+  url: https://www.lluiscoloma.com/
+  label: Web
+- name: Steve Lucky & Carmen Gettit
+  instrument: ''
+  url: ''
+  label: ''
+- name: Knock Out Greg
+  instrument: ''
+  url: ''
+  label: ''
+- name: Big Dani Pérez
+  instrument: ''
+  url: https://bigdani.com/
+  label: Web
+- name: Greg Piccolo
+  instrument: ''
+  url: ''
+  label: ''
 venues:
-  # Sales
-  - "Jamboree, Barcelona (sala habitual; Grec i MASiMAS Festival)"
-  - "Palau de la Música Catalana, Barcelona (MASiMAS Festival; amb Mike Sánchez i Dani Nel·lo, 2014)"
-  - "La Paloma, Barcelona (inauguració festival Sax-o-Rama, 2026)"
-  - "Luz de Gas, Barcelona (concert amb Elvis, juny 2026)"
-  - "Auditori Pau Casals, el Vendrell (gener 2018)"
-  - "Auditori del Vinseum, Vilafranca del Penedès (amb Dani Nel·lo, 2018)"
-  - "Paral·lel 62, Barcelona"
-  - "Teatro Juan Bravo, Segovia"
-  - "Auditorio elcírculo, Logroño"
-  # Festivals
-  - "Festival de Jazz de San Javier, Múrcia (2017 amb Dani Nel·lo i Ray Gelato; 2025)"
-  - "Festival Internacional de Blues de Cerdanyola (2022)"
-  - "Festival de Blues de Barcelona (edicions anteriors)"
-  - "Festival de Jazz de Terrassa (2015, amb Dani Nel·lo i Agustí Burriel)"
-  - "Festival Internacional de Música de Cambrils"
-  - "Vijazz, Vilafranca del Penedès"
-  - "Festival de Big Bands de Pertuis, Pertuis (França)"
-
-# Vídeos destacats per l'EPK (YouTube). TODO Ivan: validar o substituir.
+- name: Jamboree, Barcelona (sala habitual; Grec i MASiMAS Festival)
+  url: ''
+- name: Palau de la Música Catalana, Barcelona (MASiMAS Festival; amb Mike Sánchez
+    i Dani Nel·lo, 2014)
+  url: ''
+- name: La Paloma, Barcelona (inauguració festival Sax-o-Rama, 2026)
+  url: ''
+- name: Luz de Gas, Barcelona (concert amb Elvis, juny 2026)
+  url: ''
+- name: Auditori Pau Casals, el Vendrell (gener 2018)
+  url: ''
+- name: Auditori del Vinseum, Vilafranca del Penedès (amb Dani Nel·lo, 2018)
+  url: ''
+- name: Paral·lel 62, Barcelona
+  url: ''
+- name: Teatro Juan Bravo, Segovia
+  url: ''
+- name: Auditorio elcírculo, Logroño
+  url: ''
+- name: Festival de Jazz de San Javier, Múrcia (2017 amb Dani Nel·lo i Ray Gelato;
+    2025)
+  url: ''
+- name: Festival Internacional de Blues de Cerdanyola (2022)
+  url: ''
+- name: Festival de Blues de Barcelona (edicions anteriors)
+  url: ''
+- name: Festival de Jazz de Terrassa (2015, amb Dani Nel·lo i Agustí Burriel)
+  url: ''
+- name: Festival Internacional de Música de Cambrils
+  url: ''
+- name: Vijazz, Vilafranca del Penedès
+  url: ''
+- name: Festival de Big Bands de Pertuis, Pertuis (França)
+  url: ''
 videos:
-  - id: "tmgQ8PVLhA8"
-    title: "Dani Nel·lo & Barcelona Big Blues Band — Sax Attack"
-  - id: "CI5E1vqSz88"
-    title: "Barcelona Big Blues Band (live)"
-
-# Rider tècnic — ESBORRANY perquè l'Ivan el completi/validi.
+- id: tmgQ8PVLhA8
+  title: Dani Nel·lo & Barcelona Big Blues Band — Sax Attack
+- id: CI5E1vqSz88
+  title: Barcelona Big Blues Band (live)
 rider:
-  formation_ca: "Big band de 12 a 15 músics (sexe mixte), amb secció de vents de 7 peces."
-  formation_es: "Big band de 12 a 15 músicos (sexo mixto), con sección de vientos de 7 piezas."
-  formation_en: "12–15 piece big band (mixed), with a 7-piece horn section."
-  stage_ca: "TODO Ivan: escenari mínim recomanat (mida en m2, distribució)."
-  stage_es: "TODO Ivan: escenario mínimo recomendado (tamaño en m2, distribución)."
-  stage_en: "TODO Ivan: minimum recommended stage size (m2, layout)."
-  sound_ca: "TODO Ivan: PA mínim, quantes entrades de micro, tècnic de so de la banda o del local."
-  sound_es: "TODO Ivan: PA mínimo, número de entradas de micro, técnico de sonido de la banda o del local."
-  sound_en: "TODO Ivan: minimum PA, number of mic inputs, band or venue sound engineer."
-  backline_ca: "TODO Ivan: backline necessari (piano/cava, amplis, bateria...) i què porta la banda."
-  backline_es: "TODO Ivan: backline necesario (piano/teclado, amplis, batería...) y qué aporta la banda."
-  backline_en: "TODO Ivan: required backline (piano/keys, amps, drums...) and what the band brings."
-  rehearsal_ca: "TODO Ivan: temps d'assaig abans del concert i condicions."
-  rehearsal_es: "TODO Ivan: tiempo de ensayo antes del concierto y condiciones."
-  rehearsal_en: "TODO Ivan: rehearsal time before the show and conditions."
-  duration_ca: "Concert d'uns 90 minuts. Passis dobles possibles (ex. 19h i 20.30h) segons el programa."
-  duration_es: "Concierto de unos 90 minutos. Pasos dobles posibles (ej. 19h y 20.30h) según el programa."
-  duration_en: "Approx. 90-minute concert. Double bills possible (e.g. 7pm and 8.30pm) depending on the programme."
+  formation_ca: Big band de 12 a 15 músics (sexe mixte), amb secció de vents de 7
+    peces.
+  formation_es: Big band de 12 a 15 músicos (sexo mixto), con sección de vientos de
+    7 piezas.
+  formation_en: 12–15 piece big band (mixed), with a 7-piece horn section.
+  stage_ca: ''
+  stage_es: ''
+  stage_en: ''
+  sound_ca: ''
+  sound_es: ''
+  sound_en: ''
+  backline_ca: ''
+  backline_es: ''
+  backline_en: ''
+  rehearsal_ca: ''
+  rehearsal_es: ''
+  rehearsal_en: ''
+  duration_ca: Concert d'uns 90 minuts. Passis dobles possibles (ex. 19h i 20.30h)
+    segons el programa.
+  duration_es: Concierto de unos 90 minutos. Pasos dobles posibles (ej. 19h y 20.30h)
+    según el programa.
+  duration_en: Approx. 90-minute concert. Double bills possible (e.g. 7pm and 8.30pm)
+    depending on the programme.
