@@ -8,6 +8,8 @@ La banda barcelonesa dedicada al blues y rhythm'n'blues en gran formato, bajo la
 
 Enfocada a acompañar a los mejores artistas del rhythm'n'blues a nivel nacional e internacional, consiguen una sonoridad amplia y variable en cada concierto. Artistas como Dani Nel·lo, Noa Vd, Myriam Swanson, Wax & Boogie, Ray Gelato, Drew Davies, Mike Sanchez, Claire Martin, Big Dani Perez, Lluís Coloma y muchos más han sido testigos de la transformación de su música a un formato grande, un huracán sonoro que no deja a nadie indiferente.
 
+{{< lineup >}}
+
 ## Los invitados
 
 ### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
@@ -109,3 +111,7 @@ La Barcelona Big Blues Band nació en 2010 como una propuesta arriesgada. ¡Y a�
 Los escenarios de los festivales de jazz y blues en España y en toda Europa han tenido ocasión de escuchar este huracán sonoro en toda su fuerza.
 
 Concierto mensual en los últimos 12 años en la emblemática sala barcelonesa Jamboree Jazz Club, la que consideran su casa, han hecho una base de cemento para que puedan seguir haciendo lo que mejor saben: hacer al público disfrutar de la misma manera que disfrutan ellos… ¡Con toda su alma!
+
+## Miembros históricos
+
+{{< alumni >}}

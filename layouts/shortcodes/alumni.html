@@ -1,0 +1,11 @@
+{{ $b := hugo.Data.booking }}
+{{ with $b.alumni }}
+<div class="bio-alumni">
+  <h2>{{ i18n "booking_alumni" }}</h2>
+  <ul class="bio-alumni__list">
+    {{ range . }}
+    <li><strong>{{ .name }}</strong> — {{ index . (printf "role_%s" $.Page.Language.Lang) | default .role_en }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
