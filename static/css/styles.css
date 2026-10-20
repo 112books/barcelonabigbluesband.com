@@ -303,17 +303,17 @@ a   { color: inherit; }
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   z-index: 10; pointer-events: none;
+  overflow: hidden;
   transition: opacity 3s ease;
 }
 .hero-logo-intro__img {
-  width: min(520px, 70vw);
+  width: min(480px, 60vw);
   filter: drop-shadow(0 4px 32px rgba(0,0,0,0.55));
   opacity: 0;
   animation: logoIntroIn 1.4s ease-out 0.3s forwards;
 }
 @keyframes logoIntroIn {
-  0%   { opacity: 0; transform: scale(0.6); }
-  60%  { opacity: 1; transform: scale(1.05); }
+  0%   { opacity: 0; transform: scale(0.7); }
   100% { opacity: 1; transform: scale(1); }
 }
 .hero-logo-intro--done { opacity: 0; }
