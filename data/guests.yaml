@@ -1,0 +1,85 @@
+guests:
+  - id: dani-nello
+    name: "Dani Nel·lo"
+    url: "https://www.daninello.cat/en/"
+    label: "Web"
+  - id: noa-vd
+    name: "Noa VD"
+    url: "https://www.noaandthehelldrinkers.com/"
+    label: "Web"
+  - id: ray-gelato
+    name: "Ray Gelato"
+    url: "https://www.raygelato.com/"
+    label: "Web"
+  - id: wax-and-boogie
+    name: "Wax & Boogie"
+    url: "https://www.waxandboogie.info/"
+    label: "Web"
+  - id: jonathan-herrero
+    name: "Jonathan Herrero"
+    url: "https://www.instagram.com/elkujo/"
+    label: "Instagram"
+  - id: myriam-swanson
+    name: "Myriam Swanson"
+    url: "https://myriamswanson.com/"
+    label: "Web"
+  - id: spencer-evoy
+    name: "Spencer Evoy"
+    url: "https://www.instagram.com/mfcchicken/"
+    label: "Instagram"
+  - id: lluis-coloma
+    name: "Lluís Coloma"
+    url: "https://www.lluiscoloma.com/"
+    label: "Web"
+  - id: blas-picon
+    name: "Blas Picón"
+    url: "https://blaspicon.bandcamp.com/"
+    label: "Web"
+  - id: drew-davies
+    name: "Drew Davies"
+    url: ""
+    label: ""
+  - id: alberto-burguez
+    name: "Alberto Burguez"
+    url: ""
+    label: ""
+  - id: agusti-burriel
+    name: "Agustí Burriel"
+    url: "https://www.instagram.com/agustiburriel/"
+    label: "Instagram"
+  - id: pere-miro
+    name: "Pere Miró"
+    url: "https://www.peremiro.cat/"
+    label: "Web"
+  - id: martin-burguez
+    name: "Martín Burguez"
+    url: "https://martinburguez.com/"
+    label: "Web"
+  - id: big-dani-perez
+    name: "Big Dani Pérez"
+    url: "https://bigdani.com/"
+    label: "Web"
+  - id: uros-peric
+    name: "Uroš Perić"
+    url: "https://urosperich.com/"
+    label: "Web"
+  - id: ladyva
+    name: "Ladyva"
+    url: "https://ladyva.com/"
+    label: "Web"
+  - id: santos-puertas
+    name: "Santos Puertas"
+    url: "https://santospuertas.com/"
+    label: "Web"
+  - id: mike-sanchez
+    name: "Mike Sanchez"
+    url: "https://www.mikesanchez.com/"
+    label: "Web"
+  - id: chino-swingslide
+    name: "Chino Swingslide"
+    url: "https://resophonic.es/"
+    label: "Web"
+  - id: steve-lucky-carmen-getit
+    name: "Steve Lucky & Carmen Getit"
+    url: "http://www.luckylounge.com/"
+    label: "Web"

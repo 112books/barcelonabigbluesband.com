@@ -10,87 +10,87 @@ Enfocada a acompañar a los mejores artistas del rhythm'n'blues a nivel nacional
 
 ## Los invitados
 
-### Dani Nel·lo
+### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
 
 El saxofonista barcelonés con una larga trayectoria muestra su pasión por la época de los años 40 y el sonido de los grandes saxofonistas como Red Prysock, Sil Austin o King Curtis.
 
-### Noa Vd
+### {{< glink "noa-vd" >}}Noa Vd{{< /glink >}}
 
 La cantante vasca que en los últimos años ha dejado indiscutible sello personal en la escena de blues y géneros asociados. Su energía y sensibilidad con el público la han hecho recorrer escenarios de toda la península.
 
-### Ray Gelato (UK)
+### {{< glink "ray-gelato" >}}Ray Gelato (UK){{< /glink >}}
 
 ¡El Padrino del swing! Uno de los pocos músicos actuales que con el sonido de su saxo, sus canciones y su manera de cantar es capaz de trasladarnos a la época dorada del Swing, cuando la vida era música.
 
-### Wax & Boogie
+### {{< glink "wax-and-boogie" >}}Wax & Boogie{{< /glink >}}
 
 Ster Wax y David Giorcelli son probablemente los músicos más activos a nivel nacional e internacional. La trepidante voz de Ster y el ritmo desenfrenado de David Giorcelli los han llevado a los escenarios más prestigiosos del antiguo continente.
 
-### Jonathan Herrero
+### {{< glink "jonathan-herrero" >}}Jonathan Herrero{{< /glink >}}
 
 El cantante vasco afincado en Barcelona se ha convertido en símbolo de rhythm'n'blues, soul y rock'n'roll a través de las bandas prestigiosas de las que forma parte, como A Contra Blues o Rambalaya.
 
-### Myriam Swanson
+### {{< glink "myriam-swanson" >}}Myriam Swanson{{< /glink >}}
 
 ¡La reina de rhythm'n'blues! Su presencia en el escenario, personalidad inconfundible y cualidades vocales no dejan a nadie indiferente. La prueba está en la carrera de esta gran artista.
 
-### Spencer Evoy (CAN)
+### {{< glink "spencer-evoy" >}}Spencer Evoy (CAN){{< /glink >}}
 
 Cantante y saxofonista canadiense, cuya energía y entrega en el escenario lo han llevado a los mejores escenarios y festivales del mundo. Líder de MFC Chicken, una banda londinense consolidada en la escena rockera del antiguo continente.
 
-### Lluís Coloma
+### {{< glink "lluis-coloma" >}}Lluís Coloma{{< /glink >}}
 
 El pianista de boogie-woogie lleva décadas tocando, componiendo y arreglando con su propio lenguaje un estilo que no deja a nadie indiferente. ¡Firefingers es la palabra que mejor define su forma de tocar!
 
-### Blas Picón
+### {{< glink "blas-picon" >}}Blas Picón{{< /glink >}}
 
 El cantante y armonicista que siempre ha sido uno de los grandes representantes de la escena del blues, caracterizado por su manera de cantar y tocar la armónica; admirado por la fuerza y el talento que atesora como intérprete y compositor.
 
-### Drew Davies (UK)
+### {{< glink "drew-davies" >}}Drew Davies (UK){{< /glink >}}
 
 El cantante y saxofonista inglés afincado en París ha dejado la huella inconfundible en la escena de rhythm'n'blues europeo, tanto liderando su grupo como acompañando a renombrados artistas de todo el mundo. ¡La elegancia musical que lo caracteriza es única!
 
-### Alberto Burguez
+### {{< glink "alberto-burguez" >}}Alberto Burguez{{< /glink >}}
 
 Pianista y cantante de Buenos Aires afincado en Barcelona, caracterizado por su sonido Nueva Orleans, representa una generación entregada a la búsqueda de las raíces de la música afroamericana.
 
-### Agustí Burriel
+### {{< glink "agusti-burriel" >}}Agustí Burriel{{< /glink >}}
 
 Sospechoso habitual de los escenarios de toda Europa con su dedicación a la música de los años 40, 50 y 60. Su versatilidad lo ha llevado a ser uno de los primeros invitados de la Barcelona Big Blues Band.
 
-### Pere Miró
+### {{< glink "pere-miro" >}}Pere Miró{{< /glink >}}
 
 Cuando se menciona saxo barítono relacionado con rhythm'n'blues, swing y música jamaicana su nombre sale enseguida. Uno de los músicos más activos de la escena catalana.
 
-### Martín Burguez
+### {{< glink "martin-burguez" >}}Martín Burguez{{< /glink >}}
 
 Gran guitarrista y cantante de la capital argentina afincado en París cumple todos los requisitos para estar delante de una big band: canciones propias, puesta en escena, sonido característico. ¡Todo!
 
-### Big Dani Perez
+### {{< glink "big-dani-perez" >}}Big Dani Perez{{< /glink >}}
 
 Saxofonista y cantante de nuestra casa que ha marcado con su sonido salvaje el retorno del swing en Cataluña formando parte del grupo Big Jamboree. La época en la que se ha forjado como músico y compositor pone base a su forma de tocar.
 
-### Uroš Perić (SLO)
+### {{< glink "uros-peric" >}}Uroš Perić (SLO){{< /glink >}}
 
 Cantante y pianista cuya voz y carisma integral han sido recibidos con aplausos entusiastas del público de todo el mundo. Es considerado uno de los mejores intérpretes del genio del soul, ¡Ray Charles!
 
-### Ladyva (CH)
+### {{< glink "ladyva" >}}Ladyva (CH){{< /glink >}}
 
 La cantante y pianista suiza ha sido revelación en la manera de tocar boogie-woogie, con un toque personal inconfundible. Su repertorio, por primera vez ampliado a una agrupación de este tamaño, no deja a nadie indiferente.
 
-### Santos Puertas
+### {{< glink "santos-puertas" >}}Santos Puertas{{< /glink >}}
 
 Guitarrista y cantante nacido en Cataluña, ha sido uno de los primeros invitados de la banda, elegido por su voz y su manera de tocar la guitarra. ¡Blues en estado puro!
 
-### Mike Sanchez (UK)
+### {{< glink "mike-sanchez" >}}Mike Sanchez (UK){{< /glink >}}
 
 El currículum de este cantante y pianista británico es largo. Lleva tres décadas en la cima de la escena europea de rhythm'n'blues y rock'n'roll, entregándose en cada concierto al máximo.
 
-### Chino "Swingslide"
+### {{< glink "chino-swingslide" >}}Chino "Swingslide"{{< /glink >}}
 
 Su guitarra "dobro" y su característica voz lo han llevado a ser, desde su llegada de Buenos Aires a Barcelona en el año 2001, uno de los músicos más activos de la escena nacional e internacional.
 
-### Steve Lucky & Carmen Getit (EEUU)
+### {{< glink "steve-lucky-carmen-getit" >}}Steve Lucky & Carmen Getit (EEUU){{< /glink >}}
 
 La pareja artística que en los años noventa formaba parte del fenómeno conocido como Swing Revival en EEUU sigue influenciando generaciones desde su base en San Francisco.
 

@@ -10,87 +10,87 @@ Orientada a acompanyar els millors artistes del rhythm'n'blues a nivell nacional
 
 ## Els convidats
 
-### Dani Nel·lo
+### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
 
 El saxofonista barcelonès amb una llarga trajectòria mostra la seva passió per l'època dels anys 40 i el so dels grans saxofonistes com Red Prysock, Sil Austin o King Curtis.
 
-### Noa Vd
+### {{< glink "noa-vd" >}}Noa Vd{{< /glink >}}
 
 La cantant basca que en els darrers anys ha deixat inconfudible segell personal a l'escena del blues i gèneres associats. La seva energia i sensibilitat amb el públic l'han fet recórrer escenaris de tota la península.
 
-### Ray Gelato (UK)
+### {{< glink "ray-gelato" >}}Ray Gelato (UK){{< /glink >}}
 
 El Padrí del swing! Un dels pocs músics actuals que amb el so del seu saxo, les seves cançons i la seva manera de cantar és capaç de transportar-nos a l'època daurada del swing, quan la vida era música.
 
-### Wax & Boogie
+### {{< glink "wax-and-boogie" >}}Wax & Boogie{{< /glink >}}
 
 Ster Wax i David Giorcelli són probablement els músics més actius a nivell nacional i internacional. La trepidant veu de Ster i el ritme desenfrenat de David Giorcelli els han portat als escenaris més prestigiosos del vell continent.
 
-### Jonathan Herrero
+### {{< glink "jonathan-herrero" >}}Jonathan Herrero{{< /glink >}}
 
 El cantant basc establert a Barcelona s'ha convertit en símbol de rhythm'n'blues, soul i rock'n'roll a través de les bandes prestigioses de les quals forma part, com A Contra Blues o Rambalaya.
 
-### Myriam Swanson
+### {{< glink "myriam-swanson" >}}Myriam Swanson{{< /glink >}}
 
 La reina del rhythm'n'blues! La seva presència a l'escenari, personalitat inconfundible i qualitats vocals no deixen ningú indiferent. La prova és la carrera d'aquesta gran artista.
 
-### Spencer Evoy (CAN)
+### {{< glink "spencer-evoy" >}}Spencer Evoy (CAN){{< /glink >}}
 
 Cantant i saxofonista canadenc, la seva energia i entrega a l'escenari l'han portat als millors escenaris i festivals del món. Líder de MFC Chicken, una banda londinenca consolidada a l'escena rockera del vell continent.
 
-### Lluís Coloma
+### {{< glink "lluis-coloma" >}}Lluís Coloma{{< /glink >}}
 
 El pianista de boogie-woogie porta dècades tocant, component i arranjant amb el seu propi llenguatge un estil que no deixa ningú indiferent. Firefingers és la paraula que millor defineix la seva forma de tocar!
 
-### Blas Picón
+### {{< glink "blas-picon" >}}Blas Picón{{< /glink >}}
 
 El cantant i harmònica que sempre ha estat un dels grans representants de l'escena del blues, caracteritzat per la seva manera de cantar i tocar l'harmònica; admirat per la força i el talent que atresora com a intèrpret i compositor.
 
-### Drew Davies (UK)
+### {{< glink "drew-davies" >}}Drew Davies (UK){{< /glink >}}
 
 El cantant i saxofonista anglès establert a París ha deixat la marca inconfundible a l'escena del rhythm'n'blues europeu, tant liderant el seu grup com acompanyant artistes reconeguts d'arreu del món. L'elegància musical que el caracteritza és única!
 
-### Alberto Burguez
+### {{< glink "alberto-burguez" >}}Alberto Burguez{{< /glink >}}
 
 Pianista i cantant de Buenos Aires establert a Barcelona, caracteritzat pel seu so de Nova Orleans, representa una generació entregada a la recerca de les arrels de la música afroamericana.
 
-### Agustí Burriel
+### {{< glink "agusti-burriel" >}}Agustí Burriel{{< /glink >}}
 
 Sospitós habitual dels escenaris de tota Europa amb la seva dedicació a la música dels anys 40, 50 i 60. La seva versatilitat l'ha portat a ser un dels primers convidats de la Barcelona Big Blues Band.
 
-### Pere Miró
+### {{< glink "pere-miro" >}}Pere Miró{{< /glink >}}
 
 Quan es menciona el saxo baríton relacionat amb rhythm'n'blues, swing i música jamaicana, el seu nom surt de seguida. Un dels músics més actius de l'escena catalana.
 
-### Martín Burguez
+### {{< glink "martin-burguez" >}}Martín Burguez{{< /glink >}}
 
 Gran guitarrista i cantant de la capital argentina establert a París compleix tots els requisits per ser davant d'una big band: cançons pròpies, posada en escena, so característic. Tot!
 
-### Big Dani Perez
+### {{< glink "big-dani-perez" >}}Big Dani Perez{{< /glink >}}
 
 Saxofonista i cantant de casa nostra que ha marcat amb el seu so salvatge el retorn del swing a Catalunya formant part del grup Big Jamboree. L'època en què s'ha forjat com a músic i compositor posa base a la seva forma de tocar.
 
-### Uroš Perić (SLO)
+### {{< glink "uros-peric" >}}Uroš Perić (SLO){{< /glink >}}
 
 Cantant i pianista la seva veu i carisma integral han estat rebuts amb aplaudiments entusiastes del públic de tot el món. És considerat un dels millors intèrprets del geni del soul, Ray Charles!
 
-### Ladyva (CH)
+### {{< glink "ladyva" >}}Ladyva (CH){{< /glink >}}
 
 La cantant i pianista suïssa ha estat revelació en la manera de tocar boogie-woogie, amb un toc personal inconfundible. El seu repertori, per primera vegada ampliat a una agrupació d'aquesta mida, no deixa ningú indiferent.
 
-### Santos Puertas
+### {{< glink "santos-puertas" >}}Santos Puertas{{< /glink >}}
 
 Guitarrista i cantant nascut a Catalunya, ha estat un dels primers convidats de la banda, escollit per la seva veu i la seva manera de tocar la guitarra. Blues en estat pur!
 
-### Mike Sanchez (UK)
+### {{< glink "mike-sanchez" >}}Mike Sanchez (UK){{< /glink >}}
 
 El currículum d'aquest cantant i pianista britànic és llarg. Porta tres dècades al cim de l'escena europea de rhythm'n'blues i rock'n'roll, lliurant-se en cada concert al màxim.
 
-### Chino "Swingslide"
+### {{< glink "chino-swingslide" >}}Chino "Swingslide"{{< /glink >}}
 
 La seva guitarra "dobro" i la seva veu característica l'han portat a ser, des de la seva arribada de Buenos Aires a Barcelona l'any 2001, un dels músics més actius de l'escena nacional i internacional.
 
-### Steve Lucky & Carmen Getit (EEUU)
+### {{< glink "steve-lucky-carmen-getit" >}}Steve Lucky & Carmen Getit (EEUU){{< /glink >}}
 
 La parella artística que en els anys 90 formava part del fenomen conegut com a Swing Revival als EEUU segueix influenciant generacions des de la seva base a San Francisco.
 

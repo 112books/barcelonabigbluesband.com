@@ -10,87 +10,87 @@ Focused on accompanying the best national and international rhythm'n'blues artis
 
 ## The guests
 
-### Dani Nel·lo
+### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
 
 The Barcelona saxophonist with a long track record shows his passion for the sound of the 1940s and the great saxophonists such as Red Prysock, Sil Austin or King Curtis.
 
-### Noa Vd
+### {{< glink "noa-vd" >}}Noa Vd{{< /glink >}}
 
 The Basque singer who in recent years has left an unmistakable personal mark on the blues scene and related genres. Her energy and sensitivity with the audience have taken her to stages across the whole peninsula.
 
-### Ray Gelato (UK)
+### {{< glink "ray-gelato" >}}Ray Gelato (UK){{< /glink >}}
 
 The Godfather of swing! One of the few current musicians who, with the sound of his sax, his songs and his way of singing, can transport us to the golden age of Swing, when life was music.
 
-### Wax & Boogie
+### {{< glink "wax-and-boogie" >}}Wax & Boogie{{< /glink >}}
 
 Ster Wax and David Giorcelli are probably the most active musicians nationally and internationally. Ster's thrilling voice and David Giorcelli's frantic rhythm have taken them to the most prestigious stages on the European continent.
 
-### Jonathan Herrero
+### {{< glink "jonathan-herrero" >}}Jonathan Herrero{{< /glink >}}
 
 The Basque singer based in Barcelona has become a symbol of rhythm'n'blues, soul and rock'n'roll through the prestigious bands he is part of, such as A Contra Blues or Rambalaya.
 
-### Myriam Swanson
+### {{< glink "myriam-swanson" >}}Myriam Swanson{{< /glink >}}
 
 The queen of rhythm'n'blues! Her stage presence, unmistakable personality and vocal qualities leave nobody indifferent. The proof is the career of this great artist.
 
-### Spencer Evoy (CAN)
+### {{< glink "spencer-evoy" >}}Spencer Evoy (CAN){{< /glink >}}
 
 Canadian singer and saxophonist whose energy and commitment on stage have taken him to the best venues and festivals in the world. Leader of MFC Chicken, a London band established on the European rock scene.
 
-### Lluís Coloma
+### {{< glink "lluis-coloma" >}}Lluís Coloma{{< /glink >}}
 
 The boogie-woogie pianist has spent decades playing, composing and arranging, with his own language, a style that leaves nobody indifferent. Firefingers is the word that best defines his way of playing!
 
-### Blas Picón
+### {{< glink "blas-picon" >}}Blas Picón{{< /glink >}}
 
 The singer and harmonica player who has always been one of the greats of the blues scene, known for his way of singing and playing the harmonica; admired for the strength and talent he holds as a performer and composer.
 
-### Drew Davies (UK)
+### {{< glink "drew-davies" >}}Drew Davies (UK){{< /glink >}}
 
 The English singer and saxophonist based in Paris has left an indelible mark on the European rhythm'n'blues scene, both leading his own group and accompanying renowned artists from all over the world. The musical elegance that characterises him is unique!
 
-### Alberto Burguez
+### {{< glink "alberto-burguez" >}}Alberto Burguez{{< /glink >}}
 
 Pianist and singer from Buenos Aires based in Barcelona, known for his New Orleans sound, he represents a generation devoted to searching for the roots of Afro-American music.
 
-### Agustí Burriel
+### {{< glink "agusti-burriel" >}}Agustí Burriel{{< /glink >}}
 
 A regular suspect on stages across Europe with his dedication to the music of the 40s, 50s and 60s. His versatility has made him one of the first guests of the Barcelona Big Blues Band.
 
-### Pere Miró
+### {{< glink "pere-miro" >}}Pere Miró{{< /glink >}}
 
 When it comes to baritone saxophone linked to rhythm'n'blues, swing and Jamaican music, his name comes up immediately. One of the most active musicians on the Catalan scene.
 
-### Martín Burguez
+### {{< glink "martin-burguez" >}}Martín Burguez{{< /glink >}}
 
 Great guitarist and singer from the Argentine capital based in Paris, he has everything it takes to stand in front of a big band: his own songs, stage presence, a characteristic sound. Everything!
 
-### Big Dani Perez
+### {{< glink "big-dani-perez" >}}Big Dani Perez{{< /glink >}}
 
 Saxophonist and singer from our own house who has marked the return of swing in Catalonia with his wild sound as part of the Big Jamboree group. The period in which he forged himself as a musician and composer laid the foundation for his way of playing.
 
-### Uroš Perić (SLO)
+### {{< glink "uros-peric" >}}Uroš Perić (SLO){{< /glink >}}
 
 Singer and pianist whose voice and overall charisma have been received with enthusiastic applause from audiences all over the world. He is considered one of the finest interpreters of the genius of soul, Ray Charles!
 
-### Ladyva (CH)
+### {{< glink "ladyva" >}}Ladyva (CH){{< /glink >}}
 
 The Swiss singer and pianist has been a revelation in the way she plays boogie-woogie, with an unmistakable personal touch. Her repertoire, for the first time expanded to an ensemble of this size, leaves nobody indifferent.
 
-### Santos Puertas
+### {{< glink "santos-puertas" >}}Santos Puertas{{< /glink >}}
 
 Guitarist and singer born in Catalonia, he was one of the band's first guests, chosen for his voice and his way of playing the guitar. Blues in its purest form!
 
-### Mike Sanchez (UK)
+### {{< glink "mike-sanchez" >}}Mike Sanchez (UK){{< /glink >}}
 
 The CV of this British singer and pianist is a long one. He has spent three decades at the top of the European rhythm'n'blues and rock'n'roll scene, giving his all at every concert.
 
-### Chino "Swingslide"
+### {{< glink "chino-swingslide" >}}Chino "Swingslide"{{< /glink >}}
 
 His "dobro" guitar and characteristic voice have made him, since his arrival from Buenos Aires to Barcelona in 2001, one of the most active musicians on the national and international scene.
 
-### Steve Lucky & Carmen Getit (USA)
+### {{< glink "steve-lucky-carmen-getit" >}}Steve Lucky & Carmen Getit (USA){{< /glink >}}
 
 The artistic couple who in the nineties were part of the phenomenon known as the Swing Revival in the USA continue to influence generations from their base in San Francisco.
 
