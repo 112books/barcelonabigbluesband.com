@@ -16,23 +16,6 @@
           {{ end }}
         </p>
 
-        <!-- Email des de data/contact.yaml -->
-        <a href="mailto:{{ hugo.Data.contact.email }}" class="contact-email" data-track="email_click">
-          <span class="contact-email__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
-              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </span>
-          {{ hugo.Data.contact.email }}
-        </a>
-
-        <!-- Telèfon (opcional) des de data/contact.yaml -->
-        {{ with hugo.Data.contact.phone }}
-          <p class="contact-phone">
-            Tel: <a href="tel:{{ . }}">{{ . }}</a>
-          </p>
-        {{ end }}
-
         <div class="contact-divider"></div>
 
         <p class="contact-social-label">
