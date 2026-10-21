@@ -1,18 +1,10 @@
 <header class="site-header" id="site-header" role="banner">
 
-  <!-- Fila 1: logo + idiomes -->
+  <!-- Fila única: logo + nav + idiomes -->
   <div class="header-top">
     <a href="{{ .Site.Home.RelPermalink }}" class="site-logo" aria-label="{{ .Site.Title }}">
       <img class="logo-full" src="{{ "images/logo/bbb-logo.svg" | relURL }}" alt="{{ .Site.Title }}" width="512" height="512">
     </a>
-    {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--compact") }}
-  </div>
-
-  <!-- Separador -->
-  <div class="header-rule" aria-hidden="true"></div>
-
-  <!-- Fila 2: nav principal -->
-  <div class="header-bottom">
     <nav class="main-nav" id="main-nav" aria-label="{{ i18n "nav_main" | default "Navegació principal" }}">
       <ul class="nav-list" role="list">
         {{ range site.Menus.main }}
@@ -24,6 +16,7 @@
       <!-- Selector idiomes dins el menú mòbil -->
       {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--mobile") }}
     </nav>
+    {{ partial "lang-switcher.html" (dict "Site" .Site "Translations" .Translations "class" "lang-switcher--compact") }}
     <button class="nav-toggle" id="nav-toggle"
             aria-expanded="false"
             aria-controls="main-nav"

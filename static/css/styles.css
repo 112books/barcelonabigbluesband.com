@@ -1,5 +1,5 @@
 /* ============================================================
-   Bratia Music – styles.css  v4
+   Barcelona Big Blues Band – styles.css  v4
    ============================================================
    Índex:
    1.  Variables
@@ -52,9 +52,9 @@
   --f-body:    'Inter', system-ui, sans-serif;
 
   --max-w:        1160px;
-  --header-top-h:  88px;
+  --header-top-h:  90px;
   --header-nav-h:  44px;
-  --header-h:     132px;
+  --header-h:      90px;
   --compact-h:     52px;
   --gap:            2rem;
   --section-v:      6rem;
@@ -105,14 +105,14 @@ a   { color: inherit; }
 }
 
 .header-top {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: .75rem var(--gap);
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 0 var(--gap);
   height: var(--header-top-h);
 }
 
 .site-logo { display: block; text-decoration: none; }
 .logo-full {
-  height: 67px;
+  height: 74px;
   width: auto;
   opacity: .95;
   transition: height .4s var(--ease), opacity var(--dur);
@@ -129,19 +129,10 @@ a   { color: inherit; }
 .lang-switcher a:hover,
 .lang-switcher a.active { color: var(--c-gold); }
 
-.header-rule {
-  height: 1px;
-  background: rgba(255,255,255,.12);
-  margin: 0 var(--gap);
-}
+.header-rule { display: none; }
+.header-bottom { display: none; }
 
-.header-bottom {
-  display: flex; align-items: center;
-  height: var(--header-nav-h);
-  padding: 0 var(--gap);
-}
-
-.main-nav { display: flex; align-items: center; }
+.main-nav { display: flex; align-items: center; flex: 1; justify-content: flex-end; }
 .nav-list {
   list-style: none; display: flex; align-items: center; gap: 0;
 }
@@ -247,7 +238,7 @@ a   { color: inherit; }
 }
 
 .lang-switcher--compact {
-  margin-left: auto;
+  flex-shrink: 0;
   border-left: 1px solid rgba(255,255,255,.12);
   padding-left: 1rem;
 }
@@ -830,21 +821,11 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   }
 }
 
-.about-split { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); min-height: calc(100vh - var(--header-h)); gap: 0; align-items: stretch; }
+.about-split { display: grid; grid-template-columns: 40% 60%; min-height: calc(100vh - var(--header-h)); gap: 0; align-items: stretch; }
 .about-split__image { position: sticky; top: var(--header-h); height: calc(100vh - var(--header-h)); overflow: hidden; }
 .about-split__image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: brightness(.85); }
-.about-split__content { padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 4vw, 4rem); background: var(--c-dark); color: var(--c-ink); display: flex; flex-direction: column; justify-content: flex-start; max-width: none; margin: 0; width: 100%; box-sizing: border-box; }
-.about-split__content .prose { max-width: 720px; width: 100%; }
-.about-split__content .page-title { color: var(--c-ink); font-size: clamp(2rem, 5vw, 3.2rem); }
-.about-split__content .prose { font-size: .9rem; line-height: 1.7; }
-.about-split__content .page-title::after { background: var(--c-gold); }
-
-@media (max-width: 900px) {
-  .about-split { grid-template-columns: 1fr; }
-  .about-split__image { position: relative; top: 0; height: 50vw; min-height: 260px; }
-  .about-split__content { padding: 3rem var(--gap); }
-}
-
+.about-split__content { padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 3vw, 3.5rem); background: var(--c-dark); color: var(--c-ink); display: flex; flex-direction: column; justify-content: flex-start; margin: 0; width: 100%; max-width: 100%; box-sizing: border-box; }
+.about-split__content .prose { max-width: 760px; width: 100%; margin-right: auto; }
 .discography-list { display: flex; flex-direction: column; gap: 5rem; margin-top: 2rem; }
 .disc-card { display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: start; }
 .disc-card:nth-child(even) { direction: rtl; }
@@ -1016,7 +997,7 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
 
 /* ── 16. RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 900px) {
-  :root { --header-top-h: 70px; --header-h: 114px; --section-v: 4rem; }
+  :root { --header-top-h: 70px; --header-h: 70px; --section-v: 4rem; }
 
   .nav-toggle { display: flex; }
 
@@ -1074,7 +1055,7 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
 
 @media (max-width: 560px) {
   :root { --gap: 1.25rem; --section-v: 3rem; }
-  .logo-full { height: 48px; }
+  .logo-full { height: 52px; }
   .band-grid { grid-template-columns: 1fr; }
   .band-card:not(.band-card--leader) { grid-column: span 1; }
   .gallery   { grid-template-columns: repeat(2, 1fr); }
@@ -1599,6 +1580,21 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   font-weight: 600;
 }
 .booking-nav a:hover { text-decoration: underline; }
+
+.booking-nav--enhanced a {
+  border: 1px solid rgba(232,160,106,.28);
+  border-radius: 4px;
+  padding: .35rem .9rem;
+  background: rgba(232,160,106,.06);
+  transition: background var(--dur), border-color var(--dur), color var(--dur);
+  text-decoration: none !important;
+}
+.booking-nav--enhanced a:hover {
+  background: rgba(232,160,106,.18);
+  border-color: var(--c-accent-2);
+  color: var(--c-accent-2);
+  text-decoration: none !important;
+}
 
 .booking-musician__link {
   margin-left: .6rem;

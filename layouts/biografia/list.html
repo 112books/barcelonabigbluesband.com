@@ -1,55 +1,44 @@
 {{ define "main" }}
-<div class="page-wrap{{ if .Params.bg }} page-wrap--dark{{ end }}"{{ with .Params.bg }} style="--page-bg: url('{{ . | relURL }}')"{{ end }}>
+<div class="page-wrap page-wrap--dark"{{ with .Params.bg }} style="--page-bg: url('{{ . | relURL }}')"{{ end }}>
   <div class="page-inner">
-    <div class="about-split">
-      {{ with .Params.image }}
-      <div class="about-split__image">
-        <img src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}" loading="lazy">
-      </div>
+
+    <h1 class="page-title">{{ .Title }}</h1>
+
+    <nav class="booking-nav booking-nav--enhanced" aria-label="Seccions">
+      {{ $raw := .RawContent }}
+      {{ range $i, $h := findRE "(?m)^##[[:space:]]+(.+)$" $raw }}
+      {{ $txt := replaceRE "^##[[:space:]]+" "" $h }}
+      {{ $plain := plainify $txt }}
+      {{ $id := urlize $plain }}
+      {{ if eq $id "" }}{{ $id = printf "section-%d" $i }}{{ end }}
+      <a href="#{{ $id }}">{{ $plain }}</a>
       {{ end }}
-      <div class="about-split__content">
-        <h1 class="page-title">{{ .Title }}</h1>
-        <nav class="section-nav bio-sections-nav" aria-label="Seccions">
-          <ul class="section-nav__list">
-            {{ $raw := .RawContent }}
-            {{ range $i, $h := findRE "(?m)^##[[:space:]]+(.+)$" $raw }}
-            {{ $txt := replaceRE "^##[[:space:]]+" "" $h }}
-            {{ $plain := plainify $txt }}
-            {{ $id := urlize $plain }}
-            {{ if eq $id "" }}{{ $id = printf "section-%d" $i }}{{ end }}
-            <li><a href="#{{ $id }}" class="section-nav__link">{{ $plain }}</a></li>
-            {{ end }}
-          </ul>
-        </nav>
-        <div class="prose">{{ .Content }}</div>
-      </div>
-    </div>
+    </nav>
+
+    <div class="prose">{{ .Content }}</div>
+
   </div>
 </div>
 <script>
 (function(){
-  var nav=document.querySelector(".bio-sections-nav");
-  if(!nav)return;
-  var content=document.querySelector(".about-split__content .prose");
-  if(!content)return;
-  var hs=content.querySelectorAll("h2");
-  hs.forEach(function(h,i){
+  var hs = document.querySelectorAll('.prose h2');
+  hs.forEach(function(h, i){
     if(!h.id){
-      var t=h.textContent||"";
-      var id=t.toLowerCase().replace(/[^a-z0-9àèéíòóúüñ]+/gi,"-").replace(/^-+|-+$/g,"")||("section-"+i);
-      h.id=id;
+      var t = h.textContent || '';
+      var id = t.toLowerCase().replace(/[^a-z0-9àèéíòóúüñ]+/gi, '-').replace(/^-+|-+$/g, '') || ('section-' + i);
+      h.id = id;
     }
   });
-  nav.querySelectorAll("a").forEach(function(a){
-    a.addEventListener("click",function(e){
-      var href=a.getAttribute("href")||"";
-      if(href.indexOf("#")===0){
-        var el=document.querySelector(href);
+  document.querySelectorAll('.booking-nav a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href') || '';
+      if(href.indexOf('#') === 0){
+        var el = document.querySelector(href);
         if(el){
           e.preventDefault();
-          var top=el.getBoundingClientRect().top+window.pageYOffset-110;
-          window.scrollTo({top:top,behavior:"smooth"});
-          history.pushState(null,"",href);
+          var top = el.getBoundingClientRect().top + window.pageYOffset - 110;
+          window.scrollTo({top: top, behavior: 'smooth'});
+          history.pushState(null, '', href);
         }
       }
     });
