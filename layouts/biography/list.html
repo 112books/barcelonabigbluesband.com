@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="page-wrap">
+<div class="page-wrap{{ if .Params.bg }} page-wrap--dark{{ end }}"{{ with .Params.bg }} style="--page-bg: url('{{ . | relURL }}')"{{ end }}>
   <div class="page-inner">
     <div class="about-split">
       {{ with .Params.image }}
