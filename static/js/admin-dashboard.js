@@ -168,11 +168,41 @@
       '<div class="section-title">seccions</div><div class="chart">' + rows(secItems, secMax, secTotal, 'chart-bar--section') + '</div>';
   }
 
+
+  function pieChart(items, colors) {
+    if (!items || !items.length) return '';
+    var total = items.reduce(function (a,i){ return a+i.count; }, 0) || 1;
+    var cx=90, cy=90, r=70, stroke=28;
+    var offset = 0;
+    var paths = [], legend = [];
+    items.forEach(function (it, idx){
+      var pct = it.count / total;
+      if (pct <= 0) return;
+      var angle = pct * 2 * Math.PI;
+      var x1 = cx + r * Math.cos(offset);
+      var y1 = cy + r * Math.sin(offset);
+      offset += angle;
+      var x2 = cx + r * Math.cos(offset);
+      var y2 = cy + r * Math.sin(offset);
+      var large = angle > Math.PI ? 1 : 0;
+      var color = colors[idx % colors.length];
+      paths.push('<path d="M '+cx+','+cy+' L '+x1+','+y1+' A '+r+','+r+' 0 '+large+',1 '+x2+','+y2+' Z" fill="'+color+'" opacity="0.9"></path>');
+      legend.push('<div class="pie-legend-row"><span class="pie-dot" style="background:'+color+'"></span><span class="pie-legend-name">'+esc(it.name)+'</span><span class="pie-legend-val">'+it.count+' ('+Math.round(pct*100)+'%)</span></div>');
+    });
+    return '<div class="pie-wrap"><svg viewBox="0 0 180 180" class="pie-svg">'+paths.join('')+'<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-stroke)+'" fill="var(--c-bg)"></circle></svg><div class="pie-legend">'+legend.join('')+'</div></div>';
+  }
+
   function renderTecnologia() {
-    return statSection('navegadors', DATA.browsers || [], 'chart-bar--browser', BROWSER_ICONS) +
-      statSection('sistemes operatius', DATA.systems || [], 'chart-bar--system', SYSTEM_ICONS) +
-      statSection('tipus de dispositiu', DATA.sizes || [], 'chart-bar--size', SIZE_ICONS) +
-      statSection('ubicacions', DATA.locations || [], 'chart-bar--location', null);
+    var colors = ['#c9a95d','#b08d2f','#8b7355','#6b5b3e','#a0895b','#d4b36a','#7f6742'];
+    var browsers = (DATA.browsers||[]).slice().sort(function(a,b){return b.count-a.count;}).map(function(i){return {name:i.name||i.id, count:i.count};});
+    var systems = (DATA.systems||[]).slice().sort(function(a,b){return b.count-a.count;}).map(function(i){return {name:i.name||i.id, count:i.count};});
+    var sizes = (DATA.sizes||[]).slice().sort(function(a,b){return b.count-a.count;}).map(function(i){return {name:SIZE_LABELS[i.id]||i.name||i.id, count:i.count};});
+    var html = '';
+    if (browsers.length) html += '<div class="section-title">navegadors</div>' + pieChart(browsers, colors);
+    if (systems.length) html += '<div class="section-title">sistemes operatius</div>' + pieChart(systems, colors);
+    if (sizes.length) html += '<div class="section-title">tipus de dispositiu</div>' + pieChart(sizes, colors);
+    html += statSection('ubicacions', DATA.locations || [], 'chart-bar--location', null);
+    return html || '<span class="loading">Sense dades</span>';
   }
 
   function render() {

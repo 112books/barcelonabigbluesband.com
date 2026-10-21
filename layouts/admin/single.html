@@ -36,6 +36,15 @@
   .icon-item__count { font-size: .7rem; color: var(--c-muted); }
   .loading { color: var(--c-muted); padding: 1rem 0; }
   @media (max-width: 640px) { .chart-row { grid-template-columns: 120px 1fr 44px; } }
+
+  .pie-wrap { display:flex; gap:2rem; align-items:center; flex-wrap:wrap; margin:1rem 0 2rem; }
+  .pie-svg { width:200px; height:200px; flex:0 0 auto; }
+  .pie-legend { display:flex; flex-direction:column; gap:.4rem; flex:1 1 240px; }
+  .pie-legend-row { display:flex; align-items:center; gap:.6rem; font-size:.85rem; }
+  .pie-dot { width:10px; height:10px; border-radius:50%; flex:0 0 auto; }
+  .pie-legend-name { color:var(--c-ink-soft); flex:1; }
+  .pie-legend-val { color:var(--c-muted); font-variant-numeric:tabular-nums; }
+
 </style>
 <div class="page-wrap page-wrap--dark" data-pagefind-ignore>
   <div class="page-inner admin-wrap">
