@@ -1,6 +1,6 @@
 ---
 title: "Agenda"
-bg: "images/hero/jam_06.jpg"
+bg: "images/galleries/2022-07-2022-07-09-bbbb-2-0044-jpg.jpg"
 description: "Agenda de concerts de la Barcelona Big Blues Band: propers dates, entrades i calendari."
 ---
 

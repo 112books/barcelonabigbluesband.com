@@ -2,7 +2,7 @@
 type: "discography"
 layout: "discography"
 title: "Discography"
-bg: "images/hero/jam_06.jpg"
+bg: "images/sections/discografia.jpg"
 description: "Barcelona Big Blues Band discography: albums, EPs and singles."
 ---
 
