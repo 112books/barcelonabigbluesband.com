@@ -1,4 +1,4 @@
-/* Ivan Kovačević — Admin analytics (GoatCounter, dades públiques).
+/* Barcelona Big Blues Band — Admin analytics (GoatCounter, dades públiques).
    Pestanyes: Resum (per dia/setmana/mes/trimestre/any + idiomes),
    Pàgines i seccions, Navegadors i dispositius. */
 (function () {
@@ -11,6 +11,8 @@
   var DATA = null, TAB = 'resum', GROUP = 'month';
 
   var GROUPS = [['day','Dia'],['week','Setmana'],['month','Mes'],['quarter','Trimestre'],['year','Any']];
+  var PERIODS = [['1d','Dia',1],['7d','Setmana',7],['30d','Mes',30],['90d','Trimestre',90],['1y','Any',365],['all','Tot',null]];
+  var PERIOD = 'all';
   var LANG_NAMES = { ca:'Català', es:'Castellà', en:'Anglès', sr:'Serbi', other:'Altres' };
   var SECTION_NAMES = { home:'Inici', gigs:'Concerts', concerts:'Concerts', conciertos:'Concerts',
     projects:'Projectes', projectes:'Projectes', projekti:'Projectes',
@@ -53,6 +55,46 @@
     var d = parseDay(s);
     if (isNaN(d.getTime())) return s;
     return d.toLocaleDateString('ca-ES', { day:'numeric', month:'long', year:'numeric' });
+  }
+  function isoDay(d) {
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  function dataEnd() {
+    var end = (DATA.period && DATA.period.end) || '';
+    (DATA.hits || []).forEach(function (h) {
+      (h.stats || []).forEach(function (s) { if (s.day && s.day > end) end = s.day; });
+    });
+    return end;
+  }
+  function periodCutoff() {
+    var p = PERIODS.filter(function (x) { return x[0] === PERIOD; })[0];
+    if (!p || !p[2]) return '';
+    var end = dataEnd();
+    if (!end) return '';
+    var d = parseDay(end);
+    if (isNaN(d.getTime())) return '';
+    d.setDate(d.getDate() - (p[2] - 1));
+    return isoDay(d);
+  }
+  function hitCount(h) {
+    var cutoff = periodCutoff();
+    if (!cutoff) return h.count || 0;
+    var n = 0;
+    (h.stats || []).forEach(function (s) {
+      if (s.day && s.day >= cutoff) n += (s.daily || 0);
+    });
+    return n;
+  }
+  function sectionOf(path) {
+    var parts = String(path || '').replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
+    var LANGS = { ca:1, es:1, en:1 };
+    if (parts.length && LANGS[parts[0]]) return parts[1] || 'home';
+    return parts[0] || 'home';
+  }
+  function periodBtns() {
+    return PERIODS.map(function (p) {
+      return '<button type="button" class="period-btn' + (p[0] === PERIOD ? ' active' : '') + '" data-period="' + p[0] + '">' + p[1] + '</button>';
+    }).join('');
   }
   function isoWeek(d) {
     var t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
@@ -150,22 +192,34 @@
   }
 
   function renderPagines() {
-    var hits = (DATA.hits || []).slice().sort(function (a,b) { return b.count - a.count; });
+    var hits = (DATA.hits || []).map(function (h) {
+      return { path: h.path, title: h.title, count: hitCount(h) };
+    }).filter(function (h) { return h.count > 0; })
+      .sort(function (a,b) { return b.count - a.count; });
     var max = Math.max.apply(null, hits.map(function (h) { return h.count; }).concat([1]));
-    var total = hits.reduce(function (a,h) { return a + h.count; }, 0) || 1;
+    var total = hits.reduce(function (a,h) { return a + h.count; }, 0);
+    var totalSafe = total || 1;
     var pageRows = hits.map(function (h) {
       var name = h.title || h.path;
-      var pct = Math.round(h.count / total * 100);
+      var pct = Math.round(h.count / totalSafe * 100);
       return '<div class="chart-row"><div class="chart-label" title="' + esc(h.path) + '">' + esc(name) + '</div>' +
         bar(h.count, max, 'chart-bar--section', pct) + '<div class="chart-value">' + h.count + '</div></div>';
     }).join('');
-    var sec = DATA.by_section || {};
+    var sec = {};
+    (DATA.hits || []).forEach(function (h) {
+      var c = hitCount(h);
+      if (!c) return;
+      var k = sectionOf(h.path);
+      sec[k] = (sec[k] || 0) + c;
+    });
     var secItems = Object.keys(sec).sort(function (a,b) { return sec[b]-sec[a]; })
       .map(function (k) { return { id:k, name:SECTION_NAMES[k] || k, count:sec[k] }; });
     var secMax = Math.max.apply(null, secItems.map(function (i) { return i.count; }).concat([1]));
     var secTotal = secItems.reduce(function (a,i) { return a + i.count; }, 0) || 1;
-    return '<div class="section-title">pàgines més visitades</div><div class="chart">' + (pageRows || '<span class="loading">Sense dades</span>') + '</div>' +
-      '<div class="section-title">seccions</div><div class="chart">' + rows(secItems, secMax, secTotal, 'chart-bar--section') + '</div>';
+    return '<div class="period-wrap"><span class="period-label">Període</span><div id="period-selector">' + periodBtns() + '</div></div>' +
+      '<div class="stats-total">visites al període <strong>' + total.toLocaleString('ca-ES') + '</strong></div>' +
+      '<div class="section-title">pàgines més visitades</div><div class="chart">' + (pageRows || '<span class="loading">Sense dades</span>') + '</div>' +
+      '<div class="section-title">seccions</div><div class="chart">' + (secItems.length ? rows(secItems, secMax, secTotal, 'chart-bar--section') : '<span class="loading">Sense dades</span>') + '</div>';
   }
 
 
@@ -244,6 +298,8 @@
       render();
       return;
     }
+    var p = e.target.closest && e.target.closest('[data-period]');
+    if (p) { PERIOD = p.getAttribute('data-period'); render(); return; }
     var g = e.target.closest && e.target.closest('[data-group]');
     if (g) { GROUP = g.getAttribute('data-group'); render(); }
   });
