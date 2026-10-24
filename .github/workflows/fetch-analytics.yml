@@ -28,15 +28,17 @@ jobs:
 
           fetch_json() {
             local url="$1"
-            local result
-            result=$(curl -s --max-time 60 --retry 2 --retry-delay 3 -H "${AUTH}" "${url}")
-            if echo "${result}" | python3 -c "import sys,json; json.load(sys.stdin)" 2>/dev/null; then
-              echo "${result}"
+            local body code
+            body=$(mktemp)
+            code=$(curl -sS -o "$body" -w '%{http_code}' --max-time 60 --retry 2 --retry-delay 3 -H "${AUTH}" "${url}" || true)
+            if [ "$code" = "200" ] && python3 -c "import sys,json; json.load(sys.stdin)" < "$body" 2>/dev/null; then
+              cat "$body"
             else
-              echo "WARN: Resposta invalida per: ${url}" >&2
-              echo "      Contingut: ${result:0:100}" >&2
+              echo "WARN: HTTP ${code} per: ${url}" >&2
+              echo "      Contingut: $(head -c 200 "$body")" >&2
               echo "null"
             fi
+            rm -f "$body"
           }
 
           echo "Obtenint dades del ${START} al ${END}..."
