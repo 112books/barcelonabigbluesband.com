@@ -11,7 +11,6 @@ A selection of interviews, reviews and articles about the Barcelona Big Blues Ba
 ## International coverage
 
 - [Ladyva & Barcelona Big Blues Band — Une association explosive!](https://jazzentech.com/artistes/ladyva) — *Jazz en Tech* (FR)
-- [Cambrils festival opens with port light show and blues](https://catalan.news/cambrils-festival-opens-with-port-light/) — *Catalan.news* (EN)
 - [El Paral·lel oblidat. Recordant a Merche Mar — MASiMAS Festival 2026](https://jamboreejazz.com/en/event/el-parallel-oblidat-recordant-a-merche-mar/) — *Jamboree* (EN)
 - [Març al Club de Jazz Jamboree](https://agenda.cultura.gencat.cat/ca/activitat.html/20260223024/marc-al-club-de-jazz-jamboree) — *Agenda Cultural Gencat* (CA)
 
