@@ -19,30 +19,5 @@
 
   </div>
 </div>
-<script>
-(function(){
-  var hs = document.querySelectorAll('.prose h2');
-  hs.forEach(function(h, i){
-    if(!h.id){
-      var t = h.textContent || '';
-      var id = t.toLowerCase().replace(/[^a-z0-9àèéíòóúüñ]+/gi, '-').replace(/^-+|-+$/g, '') || ('section-' + i);
-      h.id = id;
-    }
-  });
-  document.querySelectorAll('.booking-nav a').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var href = a.getAttribute('href') || '';
-      if(href.indexOf('#') === 0){
-        var el = document.querySelector(href);
-        if(el){
-          e.preventDefault();
-          var top = el.getBoundingClientRect().top + window.pageYOffset - 110;
-          window.scrollTo({top: top, behavior: 'smooth'});
-          history.pushState(null, '', href);
-        }
-      }
-    });
-  });
-})();
-</script>
+<script src="{{ "js/bio-nav.js" | relURL }}" defer></script>
 {{ end }}
