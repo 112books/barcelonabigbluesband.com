@@ -299,10 +299,12 @@ a   { color: inherit; }
   box-sizing: border-box;
   transition: opacity 3s ease;
 }
+.hero-logo-intro__picture { display: contents; }
 .hero-logo-intro__img {
-  width: min(90vw, 620px);
-  max-width: 90%;
+  width: auto;
   height: auto;
+  max-width: min(90%, 620px);
+  max-height: min(78%, 620px);
   object-fit: contain;
   filter: drop-shadow(0 4px 32px rgba(0,0,0,0.55));
   opacity: 0;

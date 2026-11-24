@@ -9,7 +9,10 @@
   <div class="hero-overlay">
 
     <div class="hero-logo-intro" id="hero-logo-intro">
-      <img src="{{ "images/logo/bbb-logo.svg" | relURL }}" alt="{{ .Site.Title }}" class="hero-logo-intro__img" width="512" height="512">
+      <picture class="hero-logo-intro__picture">
+        <source srcset="{{ "images/logo/bbb-logo-10anys.webp" | relURL }}" type="image/webp">
+        <img src="{{ "images/logo/bbb-logo-10anys.png" | relURL }}" alt="{{ i18n "logo_10anys_alt" | default .Site.Title }}" class="hero-logo-intro__img" width="1240" height="1180" loading="eager" fetchpriority="high" decoding="async">
+      </picture>
     </div>
 
     <div class="hero-content">
