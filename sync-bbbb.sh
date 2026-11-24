@@ -167,6 +167,10 @@ do_publish() {
             -e "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no" \
             ${BUILD_DIR}/ ${SSH_USER}@${SSH_HOST}:${SSH_PATH}/
         RESULT=$?
+        # Normalitza permisos: Apache (www-data) ha de poder llegir tots els fitxers.
+        # (els fitxers nous poden arribar amb mode 600 si no es força el chmod)
+        print_message "Normalitzant permisos..."
+        ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} "find ${SSH_PATH} -path '${SSH_PATH}/wp-content' -prune -o -type f -exec chmod 644 {} + ; find ${SSH_PATH} -path '${SSH_PATH}/wp-content' -prune -o -type d -exec chmod 755 {} +" || true
         if [ $RESULT -eq 0 ] || [ $RESULT -eq 23 ]; then
             print_success "Web publicada via rsync"
         else
