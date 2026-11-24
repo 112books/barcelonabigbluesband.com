@@ -106,7 +106,7 @@ do_sync() {
     if [[ "$BRANCH" == "staging" ]]; then
         print_message "GitHub Pages farà deploy automàtic de staging"
     elif [[ "$BRANCH" == "main" ]]; then
-        print_message "Cloudflare Pages farà deploy automàtic de producció"
+        print_message "Ara cal publicar a Dinahosting: ./sync-bbbb.sh publish"
     fi
 }
 
@@ -141,7 +141,7 @@ do_build_local() {
 
 # Publish — per defecte Cloudflare Pages (push a main) o rsync opcional
 do_publish() {
-    print_warning "Publish: el desplegament oficial és via Cloudflare Pages (push a main)."
+    print_warning "Publish: push a main + rsync a Dinahosting (vl28359.dinaserver.com)."
     if [ -n "$SSH_KEY" ] && [ -n "$SSH_USER" ] && [ -n "$SSH_HOST" ]; then
         print_message "Hi ha configuració rsync ($SSH_HOST) — publicació directa opcional."
         do_sync main
@@ -154,11 +154,15 @@ do_publish() {
         fi
         do_pagefind production
         print_message "Enviant fitxers via rsync..."
+        # .htaccess ve de static/.htaccess (versionat al repo) i es desplega amb el build.
+        # wp-content/ i .well-known/ són del servidor: no s'han d'esborrar mai.
         rsync -avz --delete --checksum --omit-dir-times \
             --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r \
             --exclude='.DS_Store' \
             --exclude='.DS_Store?' \
             --exclude='*.map' \
+            --exclude='wp-content/' \
+            --exclude='.well-known/' \
             --ignore-errors \
             -e "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no" \
             ${BUILD_DIR}/ ${SSH_USER}@${SSH_HOST}:${SSH_PATH}/
@@ -171,7 +175,8 @@ do_publish() {
         fi
     else
         print_message "Sense rsync configurat ($CONF_FILE)."
-        print_message "Fer: git checkout main && ./sync-bbbb.sh push → Cloudflare Pages fa la resta."
+        print_message "Producció és Dinahosting: cal SSH/rsync (alias 'bbbb' + clau barcelonabigbluesband_deploy)."
+        print_message "Fer: git checkout main && ./sync-bbbb.sh publish"
         do_sync main
     fi
 }
