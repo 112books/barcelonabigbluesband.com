@@ -76,12 +76,13 @@
 {{- if $canonBase }}{{ $xdefault = replace $xdefault site.BaseURL $canonBase }}{{ end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
 
-<!-- ═══ Favicon ═══ -->
-<link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="any">
-<link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">
-<link rel="icon" type="image/png" sizes="96x96" href="{{ "images/favicon-96x96.png" | relURL }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | relURL }}">
-<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<!-- ═══ Favicon (versió = mtime perquè els navegadors no es quedin amb l'antic) ═══ -->
+{{- $favV := (os.Stat "static/images/favicon.svg").ModTime.Unix -}}
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}?v={{ $favV }}" sizes="any">
+<link rel="icon" href="{{ "images/favicon.svg" | relURL }}?v={{ $favV }}" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "images/favicon-96x96.png" | relURL }}?v={{ $favV }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "images/apple-touch-icon.png" | relURL }}?v={{ $favV }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}?v={{ $favV }}">
 
 <!-- ═══ Schema.org ═══ -->
 
