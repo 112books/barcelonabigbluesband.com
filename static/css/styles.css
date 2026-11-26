@@ -280,9 +280,9 @@ a   { color: inherit; }
 .hero-cta { display: none; }
 
 .hero-credit {
-  position: absolute; right: var(--gap); bottom: .8rem;
-  margin: 0; font-size: .5rem; line-height: 1.2; letter-spacing: .04em;
-  text-transform: uppercase; color: rgba(255,255,255,.42);
+  position: absolute; right: var(--gap); bottom: .7rem;
+  margin: 0; font-size: .42rem; line-height: 1.15; letter-spacing: .02em;
+  text-transform: uppercase; color: rgba(255,255,255,.36);
   pointer-events: none;
 }
 .hero-credit a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.2); }
