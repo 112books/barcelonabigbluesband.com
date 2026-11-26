@@ -7,27 +7,13 @@
   {{- $heroes := slice
         (dict "base" "images/hero/bbb-2026-joan-sanmarti-01" "w" 2400 "h" 1603)
         (dict "base" "images/hero/bbb-2026-joan-sanmarti-02" "w" 2400 "h" 1350) -}}
+  {{- /* Foto triada al build (no JS: la CSP de producció prohibeix scripts en línia) */ -}}
+  {{- $h := index (shuffle $heroes) 0 }}
   {{- $alt := .Site.Title -}}
-  <script>
-  (function(){
-    var h = {{ $heroes | jsonify | safeJS }};
-    var p = h[Math.floor(Math.random() * h.length)];
-    var b = {{ "/" | relURL }} + p.base;
-    document.write(
-      '<picture>' +
-      '<source type="image/webp" srcset="' + b + '-1200.webp 1200w, ' + b + '.webp 2400w" sizes="100vw">' +
-      '<img src="' + b + '.jpg" srcset="' + b + '-1200.jpg 1200w, ' + b + '.jpg 2400w" sizes="100vw" alt="{{ $alt }}" class="hero-img" loading="eager" fetchpriority="high" decoding="async" width="' + p.w + '" height="' + p.h + '">' +
-      '</picture>'
-    );
-  })();
-  </script>
-  <noscript>
-    {{- $h := index $heroes 0 }}
-    <picture>
-      <source type="image/webp" srcset="{{ printf "%s-1200.webp" $h.base | relURL }} 1200w, {{ printf "%s.webp" $h.base | relURL }} 2400w" sizes="100vw">
-      <img src="{{ printf "%s.jpg" $h.base | relURL }}" srcset="{{ printf "%s-1200.jpg" $h.base | relURL }} 1200w, {{ printf "%s.jpg" $h.base | relURL }} 2400w" sizes="100vw" alt="{{ $alt }}" class="hero-img" loading="eager" fetchpriority="high" width="{{ $h.w }}" height="{{ $h.h }}">
-    </picture>
-  </noscript>
+  <picture>
+    <source type="image/webp" srcset="{{ printf "%s-1200.webp" $h.base | relURL }} 1200w, {{ printf "%s.webp" $h.base | relURL }} 2400w" sizes="100vw">
+    <img src="{{ printf "%s.jpg" $h.base | relURL }}" srcset="{{ printf "%s-1200.jpg" $h.base | relURL }} 1200w, {{ printf "%s.jpg" $h.base | relURL }} 2400w" sizes="100vw" alt="{{ $alt }}" class="hero-img" loading="eager" fetchpriority="high" decoding="async" width="{{ $h.w }}" height="{{ $h.h }}">
+  </picture>
   <div class="hero-overlay">
 
     <div class="hero-logo-intro" id="hero-logo-intro">
