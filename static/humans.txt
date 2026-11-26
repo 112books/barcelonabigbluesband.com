@@ -7,6 +7,7 @@ Location: Barcelona, Catalonia
 /* THANKS */
 Artist: Ivan Kovačević
 Band: Barcelona Big Blues Band
+Photographer (2026 home page photos): Joan Sanmartí
 
 /* TECHNOLOGY */
 Hugo SSG: https://gohugo.io

@@ -14,6 +14,10 @@ Aquest web recull fotografies, cròniques i material gràfic de la Barcelona Big
 
 Totes les cròniques i àlbums fotogràfics de la secció [Fotos](../fotos/) són de **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [pocallum.cat](https://pocallum.cat/)).
 
+### Fotografia de portada
+
+La fotografia principal de la pàgina d’inici —les imatges de la temporada 2026, que es mostren alternadament— és de **Joan Sanmartí (fotògraf)**. La mateixa imatge es fa servir com a imatge de compartició a les xarxes socials (Open Graph) i al marcatge estructurat dels concerts.
+
 ### Altres imatges
 
 Totes les fotografies del web, excepte les portades dels discos i la fotografia principal de la pàgina d’inici, són de **Joan Linux**.
