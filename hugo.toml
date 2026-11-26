@@ -41,6 +41,7 @@ defaultContentLanguageInSubdir = true
     description = "Web oficial de la Barcelona Big Blues Band, una big band de rhythm & blues de Barcelona dirigida por el contrabajista Ivan Kovacevic. Conciertos, discografía, vídeos, prensa y contratación."
 
 [params]
+default_lang = "ca"   # idioma per a hreflang="x-default"
 description = "Web oficial de la Barcelona Big Blues Band: blues, swing i rhythm and blues en gran format des de Barcelona. Concerts, discografia, vídeos i contractació."
 tagline     = "Blues · Swing · Rhythm & Blues · Barcelona"
 og_image    = "images/hero/bbb-2026-joan-sanmarti-01.jpg"
