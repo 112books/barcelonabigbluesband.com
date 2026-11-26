@@ -1647,6 +1647,7 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
 .booking-musician__links { display: flex; gap: .35rem; align-items: center; }
 .booking-musician__icon { display: inline-flex; align-items: center; color: var(--c-accent); }
 .booking-musician__icon:hover { color: var(--c-accent-2); }
+.booking-venues { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; font-size: .95rem; }
 .booking-guests li::before, .booking-venues li::before { content: "· "; color: var(--c-accent); font-weight: 700; }
 
 .booking-video { position: relative; padding-top: 56.25%; border-radius: 8px; overflow: hidden; margin-bottom: .8rem; background: var(--c-mid); }
