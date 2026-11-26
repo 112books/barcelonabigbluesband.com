@@ -14,6 +14,10 @@ Este web recopila fotografías, crónicas y material gráfico de la Barcelona Bi
 
 Todas las crónicas y álbumes fotográficos de la sección [Fotos](../fotos/) son de **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [pocallum.cat](https://pocallum.cat/)).
 
+### Fotografía de portada
+
+La fotografía principal de la página de inicio —las imágenes de la temporada 2026, que se muestran alternativamente— es de **Joan Sanmartí (fotógrafo)**. La misma imagen se utiliza como imagen para compartir en redes sociales (Open Graph) y en el marcado estructurado de los conciertos.
+
 ### Otras imágenes
 
 Todas las fotografías del sitio, excepto las portadas de los discos y la fotografía principal de la página de inicio, son de **Joan Linux**.

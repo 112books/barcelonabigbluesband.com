@@ -14,6 +14,10 @@ This website collects photographs, chronicles and graphic material from the Barc
 
 All the chronicles and photo albums in the [Photos](../photos/) section are by **Joan Linux** ([blog.pocallum.cat](https://blog.pocallum.cat/), [pocallum.cat](https://pocallum.cat/)).
 
+### Home page photo
+
+The main photograph on the home page — the 2026 season images, shown alternately — is by **Joan Sanmartí (photographer)**. The same image is used as the social sharing image (Open Graph) and in the structured data for concerts.
+
 ### Other images
 
 All photographs on this site, except for album covers and the main hero image on the home page, are by **Joan Linux**.
