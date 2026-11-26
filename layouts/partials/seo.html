@@ -69,8 +69,10 @@
 {{- if $canonBase }}{{ $altURL = replace .Permalink site.BaseURL $canonBase }}{{ end -}}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ $altURL }}">
 {{ end }}
+{{- $defLang := site.Params.default_lang | default "ca" -}}
 {{- $xdefault := .Permalink -}}
-{{- range .AllTranslations }}{{ if eq .Language.Lang "en" }}{{ $xdefault = .Permalink }}{{ end }}{{ end -}}
+{{- range .AllTranslations }}{{ if eq .Language.Lang $defLang }}{{ $xdefault = .Permalink }}{{ end }}{{ end -}}
+{{- if eq .Language.Lang $defLang }}{{ $xdefault = .Permalink }}{{ end -}}
 {{- if $canonBase }}{{ $xdefault = replace $xdefault site.BaseURL $canonBase }}{{ end -}}
 <link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
 
@@ -86,6 +88,8 @@
 {{/* MusicGroup — present a totes les pàgines (enriquit per a cercadors i IA) */}}
 {{- $sameAs  := slice -}}
 {{- range .Site.Params.socials }}{{ $sameAs = $sameAs | append .url }}{{ end -}}
+{{- with hugo.Data.social.youtube }}{{ $sameAs = $sameAs | append . }}{{ end -}}
+{{- with hugo.Data.social.bandsintown }}{{ $sameAs = $sameAs | append . }}{{ end -}}
 {{- with hugo.Data.social.spotify }}{{ $sameAs = $sameAs | append . }}{{ end -}}
 {{- with hugo.Data.social.bandcamp }}{{ $sameAs = $sameAs | append . }}{{ end -}}
 <script type="application/ld+json">
