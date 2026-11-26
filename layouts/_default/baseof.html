@@ -17,7 +17,7 @@
   <link rel="preload" href="{{ "fonts/oswald-v57-latin-regular.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ "fonts/inter-v20-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}?v={{ (os.Stat "static/css/styles.css").ModTime.Unix }}">
   {{ partial "analytics/goatcounter.html" . }}
   <script src="{{ "js/track.js" | relURL }}" defer></script>
   <link rel="author" href="{{ "humans.txt" | relURL }}">
