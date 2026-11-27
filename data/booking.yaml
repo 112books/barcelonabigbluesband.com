@@ -182,26 +182,24 @@ videos:
 - id: CI5E1vqSz88
   title: Barcelona Big Blues Band (live)
 rider:
-  formation_ca: Big band de 12 a 15 músics (sexe mixte), amb secció de vents de 7
-    peces.
-  formation_es: Big band de 12 a 15 músicos (sexo mixto), con sección de vientos de
-    7 piezas.
-  formation_en: 12–15 piece big band (mixed), with a 7-piece horn section.
-  stage_ca: ''
-  stage_es: ''
-  stage_en: ''
-  sound_ca: ''
-  sound_es: ''
-  sound_en: ''
-  backline_ca: ''
-  backline_es: ''
-  backline_en: ''
-  rehearsal_ca: ''
-  rehearsal_es: ''
-  rehearsal_en: ''
-  duration_ca: Concert d'uns 90 minuts. Passis dobles possibles (ex. 19h i 20.30h)
-    segons el programa.
-  duration_es: Concierto de unos 90 minutos. Pasos dobles posibles (ej. 19h y 20.30h)
-    según el programa.
-  duration_en: Approx. 90-minute concert. Double bills possible (e.g. 7pm and 8.30pm)
-    depending on the programme.
+  formation_ca: "Formació: big band de 13 a 15 músics — 5 saxos (2 alto, 2 tenors i baríton), 2 trompetes, 2 trombons i secció rítmica (contrabaix, guitarra, piano i bateria). També hi ha format reduït (combo) per a espais petits."
+  formation_es: "Formación: big band de 13 a 15 músicos — 5 saxos (2 altos, 2 tenores y barítono), 2 trompetas, 2 trombones y sección rítmica (contrabajo, guitarra, piano y batería). También hay formato reducido (combo) para espacios pequeños."
+  formation_en: "Line-up: 13–15 piece big band — 5 saxes (2 alto, 2 tenor, baritone), 2 trumpets, 2 trombones and rhythm section (double bass, guitar, piano and drums). A smaller combo line-up is also available for small rooms."
+  stage_ca: "Escenari: mínim 9 × 6 m (uns 55 m²) amb 3 m de fons lliure, per poder col·locar la bateria al darrere, la secció de vents en filera i la resta de la banda al davant."
+  stage_es: "Escenario: mínimo 9 × 6 m (unos 55 m²) con 3 m de fondo libre, para colocar la batería detrás, la sección de vientos en fila y el resto de la banda delante."
+  stage_en: "Stage: minimum 9 × 6 m (approx. 55 m²) with 3 m of clear depth, so the drums can sit at the back, the horn section in a row and the rest of the band in front."
+  sound_ca: "So: PA de 4 vies amb un mínim de 24 canals, 6 mescles de monitoratge i tècnic de so de la sala. La banda pot portar el seu enginyer de so; si la sala no en té, cal preveure'l."
+  sound_es: "Sonido: PA de 4 vías con un mínimo de 24 canales, 6 mezclas de monitores y técnico de sonido de la sala. La banda puede traer su ingeniero de sonido; si la sala no tiene, hay que preverlo."
+  sound_en: "Sound: 4-way PA with at least 24 channels, 6 monitor mixes and a house sound engineer. The band can bring its own engineer; if the venue has none, it must be arranged."
+  backline_ca: "Backline: la sala ha de proporcionar una bateria completa (o caixa i ferros) amb 4 plats i peu de bombo. La banda porta contrabaix i el seu ampli, guitarra i ampli, piano o teclat d'escenari, i els micros de veus i vents si cal."
+  backline_es: "Backline: la sala debe proporcionar una batería completa (o caja y herrajes) con 4 platos y pie de bombo. La banda trae contrabajo y su amplificador, guitarra y amplificador, piano o teclado de escenario, y los micrófonos de voces y vientos si hace falta."
+  backline_en: "Backline: the venue provides a full drum kit (or snare and hardware) with 4 cymbals and a bass drum pedal. The band brings double bass and amp, guitar and amp, a stage piano or keyboard, and vocal/horn microphones when needed."
+  rehearsal_ca: "Prova de so: 90 minuts amb la sala buida, entre 2 i 3 hores abans de l'obertura de portes. Si l'espai ho permet, es pot fer un assaig general el mateix dia."
+  rehearsal_es: "Prueba de sonido: 90 minutos con la sala vacía, entre 2 y 3 horas antes de la apertura de puertas. Si el espacio lo permite, se puede hacer un ensayo general el mismo día."
+  rehearsal_en: "Soundcheck: 90 minutes in an empty room, 2–3 hours before doors. If the space allows, a full run-through can be done the same day."
+  duration_ca: "Durada: concert d'uns 90 minuts. Passis dobles possibles (per exemple, 19 h i 20.30 h) segons el programa."
+  duration_es: "Duración: concierto de unos 90 minutos. Pases dobles posibles (por ejemplo, 19 h y 20.30 h) según el programa."
+  duration_en: "Duration: approx. 90-minute concert. Double bills possible (e.g. 7pm and 8.30pm) depending on the programme."
+  note_ca: "Aquest rider és una base orientativa: l'equip tècnic de la banda l'ajusta a cada espai i a cada format."
+  note_es: "Este rider es una base orientativa: el equipo técnico de la banda lo ajusta a cada espacio y formato."
+  note_en: "This rider is a starting point: the band's technical team adapts it to each venue and line-up."

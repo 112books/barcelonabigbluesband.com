@@ -147,6 +147,7 @@
               {{ with index $b.rider (printf "backline_%s" $.Lang) | default $b.rider.backline_en }}<li>{{ . }}</li>{{ end }}
               {{ with index $b.rider (printf "rehearsal_%s" $.Lang) | default $b.rider.rehearsal_en }}<li>{{ . }}</li>{{ end }}
               {{ with index $b.rider (printf "duration_%s" $.Lang) | default $b.rider.duration_en }}<li>{{ . }}</li>{{ end }}
+              {{ with index $b.rider (printf "note_%s" $.Lang) | default $b.rider.note_en }}<li class="booking-rider__note"><em>{{ . }}</em></li>{{ end }}
             </ul>
           </details>
         </div>
