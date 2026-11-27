@@ -1,5 +1,6 @@
 ---
 title: "Agenda"
+translationKey: "agenda"
 bg: "images/galleries/2022-07-2022-07-09-bbbb-2-0044-jpg.jpg"
 description: "Barcelona Big Blues Band concert calendar: upcoming dates, tickets and calendar."
 ---

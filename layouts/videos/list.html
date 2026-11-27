@@ -3,9 +3,11 @@
   style="--videos-bg: url('{{ "images/sections/videos.jpg" | absURL }}')">
   <div class="page-inner">
 
-    <h1 class="page-title">{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Params.heading | default .Title }}</h1>
 
     <p class="videos-lead">{{ i18n "videos_lead" }}</p>
+
+    {{ with .Content }}<div class="prose videos-intro">{{ . }}</div>{{ end }}
 
     <div class="videos-layout" id="videos-layout" data-videos-url="{{ "data/videos.json" | absURL }}">
 

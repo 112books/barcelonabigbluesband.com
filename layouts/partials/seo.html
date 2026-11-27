@@ -207,6 +207,18 @@
 </script>
 {{ end }}
 
+{{/* FAQPage — només a les pàgines amb `faq:` al front matter */}}
+{{ with .Params.faq }}
+{{- $qs := slice -}}
+{{- range . -}}
+  {{- $qs = $qs | append (dict "@type" "Question" "name" (index . "q") "acceptedAnswer" (dict "@type" "Answer" "text" (index . "a"))) -}}
+{{- end -}}
+{{- $faq := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $qs -}}
+<script type="application/ld+json">
+{{ $faq | jsonify (dict "indent" "  ") | safeJS }}
+</script>
+{{ end }}
+
 {{/* MusicAlbum — fitxa de disc */}}
 {{ if eq .Type "discography" }}
 {{- $artist := strings.TrimSpace (index (split (plainify .Content) ".") 0) -}}

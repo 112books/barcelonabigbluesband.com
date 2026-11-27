@@ -1,5 +1,6 @@
 ---
 title: "Biography"
+translationKey: "biography"
 bg: "images/sections/biografia.jpg"
 description: "The Barcelona Big Blues Band, under the direction of double bass player Ivan Kovacevic."
 ---
@@ -115,3 +116,4 @@ A monthly gig for the last 12 years at the emblematic Barcelona venue Jamboree J
 ## Former members
 
 {{< alumni >}}
+\n\n## More information\n\n- [The band as a big band: line-ups and stages](/en/big-band-barcelona/)\n- [Blues in Barcelona: where to hear it and which festivals exist](/en/blues-in-barcelona/)\n

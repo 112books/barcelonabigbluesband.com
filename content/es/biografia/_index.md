@@ -1,5 +1,6 @@
 ---
 title: "Biografía"
+translationKey: "biography"
 bg: "images/sections/biografia.jpg"
 description: "La Barcelona Big Blues Band, bajo la dirección del contrabajista Ivan Kovacevic."
 ---
@@ -115,3 +116,4 @@ Concierto mensual en los últimos 12 años en la emblemática sala barcelonesa J
 ## Miembros históricos
 
 {{< alumni >}}
+\n\n## Más información\n\n- [La banda como big band: formatos y escenarios](/es/big-band-en-barcelona/)\n- [Blues en Barcelona: dónde escucharlo y qué festivales hay](/es/blues-en-barcelona/)\n
