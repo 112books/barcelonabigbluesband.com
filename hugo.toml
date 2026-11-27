@@ -158,6 +158,12 @@ baseURL = "https://barcelonabigbluesband.com/"
   identifier = "contact"
   weight = 9
 
+[[languages.en.menu.main]]
+  name = "Search"
+  url = "/en/search/"
+  identifier = "search"
+  weight = 10
+
 [[languages.ca.menu.main]]
   name = "Inici"
   url = "/ca/"
@@ -212,6 +218,12 @@ baseURL = "https://barcelonabigbluesband.com/"
   identifier = "contact"
   weight = 9
 
+[[languages.ca.menu.main]]
+  name = "Cerca"
+  url = "/ca/cerca/"
+  identifier = "search"
+  weight = 10
+
 [[languages.es.menu.main]]
   name = "Inicio"
   url = "/es/"
@@ -265,3 +277,9 @@ baseURL = "https://barcelonabigbluesband.com/"
   url = "/es/contacto/"
   identifier = "contact"
   weight = 9
+
+[[languages.es.menu.main]]
+  name = "Buscar"
+  url = "/es/buscar/"
+  identifier = "search"
+  weight = 10
