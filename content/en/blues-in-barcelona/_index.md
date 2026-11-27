@@ -6,9 +6,9 @@ bg: "images/sections/agenda.jpg"
 date: 2026-11-26
 faq:
   - q: "Where can you hear live blues in Barcelona?"
-    a: "The key venues are Jamboree (plaça Reial), where the Barcelona Big Blues Band has held a residency for more than a decade, La Paloma, Luz de Gas and Paral·lel 62. Weekly jam sessions and monthly blues and rhythm'n'blues series run alongside the regular programmes."
+    a: "The key venues are Jamboree (plaça Reial), where the Barcelona Big Blues Band has held a residency for more than a decade, La Paloma, Luz de Gas, Paral·lel 62 and the Harlem Jazz Club. Weekly jam sessions run as well (El Prize in Sant Antoni among them), alongside monthly blues and rhythm'n'blues series."
   - q: "What is the best blues festival in Catalonia?"
-    a: "The Festival Internacional de Blues de Cerdanyola and the Festival de Blues de Barcelona are the most established, alongside Vijazz in Vilafranca del Penedès, the Terrassa Jazz Festival, the Cambrils music festival and, beyond Catalonia, the San Javier Jazz Festival (Murcia) and the Pertuis Big Band Festival (France)."
+    a: "The Festival de Blues de Barcelona and the Festival Internacional de Blues de Cerdanyola are the most established, alongside Vijazz in Vilafranca del Penedès, the Terrassa Jazz Festival, the Cambrils music festival and, beyond Catalonia, the San Javier Jazz Festival (Murcia) and the Pertuis Big Band Festival (France)."
   - q: "How do you book a blues band for an event?"
     a: "You need to give the date, the venue, the type of event and the expected audience size. The band proposes a line-up (combo or a big band of up to 15 musicians), sends the technical rider and a fixed quote. For corporate events and private celebrations we recommend confirming 4-8 weeks in advance."
   - q: "What is the difference between a combo and a big band?"
@@ -24,11 +24,17 @@ festivals matter and how to book a blues band for a concert or an event.
 
 ## Where to hear live blues in Barcelona
 
-- **[Jamboree](https://www.jamboreejazz.com/)** (plaça Reial): the reference room, with jazz and
+- **[Jamboree](https://jamboreejazz.com/)** (plaça Reial): the reference room, with jazz and
   blues almost every night and the Barcelona Big Blues Band's residency for more than a decade.
-- **La Paloma**: historic Raval venue, with soul, funk and blues nights and the Sax-o-Rama festival.
-- **Luz de Gas**: bigger shows and tribute nights, with a broad audience.
-- **Paral·lel 62**: multi-purpose space with series devoted to Black American music.
+- **[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html)**:
+  historic Raval venue, with soul, funk and blues nights and the Sax-o-Rama festival.
+- **[Luz de Gas](https://luzdegas.com/)**: bigger shows and tribute nights, with a broad audience.
+- **[Paral·lel 62](https://paral-lel62.cat/)**: multi-purpose space with series devoted to Black
+  American music.
+- **[Harlem Jazz Club](https://www.harlemjazzclub.es/)** (Gothic Quarter): one of the city's homes
+  of jazz and blues, with *jam sessions* through the week.
+- **[El Prize](https://www.timeout.es/barcelona/es/bars-pubs/prize)** (Sant Antoni): a cult bar with
+  live music and jams where blues and jazz are part of the furniture.
 - **Neighbourhood rooms and jams**: the best way to discover players is to go to the weekly
   *jam sessions*; the same musicians often turn up later on the big stages.
 
@@ -37,13 +43,18 @@ If you want a full-band blues night, check the
 
 ## Blues festivals in Catalonia and beyond
 
-- **Festival Internacional de Blues de Cerdanyola**: the oldest and most established in the country.
-- **Festival de Blues de Barcelona**: concerts spread across the city.
-- **Vijazz** (Vilafranca del Penedès): jazz and blues in a small town, in summer.
-- **Terrassa Jazz Festival**: a broad programme with dedicated blues nights.
-- **Cambrils International Music Festival**: stages by the sea.
-- Beyond Catalonia, the **San Javier Jazz Festival** (Murcia) and the **Pertuis Big Band Festival**
-  (France) are two events the Barcelona Big Blues Band has played.
+- **[Festival de Blues de Barcelona](https://www.festivalbluesbarcelona.com/)**: concerts spread
+  across the city.
+- **[Vijazz](https://vijazzpenedes.com/)** (Vilafranca del Penedès): jazz and blues in a small town,
+  in summer.
+- **[Festival Internacional de Blues de Cerdanyola](https://bluesdecerdanyola.com/)**: the oldest and
+  most established in the country.
+- **[Terrassa Jazz Festival](https://www.jazzterrassa.org/)**: a broad programme with dedicated blues
+  nights.
+- **[Cambrils International Music Festival](https://www.festivaldecambrils.cat/)**: stages by the sea.
+- Beyond Catalonia, the **[San Javier Jazz Festival](https://jazz.sanjavier.es/)** (Murcia) and the
+  **[Pertuis Big Band Festival](https://www.festival-jazz-bigband-pertuis.com/)** (France) are two
+  events the Barcelona Big Blues Band has played.
 
 ## The Barcelona Big Blues Band
 
@@ -71,13 +82,22 @@ Ray Gelato, Mike Sánchez, Lluís Coloma, Wax & Boogie, Drew Davies and Spencer 
 
 ### Where can you hear live blues in Barcelona?
 
-The key venues are Jamboree (plaça Reial), La Paloma, Luz de Gas and Paral·lel 62. Weekly jam
-sessions and monthly blues and rhythm'n'blues series run alongside the regular programmes.
+The key venues are [Jamboree](https://jamboreejazz.com/) (plaça Reial),
+[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html),
+[Luz de Gas](https://luzdegas.com/) and [Paral·lel 62](https://paral-lel62.cat/). Weekly *jam
+sessions* —at the [Harlem Jazz Club](https://www.harlemjazzclub.es/) and
+[El Prize](https://www.timeout.es/barcelona/es/bars-pubs/prize), among others— and monthly blues and
+rhythm'n'blues series run alongside the regular programmes.
 
 ### What is the best blues festival in Catalonia?
 
-The Cerdanyola and Barcelona blues festivals are the most established, alongside Vijazz in
-Vilafranca, the Terrassa Jazz Festival, Cambrils and, beyond Catalonia, San Javier and Pertuis.
+The [Barcelona Blues Festival](https://www.festivalbluesbarcelona.com/) and the
+[International Blues Festival of Cerdanyola](https://bluesdecerdanyola.com/) are the most
+established, alongside [Vijazz](https://vijazzpenedes.com/) in Vilafranca, the
+[Terrassa Jazz Festival](https://www.jazzterrassa.org/),
+[Cambrils](https://www.festivaldecambrils.cat/) and, beyond Catalonia,
+[San Javier](https://jazz.sanjavier.es/) and
+[Pertuis](https://www.festival-jazz-bigband-pertuis.com/).
 
 ### How do you book a blues band for an event?
 
@@ -98,4 +118,9 @@ l'Auditori Pau Casals (el Vendrell), Vinseum (Vilafranca) and festivals such as 
 
 **Want the Barcelona Big Blues Band at your event?**
 [Ask for a quote](/en/booking/) or first see [the band live](/en/videos/).
-\n\n## Keep reading\n\n- [Big band in Barcelona: line-ups and booking](/en/big-band-barcelona/)\n- [Live music for events](/en/live-music-for-events/)\n
+
+
+## Keep reading
+
+- [Big band in Barcelona: line-ups and booking](/en/big-band-barcelona/)
+- [Live music for events](/en/live-music-for-events/)

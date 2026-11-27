@@ -38,7 +38,7 @@ brings a rhythm'n'blues big band to your stage: from a four-piece combo up to
 
 - **More than a decade** in residence at Barcelona's Jamboree Jazz Club.
 - **13 albums** with guests such as Dani Nel·lo, Ray Gelato, Mike Sánchez and Myriam Swanson.
-- Stages such as the Palau de la Música Catalana and festivals such as Mas i Mas or San Javier (Murcia).
+- Stages such as the [Palau de la Música Catalana](https://www.palaumusica.cat/) and festivals such as [Mas i Mas](https://masimas.com/) or [San Javier](https://jazz.sanjavier.es/) (Murcia).
 - A stable band: every gig is played by the same musicians you see on this website.
 
 ## How it works

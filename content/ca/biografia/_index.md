@@ -116,4 +116,9 @@ Concert mensual en els darrers 12 anys a l'emblemàtica sala barcelonesa Jambore
 ## Membres històrics
 
 {{< alumni >}}
-\n\n## Més informació\n\n- [La banda com a big band: formats i escenaris](/ca/big-band-a-barcelona/)\n- [Blues a Barcelona: on escoltar-lo i quins festivals hi ha](/ca/blues-a-barcelona/)\n
+
+
+## Més informació
+
+- [La banda com a big band: formats i escenaris](/ca/big-band-a-barcelona/)
+- [Blues a Barcelona: on escoltar-lo i quins festivals hi ha](/ca/blues-a-barcelona/)

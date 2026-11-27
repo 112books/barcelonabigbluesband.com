@@ -36,11 +36,15 @@ another level.
 
 ## Where we have played
 
-Jamboree (Barcelona, residency) · Palau de la Música Catalana · La Paloma · Luz de Gas ·
-Paral·lel 62 · Auditori Pau Casals (el Vendrell) · Vinseum (Vilafranca del Penedès) ·
-Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) · San Javier Jazz Festival (Murcia) ·
-Cerdanyola International Blues Festival · Terrassa Jazz Festival · Cambrils Music Festival ·
-Vijazz (Vilafranca) · Pertuis Big Band Festival (France).
+[Jamboree](https://jamboreejazz.com/) (Barcelona, residency) · [Palau de la Música Catalana](https://www.palaumusica.cat/) ·
+[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html) · [Luz de Gas](https://luzdegas.com/) · [Paral·lel 62](https://paral-lel62.cat/) ·
+Auditori Pau Casals (el Vendrell) · [Vinseum](https://www.vinseum.cat/) (Vilafranca del Penedès) ·
+Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) ·
+[San Javier Jazz Festival](https://jazz.sanjavier.es/) (Murcia) ·
+[Cerdanyola International Blues Festival](https://bluesdecerdanyola.com/) ·
+[Terrassa Jazz Festival](https://www.jazzterrassa.org/) · [Cambrils Music Festival](https://www.festivaldecambrils.cat/) ·
+[Vijazz](https://vijazzpenedes.com/) (Vilafranca) ·
+[Pertuis Big Band Festival](https://www.festival-jazz-bigband-pertuis.com/) (France).
 
 The full list is on the [booking page](/en/booking/).
 
@@ -69,8 +73,9 @@ intermediate formats.
 
 ### Where does the big band play in Barcelona?
 
-Residency at Jamboree (plaça Reial); also Palau de la Música, La Paloma, Luz de Gas, Paral·lel 62
-and festivals such as Mas i Mas, Grec and Sax-o-Rama.
+Residency at [Jamboree](https://jamboreejazz.com/) (plaça Reial); also [Palau de la Música](https://www.palaumusica.cat/),
+[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html), [Luz de Gas](https://luzdegas.com/), [Paral·lel 62](https://paral-lel62.cat/) and festivals such as
+[Mas i Mas](https://masimas.com/), Grec and Sax-o-Rama.
 
 ### How much does it cost to book a big band in Barcelona?
 

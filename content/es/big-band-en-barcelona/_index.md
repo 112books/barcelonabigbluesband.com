@@ -36,11 +36,14 @@ es otra cosa.
 
 ## Dónde hemos tocado
 
-Jamboree (Barcelona, residencia) · Palau de la Música Catalana · La Paloma · Luz de Gas ·
-Paral·lel 62 · Auditori Pau Casals (el Vendrell) · Vinseum (Vilafranca del Penedès) ·
-Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) · Festival de Jazz de San Javier
-(Murcia) · Festival de Blues de Cerdanyola · Festival de Jazz de Terrassa · Festival de Música de
-Cambrils · Vijazz (Vilafranca) · Festival de Big Bands de Pertuis (Francia).
+[Jamboree](https://jamboreejazz.com/) (Barcelona, residencia) · [Palau de la Música Catalana](https://www.palaumusica.cat/) ·
+[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html) · [Luz de Gas](https://luzdegas.com/) · [Paral·lel 62](https://paral-lel62.cat/) ·
+Auditori Pau Casals (el Vendrell) · [Vinseum](https://www.vinseum.cat/) (Vilafranca del Penedès) ·
+Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) ·
+[Festival de Jazz de San Javier](https://jazz.sanjavier.es/) (Murcia) ·
+[Festival de Blues de Cerdanyola](https://bluesdecerdanyola.com/) · [Festival de Jazz de Terrassa](https://www.jazzterrassa.org/) ·
+[Festival de Música de Cambrils](https://www.festivaldecambrils.cat/) · [Vijazz](https://vijazzpenedes.com/) (Vilafranca) ·
+[Festival de Big Bands de Pertuis](https://www.festival-jazz-bigband-pertuis.com/) (Francia).
 
 La lista completa está en la página de [contratación](/es/contratacion/).
 
@@ -69,8 +72,10 @@ intermedias.
 
 ### ¿Dónde actúa la big band en Barcelona?
 
-Residencia en el Jamboree (plaça Reial); también Palau de la Música, La Paloma, Luz de Gas,
-Paral·lel 62 y festivales como el Mas i Mas, el Grec o el Sax-o-Rama.
+Residencia en el [Jamboree](https://jamboreejazz.com/) (plaça Reial); también
+[Palau de la Música](https://www.palaumusica.cat/), [La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html),
+[Luz de Gas](https://luzdegas.com/), [Paral·lel 62](https://paral-lel62.cat/) y festivales como el
+[Mas i Mas](https://www.masimas.com/), el Grec o el Sax-o-Rama.
 
 ### ¿Cuánto cuesta contratar una big band en Barcelona?
 

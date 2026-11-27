@@ -38,7 +38,7 @@ hasta **15 músicos con siete vientos**, con repertorio de blues, swing y jazz.
 
 - **Más de una década** de residencia en el Jamboree Jazz Club de Barcelona.
 - **13 discos** con invitados como Dani Nel·lo, Ray Gelato, Mike Sánchez o Myriam Swanson.
-- Escenarios como el Palau de la Música Catalana y festivales como el Mas i Mas o San Javier (Murcia).
+- Escenarios como el [Palau de la Música Catalana](https://www.palaumusica.cat/) y festivales como el [Mas i Mas](https://masimas.com/) o el [de San Javier](https://jazz.sanjavier.es/) (Murcia).
 - Formación estable: cada bolo lo tocan los mismos músicos que ves en la web.
 
 ## Cómo funciona

@@ -36,11 +36,14 @@ festival, una sala gran, una festa major o un esdeveniment d'empresa, l'impacte 
 
 ## On hem tocat
 
-Jamboree (Barcelona, residència) · Palau de la Música Catalana · La Paloma · Luz de Gas ·
-Paral·lel 62 · Auditori Pau Casals (el Vendrell) · Vinseum (Vilafranca del Penedès) ·
-Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) · Festival de Jazz de San Javier
-(Múrcia) · Festival de Blues de Cerdanyola · Festival de Jazz de Terrassa · Festival de Música de
-Cambrils · Vijazz (Vilafranca) · Festival de Big Bands de Pertuis (França).
+[Jamboree](https://jamboreejazz.com/) (Barcelona, residència) · [Palau de la Música Catalana](https://www.palaumusica.cat/) ·
+[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html) · [Luz de Gas](https://luzdegas.com/) · [Paral·lel 62](https://paral-lel62.cat/) ·
+Auditori Pau Casals (el Vendrell) · [Vinseum](https://www.vinseum.cat/) (Vilafranca del Penedès) ·
+Teatro Juan Bravo (Segovia) · Auditorio elCírculo (Logroño) ·
+[Festival de Jazz de San Javier](https://jazz.sanjavier.es/) (Múrcia) ·
+[Festival de Blues de Cerdanyola](https://bluesdecerdanyola.com/) · [Festival de Jazz de Terrassa](https://www.jazzterrassa.org/) ·
+[Festival de Música de Cambrils](https://www.festivaldecambrils.cat/) · [Vijazz](https://vijazzpenedes.com/) (Vilafranca) ·
+[Festival de Big Bands de Pertuis](https://www.festival-jazz-bigband-pertuis.com/) (França).
 
 La llista completa és a la pàgina de [contractació](/ca/contractacio/).
 
@@ -68,8 +71,10 @@ En format gran, fins a 15 músics amb set vents. També actua en combo o en vers
 
 ### On actua la big band a Barcelona?
 
-Residència al Jamboree (plaça Reial); també Palau de la Música, La Paloma, Luz de Gas,
-Paral·lel 62 i festivals com el Mas i Mas, el Grec o el Sax-o-Rama.
+Residència al [Jamboree](https://jamboreejazz.com/) (plaça Reial); també
+[Palau de la Música](https://www.palaumusica.cat/), [La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html),
+[Luz de Gas](https://luzdegas.com/), [Paral·lel 62](https://paral-lel62.cat/) i festivals com el
+[Mas i Mas](https://www.masimas.com/), el Grec o el Sax-o-Rama.
 
 ### Quant costa contractar una big band a Barcelona?
 

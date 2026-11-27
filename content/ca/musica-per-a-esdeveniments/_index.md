@@ -36,9 +36,9 @@ a **15 músics amb set vents**, amb repertori de blues, swing i jazz.
 
 ## Per què nosaltres
 
-- **Més d'una dècada** de residència al Jamboree Jazz Club de Barcelona.
+- **Més d'una dècada** de residència al [Jamboree Jazz Club](https://jamboreejazz.com/) de Barcelona.
 - **13 discos** amb convidats com Dani Nel·lo, Ray Gelato, Mike Sánchez o Myriam Swanson.
-- Escenaris com el Palau de la Música Catalana i festivals com el Mas i Mas o San Javier (Múrcia).
+- Escenaris com el [Palau de la Música Catalana](https://www.palaumusica.cat/) i festivals com el [Mas i Mas](https://masimas.com/) o el [de San Javier](https://jazz.sanjavier.es/) (Múrcia).
 - Formació estable: cada bolo el toquen els mateixos músics que veus a la web.
 
 ## Com funciona

@@ -116,4 +116,9 @@ A monthly gig for the last 12 years at the emblematic Barcelona venue Jamboree J
 ## Former members
 
 {{< alumni >}}
-\n\n## More information\n\n- [The band as a big band: line-ups and stages](/en/big-band-barcelona/)\n- [Blues in Barcelona: where to hear it and which festivals exist](/en/blues-in-barcelona/)\n
+
+
+## More information
+
+- [The band as a big band: line-ups and stages](/en/big-band-barcelona/)
+- [Blues in Barcelona: where to hear it and which festivals exist](/en/blues-in-barcelona/)
