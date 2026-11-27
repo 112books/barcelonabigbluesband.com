@@ -4,6 +4,9 @@ ErrorDocument 404 /404.html
 # ── Redireccions ──────────────────────────────────────────
 RedirectMatch 301 ^/admin/?$ /ca/admin/
 
+# Arrel → home catalana (abans servia una còpia de /ca/ amb 200)
+RedirectMatch 301 ^/?$ /ca/
+
 # ── Redireccions des de l'antic WordPress ─────────────────
 # ES (URLs antigues a l'arrel)
 RedirectMatch 301 ^/aviso-legal/?$                    /es/aviso-legal/
@@ -16,6 +19,14 @@ RedirectMatch 301 ^/proximos-conciertos/?$            /es/agenda/
 RedirectMatch 301 ^/discografia/?$                    /es/discografia/
 RedirectMatch 301 ^/videos/?$                         /es/videos/
 RedirectMatch 301 ^/contacto/?$                       /es/contacto/
+
+# URLS antigues que encara reben clics a Search Console (26/11/2026)
+RedirectMatch 301 ^/en/shows(/.*)?$    /en/agenda/
+RedirectMatch 301 ^/en/events(/.*)?$   /en/agenda/
+RedirectMatch 301 ^/biografia/?$       /ca/biografia/
+RedirectMatch 301 ^/videos-2/?$        /ca/videos/
+RedirectMatch 301 ^/noticias/?$        /ca/premsa/
+RedirectMatch 301 ^/ca/noticias/?$     /ca/premsa/
 
 # EN
 RedirectMatch 301 ^/en/next-shows-2/?$  /en/agenda/
