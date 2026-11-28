@@ -6,4 +6,6 @@ description: "Gran guitarrista i cantant de la capital argentina establert a Par
 
 Gran guitarrista i cantant de la capital argentina establert a París compleix tots els requisits per ser davant d'una big band: cançons pròpies, posada en escena, so característic. Tot!
 
+**Fitxa:** Guitarra i veu · Montevideo · Martín Burguez & His Rhythm Combo.
+
 [Web](https://martinburguez.com/) · [Biografia](/ca/biografia/)

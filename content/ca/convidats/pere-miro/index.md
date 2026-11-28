@@ -6,4 +6,6 @@ description: "Quan es menciona el saxo baríton relacionat amb rhythm'n'blues, s
 
 Quan es menciona el saxo baríton relacionat amb rhythm'n'blues, swing i música jamaicana, el seu nom surt de seguida. Un dels músics més actius de l'escena catalana.
 
+**Fitxa:** Instrumentista i arranjador · Barcelona.
+
 [Web](https://www.peremiro.cat/) · [Disc: Pere Miró & Barcelona Big Blues Band](/ca/discografia/b4-pere-miro/) · [Biografia](/ca/biografia/)

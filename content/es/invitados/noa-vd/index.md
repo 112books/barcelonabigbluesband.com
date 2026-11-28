@@ -6,4 +6,6 @@ description: "La cantante vasca que en los últimos años ha dejado indiscutible
 
 La cantante vasca que en los últimos años ha dejado indiscutible sello personal en la escena de blues y géneros asociados. Su energía y sensibilidad con el público la han hecho recorrer escenarios de toda la península.
 
+**Ficha:** Voz · País Vasco · Noa & The Hell Drinkers.
+
 [Web](https://www.noaandthehelldrinkers.com/) · [Biografía](/es/biografia/)

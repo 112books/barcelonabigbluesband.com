@@ -32,4 +32,6 @@ Concert mensual en els darrers 12 anys a l'emblemàtica sala barcelonesa Jambore
 - [La banda com a big band: formats i escenaris](/ca/big-band-a-barcelona/)
 - [Blues a Barcelona: on escoltar-lo i quins festivals hi ha](/ca/blues-a-barcelona/)
 
+**Fitxa:** Piano i veu, guitarra i veu · San Francisco · Steve Lucky & The Rhumba Bums.
+
 [Web](http://www.luckylounge.com/) · [Biografia](/ca/biografia/)

@@ -6,4 +6,6 @@ description: "The Godfather of swing! One of the few current musicians who, with
 
 The Godfather of swing! One of the few current musicians who, with the sound of his sax, his songs and his way of singing, can transport us to the golden age of Swing, when life was music.
 
+**Fact file:** Sax and vocals · London · Ray Gelato & The Giants.
+
 [Web](https://www.raygelato.com/) · [Album: Ray Gelato & Barcelona Big Blues Band](/en/discography/b4-ray-gelato/) · [Biography](/en/biography/)

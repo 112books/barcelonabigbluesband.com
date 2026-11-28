@@ -32,4 +32,6 @@ A monthly gig for the last 12 years at the emblematic Barcelona venue Jamboree J
 - [The band as a big band: line-ups and stages](/en/big-band-barcelona/)
 - [Blues in Barcelona: where to hear it and which festivals exist](/en/blues-in-barcelona/)
 
+**Fact file:** Piano and vocals, guitar and vocals · San Francisco · Steve Lucky & The Rhumba Bums.
+
 [Web](http://www.luckylounge.com/) · [Biography](/en/biography/)

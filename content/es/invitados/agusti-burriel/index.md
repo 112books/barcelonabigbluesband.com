@@ -6,4 +6,6 @@ description: "Sospechoso habitual de los escenarios de toda Europa con su dedica
 
 Sospechoso habitual de los escenarios de toda Europa con su dedicación a la música de los años 40, 50 y 60. Su versatilidad lo ha llevado a ser uno de los primeros invitados de la Barcelona Big Blues Band.
 
+**Ficha:** Voz · Barcelona, 1984 · The Velvet Candles, The Big Jamboree, Los Torontos. Asiduo de La Boîte desde finales de los noventa, donde conoció a Ray Gelato, Steve Lucky y Mike Sánchez.
+
 [Instagram](https://www.instagram.com/agustiburriel/) · [Disco: Agustí Burriel & Barcelona Big Blues Band](/es/discografia/b4-agusti-burriel/) · [Biografía](/es/biografia/)

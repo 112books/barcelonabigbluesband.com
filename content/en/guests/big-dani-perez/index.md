@@ -6,4 +6,6 @@ description: "Saxophonist and singer from our own house who has marked the retur
 
 Saxophonist and singer from our own house who has marked the return of swing in Catalonia with his wild sound as part of the Big Jamboree group. The period in which he forged himself as a musician and composer laid the foundation for his way of playing.
 
+**Fact file:** Sax and vocals · Barcelona, 1979 · The Big Jamboree, Los Rebeldes, Big Dani Pérez R&B Band. He studied sax at the Liceu Conservatory and joined Los Rebeldes in the early 2000s.
+
 [Web](https://bigdani.com/) · [Biography](/en/biography/)

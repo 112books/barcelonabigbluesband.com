@@ -32,4 +32,6 @@ Concierto mensual en los últimos 12 años en la emblemática sala barcelonesa J
 - [La banda como big band: formatos y escenarios](/es/big-band-en-barcelona/)
 - [Blues en Barcelona: dónde escucharlo y qué festivales hay](/es/blues-en-barcelona/)
 
+**Ficha:** Piano y voz, guitarra y voz · San Francisco · Steve Lucky & The Rhumba Bums.
+
 [Web](http://www.luckylounge.com/) · [Biografía](/es/biografia/)

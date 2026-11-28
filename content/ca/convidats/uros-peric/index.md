@@ -6,4 +6,6 @@ description: "Cantant i pianista la seva veu i carisma integral han estat rebuts
 
 Cantant i pianista la seva veu i carisma integral han estat rebuts amb aplaudiments entusiastes del públic de tot el món. És considerat un dels millors intèrprets del geni del soul, Ray Charles!
 
+**Fitxa:** Cantant i pianista.
+
 [Web](https://urosperich.com/) · [Biografia](/ca/biografia/)

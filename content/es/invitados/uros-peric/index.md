@@ -6,4 +6,6 @@ description: "Cantante y pianista cuya voz y carisma integral han sido recibidos
 
 Cantante y pianista cuya voz y carisma integral han sido recibidos con aplausos entusiastas del público de todo el mundo. Es considerado uno de los mejores intérpretes del genio del soul, ¡Ray Charles!
 
+**Ficha:** Cantante y pianista.
+
 [Web](https://urosperich.com/) · [Biografía](/es/biografia/)

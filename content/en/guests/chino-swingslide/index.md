@@ -6,4 +6,6 @@ description: "His 'dobro' guitar and characteristic voice have made him, since h
 
 His "dobro" guitar and characteristic voice have made him, since his arrival from Buenos Aires to Barcelona in 2001, one of the most active musicians on the national and international scene.
 
+**Fact file:** Resonator guitar · Chino & The Big Bet.
+
 [Web](https://resophonic.es/) · [Biography](/en/biography/)

@@ -6,4 +6,6 @@ description: "El saxofonista barcelonés con una larga trayectoria muestra su pa
 
 El saxofonista barcelonés con una larga trayectoria muestra su pasión por la época de los años 40 y el sonido de los grandes saxofonistas como Red Prysock, Sil Austin o King Curtis.
 
+**Ficha:** Saxo tenor y composición · Barcelona · Los Mambo Jambo, Los Rebeldes.
+
 [Web](https://www.daninello.cat/en/) · [Disco: Dani Nel·lo & Barcelona Big Blues Band](/es/discografia/b4-dani-nello/) · [Biografía](/es/biografia/)

@@ -6,4 +6,6 @@ description: "Guitarist and singer born in Catalonia, he was one of the band's f
 
 Guitarist and singer born in Catalonia, he was one of the band's first guests, chosen for his voice and his way of playing the guitar. Blues in its purest form!
 
+**Fact file:** Vocals.
+
 [Web](https://santospuertas.com/) · [Biography](/en/biography/)

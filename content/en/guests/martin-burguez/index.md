@@ -6,4 +6,6 @@ description: "Great guitarist and singer from the Argentine capital based in Par
 
 Great guitarist and singer from the Argentine capital based in Paris, he has everything it takes to stand in front of a big band: his own songs, stage presence, a characteristic sound. Everything!
 
+**Fact file:** Guitar and vocals · Montevideo · Martín Burguez & His Rhythm Combo.
+
 [Web](https://martinburguez.com/) · [Biography](/en/biography/)

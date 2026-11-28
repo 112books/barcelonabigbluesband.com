@@ -6,4 +6,6 @@ description: "The Basque singer who in recent years has left an unmistakable per
 
 The Basque singer who in recent years has left an unmistakable personal mark on the blues scene and related genres. Her energy and sensitivity with the audience have taken her to stages across the whole peninsula.
 
+**Fact file:** Vocals · Basque Country · Noa & The Hell Drinkers.
+
 [Web](https://www.noaandthehelldrinkers.com/) · [Biography](/en/biography/)

@@ -6,4 +6,6 @@ description: "La seva guitarra 'dobro' i la seva veu característica l'han porta
 
 La seva guitarra "dobro" i la seva veu característica l'han portat a ser, des de la seva arribada de Buenos Aires a Barcelona l'any 2001, un dels músics més actius de l'escena nacional i internacional.
 
+**Fitxa:** Guitarra resofònica · Chino & The Big Bet.
+
 [Web](https://resophonic.es/) · [Biografia](/ca/biografia/)
