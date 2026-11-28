@@ -67,7 +67,7 @@ que un combo.
 
 ### Quants músics té la Barcelona Big Blues Band?
 
-En format gran, fins a 13 músics amb nou vents. També actua en combo o en versions intermèdies.
+En format gran, 13 músics amb nou vents i secció rítmica, habitualment amb un o dos convidats solistes (fins a 15 a l'escenari). També actua en combo o en versions intermèdies.
 
 ### On actua la big band a Barcelona?
 

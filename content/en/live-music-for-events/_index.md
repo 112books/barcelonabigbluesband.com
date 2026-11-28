@@ -60,7 +60,7 @@ party; both can be combined on the same day.
 
 ### Which line-up works best for a corporate event?
 
-A 4-7 piece combo at controlled volume for presentations and receptions; a big band of 13
+A 4-7 piece combo at controlled volume for presentations and receptions; a 13-piece big band (usually with one or two guest soloists) for
 for gala dinners and end-of-year parties.
 
 ### How far in advance should you book the band?

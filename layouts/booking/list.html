@@ -149,6 +149,15 @@
               {{ with index $b.rider (printf "duration_%s" $.Lang) | default $b.rider.duration_en }}<li>{{ . }}</li>{{ end }}
               {{ with index $b.rider (printf "note_%s" $.Lang) | default $b.rider.note_en }}<li class="booking-rider__note"><em>{{ . }}</em></li>{{ end }}
             </ul>
+            {{- $plot := "images/rider/stage-plot-generico" }}
+            <a class="booking-rider__plot" href="{{ printf "%s.jpg" $plot | relURL }}" target="_blank" rel="noopener">
+              <picture>
+                <source srcset="{{ printf "%s.webp" $plot | relURL }}" type="image/webp">
+                <img src="{{ printf "%s.jpg" $plot | relURL }}" width="1179" height="1662" loading="lazy" decoding="async"
+                     alt="{{ i18n "booking_stage_plot_alt" | default "Stage plot" }}">
+              </picture>
+              <span>{{ i18n "booking_stage_plot" | default "Stage plot (obrir gran)" }}</span>
+            </a>
           </details>
         </div>
 

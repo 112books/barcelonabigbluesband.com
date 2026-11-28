@@ -9,7 +9,7 @@ faq:
   - q: "¿Qué es una big band?"
     a: "Una big band es una formación de jazz o rhythm'n'blues con sección de vientos completa (normalmente 7 piezas: 2 saxos altos, 2 tenores, 1 barítono, 2 trompetas y trombón, ampliable) más sección rítmica de piano, contrabajo, guitarra y batería. Permite arreglos escritos y un sonido mucho más potente que un combo."
   - q: "¿Cuántos músicos tiene la Barcelona Big Blues Band?"
-    a: "En formato grande, hasta 13 músicos con nueve vientos. También actúa en formato combo o en versiones intermedias, según el espacio y el presupuesto del evento."
+    a: "En formato grande, 13 músicos con nueve vientos y sección rítmica, habitualmente con uno o dos invitados solistas (hasta 15 en el escenario). También actúa en formato combo o en versiones intermedias, según el espacio y el presupuesto del evento."
   - q: "¿Dónde actúa la big band en Barcelona?"
     a: "La residencia está en el Jamboree Jazz Club, en la plaça Reial. También ha actuado en el Palau de la Música Catalana, La Paloma, Luz de Gas y Paral·lel 62, y en festivales como el Mas i Mas, el Grec o el Sax-o-Rama."
   - q: "¿Cuánto cuesta contratar una big band en Barcelona?"
@@ -67,8 +67,8 @@ más potente que un combo.
 
 ### ¿Cuántos músicos tiene la Barcelona Big Blues Band?
 
-En formato grande, hasta 13 músicos con nueve vientos. También actúa en combo o en versiones
-intermedias.
+En formato grande, 13 músicos con nueve vientos y sección rítmica, habitualmente con uno o dos
+invitados solistas (hasta 15 en el escenario). También actúa en combo o en versiones intermedias.
 
 ### ¿Dónde actúa la big band en Barcelona?
 

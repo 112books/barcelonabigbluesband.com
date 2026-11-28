@@ -60,7 +60,7 @@ per al ball. Es poden combinar els dos formats el mateix dia.
 
 ### Quin format és millor per a un esdeveniment d'empresa?
 
-Combo de 4-7 músics amb volum controlat per a presentacions i recepcions; big band de 13
+Combo de 4-7 músics amb volum controlat per a presentacions i recepcions; big band de 13 músics (habitualment amb un o dos convidats solistes) per a
 músics per a sopars de gala i festes de final d'any.
 
 ### Quant temps cal per reservar la banda?
