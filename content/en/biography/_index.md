@@ -13,6 +13,8 @@ Focused on accompanying the best national and international rhythm'n'blues artis
 
 ## The guests
 
+Every soloist has their own page with discography and links: [see all guests](/en/guests/).
+
 ### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
 
 The Barcelona saxophonist with a long track record shows his passion for the sound of the 1940s and the great saxophonists such as Red Prysock, Sil Austin or King Curtis.

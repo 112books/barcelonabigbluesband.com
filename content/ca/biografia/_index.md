@@ -13,6 +13,8 @@ Orientada a acompanyar els millors artistes del rhythm'n'blues a nivell nacional
 
 ## Els convidats
 
+Cada solista té la seva fitxa amb discografia i enllaços: [vegeu tots els convidats](/ca/convidats/).
+
 ### {{< glink "dani-nello" >}}Dani Nel·lo{{< /glink >}}
 
 El saxofonista barcelonès amb una llarga trajectòria mostra la seva passió per l'època dels anys 40 i el so dels grans saxofonistes com Red Prysock, Sil Austin o King Curtis.
