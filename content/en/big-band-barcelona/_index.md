@@ -68,7 +68,7 @@ than a combo.
 
 ### How many musicians are in the Barcelona Big Blues Band?
 
-Up to 13 with a nine-piece horn section in the full line-up; it also scales down to a combo or
+13 musicians with a nine-piece horn section and rhythm section in the full line-up, usually joined by one or two guest soloists (up to 15 on stage); it also scales down to a combo or
 intermediate formats.
 
 ### Where does the big band play in Barcelona?

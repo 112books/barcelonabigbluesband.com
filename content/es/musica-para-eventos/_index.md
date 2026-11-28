@@ -61,7 +61,7 @@ para el baile. Se pueden combinar los dos formatos el mismo día.
 ### ¿Qué formato es mejor para un evento de empresa?
 
 Combo de 4-7 músicos con volumen controlado para presentaciones y recepciones; big band de hasta
-13 músicos para cenas de gala y fiestas de fin de año.
+13 músicos (habitualmente con uno o dos invitados solistas) para cenas de gala y fiestas de fin de año.
 
 ### ¿Cuánto tiempo hace falta para reservar la banda?
 
