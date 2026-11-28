@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ .Site.Title }} · {{ i18n "official_website_short" }}{{ else if strings.Contains .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if strings.Contains .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   {{ partial "seo.html" . }}
   <style>
     @font-face {
