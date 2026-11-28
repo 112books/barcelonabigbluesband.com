@@ -1907,3 +1907,9 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
 .booking-rider__plot img { max-width: 300px; width: 100%; height: auto; border: 1px solid var(--c-border); border-radius: 6px; background: #fff; }
 .booking-rider__plot span { color: var(--c-accent-2); }
 .booking-rider__plot:hover span { text-decoration: underline; }
+
+/* Icona "40 anys de blues a Barcelona" al costat dels noms */
+.ref40 { display: inline-flex; align-items: center; vertical-align: middle; margin-left: .45rem; text-decoration: none; }
+.ref40 img { width: 26px; height: 26px; border-radius: 50%; display: block; }
+.ref40--inline img { width: 20px; height: 20px; }
+.ref40:hover, .ref40:focus-visible { filter: brightness(1.15); }

@@ -1,61 +1,74 @@
 lineup:
 - name: Ivan Kovacevic
+  id: ivan-kovacevic
   role_ca: Contrabaix, direcció
   role_es: Contrabajo, dirección
   role_en: Double bass, bandleader
   url: https://ivankovacevic.com
   label: Web
 - name: Duška Miščević
+  id: duska-miscevic
   role_ca: Saxo alt
   role_es: Saxo alto
   role_en: Alto sax
 - name: Ignasi Poch
+  id: ignasi-poch
   role_ca: Saxo alt
   role_es: Saxo alto
   role_en: Alto sax
   url: https://www.instagram.com/ignasipoch/
   label: Instagram
 - name: Pol Prats
+  id: pol-prats
   role_ca: Saxo tenor
   role_es: Saxo tenor
   role_en: Tenor sax
   url: https://www.mixcloud.com/polsaxo/
   label: Mixcloud
 - name: Nil Mujal
+  id: nil-mujal
   role_ca: Saxo tenor
   role_es: Saxo tenor
   role_en: Tenor sax
 - name: Núria Vito
+  id: nuria-vito
   role_ca: Saxo baríton
   role_es: Saxo barítono
   role_en: Baritone sax
 - name: Jaume Torné
+  id: jaume-torne
   role_ca: Trompeta
   role_es: Trompeta
   role_en: Trumpet
 - name: Víctor Vergés
+  id: victor-verges
   role_ca: Trompeta
   role_es: Trompeta
   role_en: Trumpet
 - name: Aram Montagud
+  id: aram-montagud
   role_ca: Trombó
   role_es: Trombón
   role_en: Trombone
 - name: Miguel Berenguer
+  id: miguel-berenguer
   role_ca: Trombó
   role_es: Trombón
   role_en: Trombone
 - name: Héctor Martín
+  id: hector-martin
   role_ca: Guitarra
   role_es: Guitarra
   role_en: Guitar
   url: https://www.instagram.com/dhectormartin/
   label: Instagram
 - name: Federico Mazzanti
+  id: federico-mazzanti
   role_ca: Piano
   role_es: Piano
   role_en: Piano
 - name: Óscar Hita
+  id: oscar-hita
   role_ca: Bateria
   role_es: Batería
   role_en: Drums
