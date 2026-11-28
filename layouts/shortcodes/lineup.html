@@ -3,8 +3,13 @@
   <h2>{{ i18n "booking_lineup" }}</h2>
   <ul class="bio-lineup__list">
     {{ range $b.lineup }}
-    {{- $ref := index hugo.Data.refs40 .id }}
-    <li><strong>{{ .name }}</strong>{{ with $ref }} <a class="ref40 ref40--inline" href="{{ . }}" target="_blank" rel="noopener" title="{{ i18n "ref40_title" | default "Fitxa a 40 anys de blues a Barcelona" }}"><img src="{{ "images/40anys/logo-48.png" | relURL }}" width="48" height="48" alt="" loading="lazy" decoding="async"></a>{{ end }} — {{ index . (printf "role_%s" $.Page.Language.Lang) | default .role_en }}</li>
+    {{- $ref := index hugo.Data.refs40 .id -}}
+    {{- $role := index . (printf "role_%s" $.Page.Language.Lang) | default .role_en -}}
+    {{- if $ref -}}
+    <li><a class="bio-lineup__link" href="{{ $ref }}" target="_blank" rel="noopener" title="{{ i18n "ref40_title" | default "Fitxa a 40 anys de blues a Barcelona" }}"><strong>{{ .name }}</strong><img class="bio-lineup__icon" src="{{ "images/40anys/logo-48.png" | relURL }}" width="48" height="48" alt="{{ i18n "ref40_alt" | default "40 anys de blues a Barcelona" }}" loading="lazy" decoding="async"></a> — {{ $role }}</li>
+    {{- else -}}
+    <li><strong>{{ .name }}</strong> — {{ $role }}</li>
+    {{- end }}
     {{ end }}
   </ul>
 </div>

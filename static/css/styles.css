@@ -1913,3 +1913,9 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
 .ref40 img { width: 26px; height: 26px; border-radius: 50%; display: block; }
 .ref40--inline img { width: 20px; height: 20px; }
 .ref40:hover, .ref40:focus-visible { filter: brightness(1.15); }
+
+/* Nom enllaçat a la fitxa de 40 anys de blues a Barcelona */
+.bio-lineup__link { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: .4rem; }
+.bio-lineup__link:hover strong, .bio-lineup__link:focus-visible strong { text-decoration: underline; text-decoration-color: var(--c-accent-2); }
+.bio-lineup__icon { width: 20px; height: 20px; border-radius: 50%; display: inline-block; vertical-align: middle; }
+.bio-lineup__link:hover .bio-lineup__icon, .bio-lineup__link:focus-visible .bio-lineup__icon { filter: brightness(1.15); }
