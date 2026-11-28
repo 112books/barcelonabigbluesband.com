@@ -1,5 +1,6 @@
 ---
-title: "Barcelona Big Blues Band"
+title: "Barcelona Big Blues Band · Big band in Barcelona"
+description: "Official website of the Barcelona Big Blues Band, a rhythm'n'blues big band based at Jamboree in Barcelona. Concerts, discography, videos and booking."
 ---
 
 Blues, swing and rhythm and blues in big band format from Barcelona.

@@ -1,8 +1,8 @@
 ---
-title: "Biografía"
+title: "Biografía y formación · Barcelona Big Blues Band"
 translationKey: "biography"
 bg: "images/sections/biografia.jpg"
-description: "La Barcelona Big Blues Band, bajo la dirección del contrabajista Ivan Kovacevic."
+description: "Historia, formación e invitados de la Barcelona Big Blues Band, la big band de rhythm'n'blues de Barcelona dirigida por Ivan Kovacevic."
 ---
 
 La banda barcelonesa dedicada al blues y rhythm'n'blues en gran formato, bajo la dirección del contrabajista Ivan Kovacevic, conjuga un grupo de buenos músicos que crean un sonido energético, salvaje y a la vez sofisticado. A través de sus arreglos, Kovacevic aplica a la Big Band toda la experiencia y el criterio que ha ido adquiriendo en pequeños combos. El resultado es un torrente sonoro en la tradición de bandas como las de T-Bone Walker o Johnny Otis.

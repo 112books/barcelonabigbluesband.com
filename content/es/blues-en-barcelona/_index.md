@@ -6,13 +6,13 @@ bg: "images/sections/agenda.jpg"
 date: 2026-11-26
 faq:
   - q: "¿Dónde se puede escuchar blues en directo en Barcelona?"
-    a: "Las salas de referencia son el Jamboree (plaça Reial), con residencia de la Barcelona Big Blues Band desde hace más de una década, La Paloma, Luz de Gas, Paral·lel 62 y el Harlem Jazz Club. Además hay jam sessions semanales (también en El Prize, en Sant Antoni) y ciclos mensuales de blues y rhythm'n'blues."
+    a: "Las salas de referencia son el Jamboree (plaça Reial), con residencia de la Barcelona Big Blues Band desde hace más de 15 años, La Paloma, Luz de Gas, Paral·lel 62 y el Harlem Jazz Club. Además hay jam sessions semanales (también en El Prize, en Sant Antoni) y ciclos mensuales de blues y rhythm'n'blues."
   - q: "¿Cuál es el mejor festival de blues en Cataluña?"
     a: "El Festival de Blues de Barcelona y el Festival Internacional de Blues de Cerdanyola son los más consolidados. También el Vijazz de Vilafranca del Penedès, el Festival de Jazz de Terrassa, el de Cambrils y, fuera de Cataluña, el de San Javier (Murcia) y el de Pertuis (Francia)."
   - q: "¿Cómo se contrata una banda de blues para un evento?"
-    a: "Hay que indicar fecha, lugar, tipo de evento y aforo. La banda propone un formato (combo o big band de hasta 15 músicos), envía el rider técnico y un presupuesto cerrado. Para eventos de empresa y celebraciones privadas recomendamos cerrar la fecha con 4-8 semanas de antelación."
+    a: "Hay que indicar fecha, lugar, tipo de evento y aforo. La banda propone un formato (combo o big band de 13 músicos), envía el rider técnico y un presupuesto cerrado. Para eventos de empresa y celebraciones privadas recomendamos cerrar la fecha con 4-8 semanas de antelación."
   - q: "¿Qué diferencia hay entre un combo y una big band?"
-    a: "Un combo es una formación pequeña (4-7 músicos) de sonido más íntimo, ideal para espacios reducidos. Una big band añade una sección de vientos de siete piezas y llega a 15 músicos: más potencia, más repertorio de swing y rhythm'n'blues y un efecto escénico mucho mayor."
+    a: "Un combo es una formación pequeña (4-7 músicos) de sonido más íntimo, ideal para espacios reducidos. Una big band añade una sección de vientos de nueve piezas y llega a 13 músicos: más potencia, más repertorio de swing y rhythm'n'blues y un efecto escénico mucho mayor."
   - q: "¿La Barcelona Big Blues Band toca fuera de Barcelona?"
     a: "Sí. Ha actuado en el Palau de la Música Catalana, el Teatro Juan Bravo de Segovia, el Auditorio elCírculo de Logroño, l'Auditori Pau Casals del Vendrell, el Vinseum de Vilafranca y festivales como el de San Javier (Murcia) o el de Pertuis (Francia)."
 ---
@@ -26,7 +26,7 @@ qué festivales hay y cómo se contrata una banda de blues para un concierto o u
 
 - **[Jamboree](https://jamboreejazz.com/)** (plaça Reial): la sala de referencia, con
   programación de jazz y blues casi cada noche y residencia de la Barcelona Big Blues Band
-  desde hace más de una década.
+  desde hace más de 15 años.
 - **[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html)**:
   sala histórica del Raval, con noches de soul, funk y blues y el festival Sax-o-Rama.
 - **[Luz de Gas](https://luzdegas.com/)**: conciertos de gran formato y homenajes, con público amplio.
@@ -61,7 +61,7 @@ Si lo que quieres es una noche de blues con toda la banda, mira la
 ## La Barcelona Big Blues Band
 
 La banda barcelonesa —dirigida por el contrabajista [Ivan Kovacevic](https://ivankovacevic.com/)—
-es la big band de rhythm'n'blues más grande de Europa: hasta **15 músicos con siete vientos**, con
+es la big band de rhythm'n'blues más grande de Europa: **13 músicos con nueve vientos**, con
 formato configurable desde el combo. Su sonido parte de la tradición de las bandas de T-Bone Walker
 y Johnny Otis y ha acompañado a artistas como Dani Nel·lo, Myriam Swanson, Ray Gelato, Mike Sánchez,
 Lluís Coloma, Wax & Boogie, Drew Davies o Spencer Evoy.
@@ -73,7 +73,7 @@ Lluís Coloma, Wax & Boogie, Drew Davies o Spencer Evoy.
 ## Cómo contratar una banda de blues en Barcelona
 
 1. **Fecha y lugar**: indica la fecha, el espacio (interior o exterior) y el aforo previsto.
-2. **Formato**: combo (4-7 músicos) para espacios reducidos; big band (hasta 15) para festivales,
+2. **Formato**: combo (4-7 músicos) para espacios reducidos; big band (13 músicos) para festivales,
    salas grandes y eventos de empresa.
 3. **Rider técnico**: la banda envía las necesidades de sonido y escenario; el rider está en
    [contratación](/es/contratacion/).
@@ -108,7 +108,7 @@ técnico y un presupuesto cerrado. Recomendamos 4-8 semanas de antelación.
 
 ### ¿Qué diferencia hay entre un combo y una big band?
 
-Un combo tiene 4-7 músicos y un sonido más íntimo. Una big band añade siete vientos y llega a 15
+Un combo tiene 4-7 músicos y un sonido más íntimo. Una big band añade nueve vientos y llega a 13
 músicos: más potencia, más repertorio y más efecto escénico.
 
 ### ¿La Barcelona Big Blues Band toca fuera de Barcelona?

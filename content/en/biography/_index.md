@@ -1,8 +1,8 @@
 ---
-title: "Biography"
+title: "Biography and line-up · Barcelona Big Blues Band"
 translationKey: "biography"
 bg: "images/sections/biografia.jpg"
-description: "The Barcelona Big Blues Band, under the direction of double bass player Ivan Kovacevic."
+description: "History, line-up and guest artists of the Barcelona Big Blues Band, the rhythm'n'blues big band from Barcelona led by Ivan Kovacevic."
 ---
 
 The Barcelona band dedicated to large-format blues and rhythm'n'blues, under the direction of double bass player Ivan Kovacevic, brings together a group of great musicians who create an energetic, wild and at the same time sophisticated sound. Through his arrangements, Kovacevic brings to the Big Band all the experience and judgement he has built up in small combos. The result is a sonic torrent in the tradition of bands such as T-Bone Walker's or Johnny Otis's.

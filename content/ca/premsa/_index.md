@@ -1,9 +1,9 @@
 ---
-title: "Premsa"
+title: "Premsa i ressenyes · Barcelona Big Blues Band"
 bg: "images/galleries/2026-01-img-4392-jpg.jpg"
 type: "press"
 translationKey: "press"
-description: "Entrevistes, ressenyes i cròniques sobre la Barcelona Big Blues Band arreu del món."
+description: "Entrevistes, ressenyes i cròniques sobre la Barcelona Big Blues Band als mitjans de Barcelona, Espanya i l'estranger."
 ---
 
 Una selecció d'entrevistes, ressenyes i articles sobre la Barcelona Big Blues Band. Els articles es mostren en el seu idioma original.

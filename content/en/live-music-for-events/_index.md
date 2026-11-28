@@ -2,14 +2,14 @@
 title: "Live music for events in Barcelona"
 heading: "Live music for events"
 translationKey: "live-music-events"
-description: "A blues and swing big band for events in Barcelona: corporate, weddings, local festivals and venues. Line-ups from 4 to 15 musicians and a quote within 24 hours."
+description: "A blues and swing big band for events in Barcelona: corporate, weddings, local festivals and venues. Line-ups from 4 to 13 musicians and a quote within 24 hours."
 bg: "images/galleries/2026-06-l1560008-jpg.jpg"
 date: 2026-11-26
 faq:
   - q: "Can you book a blues band for a wedding?"
     a: "Yes. The usual set-up for weddings is the 4-7 piece combo for drinks and dinner, and the full big band for the party. Both formats can be combined on the same day."
   - q: "Which line-up works best for a corporate event?"
-    a: "For presentations and receptions, a 4-7 piece combo at a controlled volume. For gala dinners and end-of-year parties, the big band of up to 15 musicians makes the biggest impact."
+    a: "For presentations and receptions, a 4-7 piece combo at a controlled volume. For gala dinners and end-of-year parties, the big band of 13 musicians makes the biggest impact."
   - q: "How far in advance should you book the band?"
     a: "Four to eight weeks for corporate events and private celebrations. For festivals and venues it is often months ahead, but it is always worth asking about availability."
   - q: "What does the quote include?"
@@ -18,7 +18,7 @@ faq:
 
 Planning an event and want the music to sound like a film? The **Barcelona Big Blues Band**
 brings a rhythm'n'blues big band to your stage: from a four-piece combo up to
-**15 musicians with a seven-piece horn section**, playing blues, swing and jazz.
+**13 musicians with a nine-piece horn section**, playing blues, swing and jazz.
 
 ## Which events
 
@@ -29,14 +29,14 @@ brings a rhythm'n'blues big band to your stage: from a four-piece combo up to
 
 ## What is included
 
-- A line-up sized to the room and the budget (4-15 musicians).
+- A line-up sized to the room and the budget (4-13 musicians).
 - Technical rider sent well ahead so the sound is settled.
 - A rhythm'n'blues, swing and jazz repertoire, with requests by arrangement.
 - A fixed written quote and a reply within 24 hours.
 
 ## Why us
 
-- **More than a decade** in residence at Barcelona's Jamboree Jazz Club.
+- **More than 15 years** in residence at Barcelona's Jamboree Jazz Club.
 - **13 albums** with guests such as Dani Nel·lo, Ray Gelato, Mike Sánchez and Myriam Swanson.
 - Stages such as the [Palau de la Música Catalana](https://www.palaumusica.cat/) and festivals such as [Mas i Mas](https://masimas.com/) or [San Javier](https://jazz.sanjavier.es/) (Murcia).
 - A stable band: every gig is played by the same musicians you see on this website.
@@ -60,7 +60,7 @@ party; both can be combined on the same day.
 
 ### Which line-up works best for a corporate event?
 
-A 4-7 piece combo at controlled volume for presentations and receptions; a big band of up to 15
+A 4-7 piece combo at controlled volume for presentations and receptions; a big band of 13
 for gala dinners and end-of-year parties.
 
 ### How far in advance should you book the band?

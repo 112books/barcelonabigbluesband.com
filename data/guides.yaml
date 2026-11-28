@@ -1,0 +1,21 @@
+ca:
+  - title: "Blues a Barcelona"
+    url: "/ca/blues-a-barcelona/"
+  - title: "Big band a Barcelona"
+    url: "/ca/big-band-a-barcelona/"
+  - title: "Música per a esdeveniments"
+    url: "/ca/musica-per-a-esdeveniments/"
+es:
+  - title: "Blues en Barcelona"
+    url: "/es/blues-en-barcelona/"
+  - title: "Big band en Barcelona"
+    url: "/es/big-band-en-barcelona/"
+  - title: "Música para eventos"
+    url: "/es/musica-para-eventos/"
+en:
+  - title: "Blues in Barcelona"
+    url: "/en/blues-in-barcelona/"
+  - title: "Big band in Barcelona"
+    url: "/en/big-band-barcelona/"
+  - title: "Live music for events"
+    url: "/en/live-music-for-events/"

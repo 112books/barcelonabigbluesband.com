@@ -2,14 +2,14 @@
 title: "Big band in Barcelona · Barcelona Big Blues Band"
 heading: "Big band in Barcelona"
 translationKey: "big-band-barcelona"
-description: "A rhythm'n'blues big band in Barcelona: up to 15 musicians with a seven-piece horn section, a residency at Jamboree and a line-up that scales to any venue or event."
+description: "A rhythm'n'blues big band in Barcelona: up to 13 musicians with a nine-piece horn section, a residency at Jamboree and a line-up that scales to any venue or event."
 bg: "images/galleries/2026-06-l1560008-jpg.jpg"
 date: 2026-11-26
 faq:
   - q: "What is a big band?"
     a: "A big band is a jazz or rhythm'n'blues ensemble with a full horn section (usually seven pieces: two alto saxes, two tenors, a baritone, two trumpets and trombone, expandable) plus a rhythm section of piano, double bass, guitar and drums. It allows written arrangements and a far bigger sound than a combo."
   - q: "How many musicians are in the Barcelona Big Blues Band?"
-    a: "In its full line-up, up to 15 musicians with a seven-piece horn section. It also performs as a combo or in intermediate line-ups, depending on the venue and the budget."
+    a: "In its full line-up, up to 13 musicians with a nine-piece horn section. It also performs as a combo or in intermediate line-ups, depending on the venue and the budget."
   - q: "Where does the big band play in Barcelona?"
     a: "Its residency is at Jamboree Jazz Club on plaça Reial. It has also played the Palau de la Música Catalana, La Paloma, Luz de Gas and Paral·lel 62, and festivals such as Mas i Mas, Grec and Sax-o-Rama."
   - q: "How much does it cost to book a big band in Barcelona?"
@@ -17,9 +17,9 @@ faq:
 ---
 
 The **Barcelona Big Blues Band** is Europe's largest rhythm'n'blues big band: up to
-**15 musicians with a seven-piece horn section**, led by double bassist
+**13 musicians with a nine-piece horn section**, led by double bassist
 [Ivan Kovacevic](https://ivankovacevic.com/). It holds a residency at Barcelona's
-[Jamboree Jazz Club](https://www.jamboreejazz.com/) and has done for more than a decade.
+[Jamboree Jazz Club](https://www.jamboreejazz.com/) and has done for more than 15 years.
 
 ## Why a big band and not a combo
 
@@ -32,7 +32,7 @@ another level.
 
 - **Combo** · 4-7 musicians · small rooms, cocktails and receptions.
 - **Intermediate** · 8-11 musicians · mid-sized rooms, terraces and private parties.
-- **Full big band** · up to 15 musicians · festivals, theatres, squares and corporate events.
+- **Full big band** · 13 musicians · festivals, theatres, squares and corporate events.
 
 ## Where we have played
 
@@ -68,7 +68,7 @@ than a combo.
 
 ### How many musicians are in the Barcelona Big Blues Band?
 
-Up to 15 with a seven-piece horn section in the full line-up; it also scales down to a combo or
+Up to 13 with a nine-piece horn section in the full line-up; it also scales down to a combo or
 intermediate formats.
 
 ### Where does the big band play in Barcelona?

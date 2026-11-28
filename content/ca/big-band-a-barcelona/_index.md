@@ -2,14 +2,14 @@
 title: "Big band a Barcelona · Barcelona Big Blues Band"
 heading: "Big band a Barcelona"
 translationKey: "big-band-barcelona"
-description: "Big band de rhythm'n'blues a Barcelona: fins a 15 músics amb set vents, residència al Jamboree i format configurable per a sales, festivals i esdeveniments."
+description: "Big band de rhythm'n'blues a Barcelona: fins a 13 músics amb nou vents, residència al Jamboree i format configurable per a sales, festivals i esdeveniments."
 bg: "images/galleries/2026-06-l1560008-jpg.jpg"
 date: 2026-11-26
 faq:
   - q: "Què és una big band?"
     a: "Una big band és una formació de jazz o rhythm'n'blues amb secció de vents completa (normalment 7 peces: 2 saxos alts, 2 tenors, 1 baríton, 2 trompetes i trombó, ampliable) més secció rítmica de piano, contrabaix, guitarra i bateria. Permet arranjaments escrits i un so molt més potent que un combo."
   - q: "Quants músics té la Barcelona Big Blues Band?"
-    a: "En format gran, fins a 15 músics amb set vents. També actua en format combo o en versions intermèdies, segons l'espai i el pressupost de l'esdeveniment."
+    a: "En format gran, fins a 13 músics amb nou vents. També actua en format combo o en versions intermèdies, segons l'espai i el pressupost de l'esdeveniment."
   - q: "On actua la big band a Barcelona?"
     a: "La residència és al Jamboree Jazz Club, a la plaça Reial. També ha actuat al Palau de la Música Catalana, La Paloma, Luz de Gas i Paral·lel 62, i en festivals com el Mas i Mas, el Grec o el Sax-o-Rama."
   - q: "Quant costa contractar una big band a Barcelona?"
@@ -17,9 +17,9 @@ faq:
 ---
 
 La **Barcelona Big Blues Band** és la big band de rhythm'n'blues més gran d'Europa: fins a
-**15 músics amb una secció de vents de set peces**, sota la direcció del contrabaixista
+**13 músics amb una secció de vents de nou peces**, sota la direcció del contrabaixista
 [Ivan Kovacevic](https://ivankovacevic.com/). Té la residència al
-[Jamboree Jazz Club](https://www.jamboreejazz.com/) de Barcelona des de fa més d'una dècada.
+[Jamboree Jazz Club](https://www.jamboreejazz.com/) de Barcelona des de fa més de 15 anys.
 
 ## Per què una big band i no un combo
 
@@ -32,7 +32,7 @@ festival, una sala gran, una festa major o un esdeveniment d'empresa, l'impacte 
 
 - **Combo** · 4-7 músics · sales petites, còctels i recepcions.
 - **Format intermedi** · 8-11 músics · sales mitjanes, terrasses i festes privades.
-- **Big band completa** · fins a 15 músics · festivals, teatres, places i esdeveniments d'empresa.
+- **Big band completa** · 13 músics · festivals, teatres, places i esdeveniments d'empresa.
 
 ## On hem tocat
 
@@ -61,13 +61,13 @@ en directe, mira els [vídeos](/ca/videos/) o l'[agenda](/ca/agenda/).
 
 ### Què és una big band?
 
-Una formació amb secció de vents completa —set peces: saxos, trompetes i trombó— més secció
+Una formació amb secció de vents completa —nou peces: 5 saxos, 2 trompetes i 2 trombons— més secció
 rítmica (piano, contrabaix, guitarra i bateria), amb arranjaments escrits i un so molt més potent
 que un combo.
 
 ### Quants músics té la Barcelona Big Blues Band?
 
-En format gran, fins a 15 músics amb set vents. També actua en combo o en versions intermèdies.
+En format gran, fins a 13 músics amb nou vents. També actua en combo o en versions intermèdies.
 
 ### On actua la big band a Barcelona?
 

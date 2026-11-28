@@ -4,15 +4,20 @@
 
     <h1 class="page-title">{{ .Title }}</h1>
 
+    {{/* Índex de seccions: .Fragments dóna els IDs EXACTES que genera Goldmark
+         (l'antic `urlize` percent-codificava els accents i trencava els ancoratges) */}}
+    {{/* IDs generats amb `anchorize` (el mateix que Goldmark). Abans s'usava
+         `urlize`, que percent-codificava els accents i trencava tots els ancoratges. */}}
+    {{- /* Índex de seccions generat des del TOC de Goldmark: així els IDs
+         coincideixen EXACTAMENT amb els dels títols (abans s'usava `urlize`,
+         que percent-codificava els accents i deixava tots els ancoratges morts). */ -}}
     <nav class="booking-nav booking-nav--enhanced" aria-label="Seccions">
-      {{ $raw := .RawContent }}
-      {{ range $i, $h := findRE "(?m)^##[[:space:]]+(.+)$" $raw }}
-      {{ $txt := replaceRE "^##[[:space:]]+" "" $h }}
-      {{ $plain := plainify $txt }}
-      {{ $id := urlize $plain }}
-      {{ if eq $id "" }}{{ $id = printf "section-%d" $i }}{{ end }}
-      <a href="#{{ $id }}">{{ $plain }}</a>
-      {{ end }}
+      {{- $toc := string .TableOfContents }}
+      {{- range findRE `<a href="#[^"]+">[^<]+</a>` $toc }}
+      {{- $id := replaceRE `^<a href="#([^"]+)">.*$` "$1" . }}
+      {{- $txt := replaceRE `^<a href="#[^"]+">(.*)</a>$` "$1" . | safeHTML }}
+      <a href="#{{ $id | safeURL }}">{{ $txt }}</a>
+      {{- end }}
     </nav>
 
     <div class="prose">{{ .Content }}</div>

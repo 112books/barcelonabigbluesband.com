@@ -1,9 +1,9 @@
 ---
-title: "Press"
+title: "Press and reviews · Barcelona Big Blues Band"
 bg: "images/galleries/2026-01-img-4392-jpg.jpg"
 type: "press"
 translationKey: "press"
-description: "Interviews, reviews and coverage about the Barcelona Big Blues Band around the world."
+description: "Interviews, reviews and coverage about the Barcelona Big Blues Band in Barcelona, Spanish and international media."
 ---
 
 A selection of interviews, reviews and articles about the Barcelona Big Blues Band. Articles are listed in their original language.

@@ -1891,3 +1891,13 @@ button.back-link { background: none; border: 0; padding: 0; cursor: pointer; fon
   .booking-musician__name { min-width: auto; }
   .booking-musician { gap: .4rem; }
 }
+
+/* ── Guies (fila discreta sobre el peu) ─────────────────── */
+.footer-guides {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 1.1rem var(--gap) 0;
+  display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; justify-content: center;
+  font-size: .8rem; letter-spacing: .02em;
+}
+.footer-guides a { color: var(--c-muted); text-decoration: none; border-bottom: 1px solid transparent; transition: color var(--dur), border-color var(--dur); }
+.footer-guides a:hover, .footer-guides a:focus-visible { color: var(--c-accent-2); border-color: currentColor; }

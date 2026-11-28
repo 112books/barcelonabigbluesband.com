@@ -136,7 +136,7 @@
           </p>
         </div>
 
-        <div class="booking-block booking-block--wide">
+        <div class="booking-block booking-block--wide" id="rider">
           <h3>{{ i18n "booking_rider" }}</h3>
           <details class="booking-rider">
             <summary>{{ i18n "booking_rider" }}</summary>
@@ -156,7 +156,7 @@
     </section>
 
     <!-- ══ Contacte + formulari ══ -->
-    <section class="booking-contact" aria-label="{{ i18n "booking_contact_title" }}">
+    <section class="booking-contact" id="contact" aria-label="{{ i18n "booking_contact_title" }}">
       <h2 class="booking-contact__title">{{ i18n "booking_contact_title" }}</h2>
 
       {{ $endpoint := site.Params.booking_form_endpoint | default "" }}

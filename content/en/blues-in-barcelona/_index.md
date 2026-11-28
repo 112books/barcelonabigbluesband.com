@@ -6,13 +6,13 @@ bg: "images/sections/agenda.jpg"
 date: 2026-11-26
 faq:
   - q: "Where can you hear live blues in Barcelona?"
-    a: "The key venues are Jamboree (plaça Reial), where the Barcelona Big Blues Band has held a residency for more than a decade, La Paloma, Luz de Gas, Paral·lel 62 and the Harlem Jazz Club. Weekly jam sessions run as well (El Prize in Sant Antoni among them), alongside monthly blues and rhythm'n'blues series."
+    a: "The key venues are Jamboree (plaça Reial), where the Barcelona Big Blues Band has held a residency for more than 15 years, La Paloma, Luz de Gas, Paral·lel 62 and the Harlem Jazz Club. Weekly jam sessions run as well (El Prize in Sant Antoni among them), alongside monthly blues and rhythm'n'blues series."
   - q: "What is the best blues festival in Catalonia?"
     a: "The Festival de Blues de Barcelona and the Festival Internacional de Blues de Cerdanyola are the most established, alongside Vijazz in Vilafranca del Penedès, the Terrassa Jazz Festival, the Cambrils music festival and, beyond Catalonia, the San Javier Jazz Festival (Murcia) and the Pertuis Big Band Festival (France)."
   - q: "How do you book a blues band for an event?"
-    a: "You need to give the date, the venue, the type of event and the expected audience size. The band proposes a line-up (combo or a big band of up to 15 musicians), sends the technical rider and a fixed quote. For corporate events and private celebrations we recommend confirming 4-8 weeks in advance."
+    a: "You need to give the date, the venue, the type of event and the expected audience size. The band proposes a line-up (combo or a big band of 13 musicians), sends the technical rider and a fixed quote. For corporate events and private celebrations we recommend confirming 4-8 weeks in advance."
   - q: "What is the difference between a combo and a big band?"
-    a: "A combo is a small line-up (4-7 musicians) with a more intimate sound, ideal for smaller rooms. A big band adds a seven-piece horn section and reaches 15 musicians: more power, a wider swing and rhythm'n'blues repertoire, and a far bigger stage presence."
+    a: "A combo is a small line-up (4-7 musicians) with a more intimate sound, ideal for smaller rooms. A big band adds a nine-piece horn section and reaches 13 musicians: more power, a wider swing and rhythm'n'blues repertoire, and a far bigger stage presence."
   - q: "Does the Barcelona Big Blues Band play outside Barcelona?"
     a: "Yes. The band has played the Palau de la Música Catalana, Teatro Juan Bravo in Segovia, Auditorio elCírculo in Logroño, l'Auditori Pau Casals in el Vendrell, Vinseum in Vilafranca and festivals such as San Javier (Murcia) and Pertuis (France)."
 ---
@@ -25,7 +25,7 @@ festivals matter and how to book a blues band for a concert or an event.
 ## Where to hear live blues in Barcelona
 
 - **[Jamboree](https://jamboreejazz.com/)** (plaça Reial): the reference room, with jazz and
-  blues almost every night and the Barcelona Big Blues Band's residency for more than a decade.
+  blues almost every night and the Barcelona Big Blues Band's residency for more than 15 years.
 - **[La Paloma](https://www.barcelona.cat/culturapopular/es/detall/sala-de-festes-la-paloma_99400504492.html)**:
   historic Raval venue, with soul, funk and blues nights and the Sax-o-Rama festival.
 - **[Luz de Gas](https://luzdegas.com/)**: bigger shows and tribute nights, with a broad audience.
@@ -59,7 +59,7 @@ If you want a full-band blues night, check the
 ## The Barcelona Big Blues Band
 
 The Barcelona outfit —led by double bassist [Ivan Kovacevic](https://ivankovacevic.com/)— is
-Europe's largest rhythm'n'blues big band: up to **15 musicians with a seven-piece horn section**,
+Europe's largest rhythm'n'blues big band: **13 musicians with a nine-piece horn section**,
 with a configurable line-up from combo upwards. Its sound comes out of the T-Bone Walker and
 Johnny Otis band tradition and it has backed artists such as Dani Nel·lo, Myriam Swanson,
 Ray Gelato, Mike Sánchez, Lluís Coloma, Wax & Boogie, Drew Davies and Spencer Evoy.
@@ -71,7 +71,7 @@ Ray Gelato, Mike Sánchez, Lluís Coloma, Wax & Boogie, Drew Davies and Spencer 
 ## How to book a blues band in Barcelona
 
 1. **Date and place**: give the date, the space (indoor or outdoor) and the expected capacity.
-2. **Line-up**: a combo (4-7 musicians) for smaller rooms; a big band (up to 15) for festivals,
+2. **Line-up**: a combo (4-7 musicians) for smaller rooms; a big band (13 musicians) for festivals,
    large halls and corporate events.
 3. **Technical rider**: the band sends its sound and stage requirements; the rider lives on the
    [booking page](/en/booking/).
@@ -106,8 +106,8 @@ technical rider and a fixed quote. We recommend 4-8 weeks' notice.
 
 ### What is the difference between a combo and a big band?
 
-A combo has 4-7 musicians and a more intimate sound. A big band adds seven horns and reaches
-15 musicians: more power, a wider repertoire and much bigger stage presence.
+A combo has 4-7 musicians and a more intimate sound. A big band adds nine horns and reaches
+13 musicians: more power, a wider repertoire and much bigger stage presence.
 
 ### Does the Barcelona Big Blues Band play outside Barcelona?
 
